@@ -1,12 +1,12 @@
-<!DOCTYPE html>
 
 <html lang="ru">
 	<head>
-		<meta http-equiv="Cache-Control" content="no-cache">
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
 		<title><?=$array['title'];?></title>
+        <meta http-equiv="Cache-Control" content="no-cache">
 		<meta name="description" content="<?=$array['metakeys'];?>">
 		<meta property="og:title" content="<?=$array['title'];?>" />
 		<meta property="og:site_name" content="<?=$array['title'];?>" />
@@ -21,32 +21,32 @@
 		
 		
 		<link href="https://plus.google.com/u/0/+pioneerdjglobal" rel="publisher" />
-		<link href="update/Content/img/app/apple-touch-icon-precomposed-152.png" sizes="152x152" rel="apple-touch-icon-precomposed">
-		<link href="update/Content/img/app/apple-touch-icon-precomposed-72.png" sizes="72x72" rel="apple-touch-icon-precomposed">
-		<link href="update/Content/img/app/apple-touch-icon-precomposed-120.png" sizes="120x120" rel="apple-touch-icon-precomposed">
-		<link href="update/Content/img/app/apple-touch-icon-precomposed-114.png" sizes="114x114" rel="apple-touch-icon-precomposed">
-		<link href="update/Content/img/app/apple-touch-icon-precomposed-57.png" sizes="57x57" rel="apple-touch-icon-precomposed">
-		<link href="update/Content/img/app/apple-touch-startup-image-1536x2008.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image">
-		<link href="update/Content/img/app/apple-touch-startup-image-1496x2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image">
-		<link href="update/Content/img/app/apple-touch-startup-image-768x1004.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait)" rel="apple-touch-startup-image">
-		<link href="update/Content/img/app/apple-touch-startup-image-748x1024.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape)" rel="apple-touch-startup-image">
-		<link href="update/Content/img/app/apple-touch-startup-image-1242x2148.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" rel="apple-touch-startup-image">
-		<link href="update/Content/img/app/apple-touch-startup-image-1182x2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" rel="apple-touch-startup-image">
-		<link href="update/Content/img/app/apple-touch-startup-image-750x1294.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-		<link href="update/Content/img/app/apple-touch-startup-image-640x1096.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-		<link href="update/Content/img/app/apple-touch-startup-image-640x920.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-		<link href="update/Content/img/app/apple-touch-startup-image-320x460.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+		<link href="/update/Content/img/app/apple-touch-icon-precomposed-152.png" sizes="152x152" rel="apple-touch-icon-precomposed">
+		<link href="/update/Content/img/app/apple-touch-icon-precomposed-72.png" sizes="72x72" rel="apple-touch-icon-precomposed">
+		<link href="/update/Content/img/app/apple-touch-icon-precomposed-120.png" sizes="120x120" rel="apple-touch-icon-precomposed">
+		<link href="/update/Content/img/app/apple-touch-icon-precomposed-114.png" sizes="114x114" rel="apple-touch-icon-precomposed">
+		<link href="/update/Content/img/app/apple-touch-icon-precomposed-57.png" sizes="57x57" rel="apple-touch-icon-precomposed">
+		<link href="/update/Content/img/app/apple-touch-startup-image-1536x2008.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image">
+		<link href="/update/Content/img/app/apple-touch-startup-image-1496x2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image">
+		<link href="/update/Content/img/app/apple-touch-startup-image-768x1004.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait)" rel="apple-touch-startup-image">
+		<link href="/update/Content/img/app/apple-touch-startup-image-748x1024.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape)" rel="apple-touch-startup-image">
+		<link href="/update/Content/img/app/apple-touch-startup-image-1242x2148.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" rel="apple-touch-startup-image">
+		<link href="/update/Content/img/app/apple-touch-startup-image-1182x2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" rel="apple-touch-startup-image">
+		<link href="/update/Content/img/app/apple-touch-startup-image-750x1294.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="/update/Content/img/app/apple-touch-startup-image-640x1096.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="/update/Content/img/app/apple-touch-startup-image-640x920.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="/update/Content/img/app/apple-touch-startup-image-320x460.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
 
 		<meta name="VIcurrentDateTime" content="<?=time();?>" />
-		<script type="text/javascript" src="update/layouts/system/VisitorIdentification.js"></script>
+		<script type="text/javascript" src="/update/layouts/system/VisitorIdentification.js"></script>
 
-		<script src="update/layouts/JsHeader/index-v=BMne-U6Vgal8q3NFbvZfdgOMUnIfzy_RdwlKQDCSjtg1"></script>
+		<script src="/update/layouts/JsHeader/index.js"></script>
 
 
 
-		<link href="update/layouts/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
+		<link href="/update/layouts/Style/index.css" rel="stylesheet"/>
 
-		<link href="update/Content/css/fonts-default.css" rel="stylesheet" type="text/css">
+		<link href="/update/Content/css/fonts-default.css" rel="stylesheet" type="text/css">
 
 
 	</head>
@@ -60,15 +60,15 @@
 <header class="header outer">
     <div class="topbar">
         <div class="container">
-            <a href="index.html#" class="btn-offcanvas trigger__offcanvas"><i class="icon-menu"></i></a>
-                    <a href="index.html" class="logo">
-                        <img src="update/Content/img/pioneer-dj.png" alt="Pioneer DJ logo" />
+            <a href="/" class="btn-offcanvas trigger__offcanvas"><i class="icon-menu"></i></a>
+                    <a href="/" class="logo">
+                        <img src="/update/Content/img/pioneer-dj.png" alt="Pioneer DJ School logo" />
                     </a>
 
             <div class="action-nav">
                 <ul>
                     <li>
-                        <a href="index.html#search__wrap" class="site-search-toggle trigger__open-overlayer">
+                        <a href="#search__wrap" class="site-search-toggle trigger__open-overlayer">
                             <i class="icon-search">
                                 <span class="sr-only">Search</span>
                             </i>
@@ -81,52 +81,52 @@
     </div>
     <div class="navbar" id="navbar">
         <div class="container">
-                    <a href="index.html" class="logo">
-                        <img src="update/Content/img/pioneer-dj.png" alt="Pioneer DJ logo" />
+                    <a href="/" class="logo">
+                        <img src="/update/Content/img/pioneer-dj.png" alt="Pioneer DJ School logo" />
                     </a>
 
             <nav class="main-nav">
 
                     <ul>
                         <li class="main-nav__home">
-                                <a href="index.html">Home</a>
+                                <a href="/">Home</a>
                         </li>
                                 <li class="main-nav__products folder__container">
-                                    <a href='product/index.html' >Products</a>
+                                    <a href='/product/player/' >Products</a>
 
                                     <span class="folder__trigger"></span>
                                     <div class="folder__content">
                                         <ul>
                                                 <li>
-<a href='product/player/index.html' >                                                        <span class="image">
+<a href='/product/player/' >                                                        <span class="image">
                                                                 <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/players.png" alt="players" />
                                                         </span>
                                                                 <span class="text">
 Players                                                                </span>
 </a>                                                </li>
                                                 <li>
-<a href='product/mixer/index.html' >                                                        <span class="image">
+<a href='/product/mixer/' >                                                        <span class="image">
                                                                 <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/mixers.png" alt="mixers" />
                                                         </span>
                                                                 <span class="text">
 Mixers                                                                </span>
 </a>                                                </li>
                                                 <li>
-<a href='product/controller/index.html' >                                                        <span class="image">
+<a href='/product/controller/' >                                                        <span class="image">
                                                                 <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/controllers.png" alt="controllers" />
                                                         </span>
                                                                 <span class="text">
 Controllers                                                                </span>
 </a>                                                </li>
                                                 <li>
-<a href='product/headphones/index.html' >                                                        <span class="image">
+<a href='/product/headphones/' >                                                        <span class="image">
                                                                 <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/headphones.png" alt="Headphones" />
                                                         </span>
                                                                 <span class="text">
 Headphones                                                                </span>
 </a>                                                </li>
                                                 <li>
-<a href='product/index.html' >                                                        <span class="image">
+<a href='/product/' >                                                        <span class="image">
                                                                 <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/other.png" alt="other" />
                                                         </span>
                                                                 <span class="text">
@@ -137,20 +137,20 @@ More                                                                </span>
                                     </div>
                                 </li>
                                     <li>
-                                        <a href='news/index.html' title='News' >News</a>
+                                        <a href='/news/' title='News' >News</a>
                                     </li>
                                     <li>
-                                        <a href='support/index.html' title='Support' >Support</a>
+                                        <a href='/support/' title='Support' >Support</a>
                                     </li>
                                     <li>
-                                        <a href='shops/index.html' title='Where to Buy' >Find a store</a>
+                                        <a href='/shops/' title='Where to Buy' >Find a store</a>
                                     </li>
                     </ul>
             </nav>
             <div class="action-nav">
                 <ul>
                     <li class="item-search">
-                        <a href="index.html#search__wrap" class="site-search-toggle trigger__open-overlayer">
+                        <a href="#search__wrap" class="site-search-toggle trigger__open-overlayer">
                             <i class="icon-search"></i>
                         </a>
                     </li>
@@ -173,7 +173,7 @@ More                                                                </span>
                     <div class="image-fx-overlay"></div>
                 </div>
             <div class="wheel"></div>
-            <a href="product/controller/ddj-sz2/black/overview/index.html" class="body">
+            <a href="/product/controller/ddj-sz2/black/overview/" class="body">
                 <div class="in">
                     <h1 class="quote"><span class="ellipsis">Freedom to control<br>Meet the DDJ-SZ2 controller</span></h1>
                     <span class="ghostbtn ghostbtn-large ghostbtn-forw ghostbtn-light"><span class="text">Find out more</span></span>
@@ -184,23 +184,23 @@ More                                                                </span>
             <ul>
 
                         <li>
-<a href='product/player/index.html' >                                <span class="text">Players</span>
+<a href='/product/player/' >                                <span class="text">Players</span>
                                 <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/players.png?h=256&amp;w=400&amp;la=en&amp;hash=8C5DF8DD2CF7C891FD0C34363773C3399B009082' alt='players' /></span>
 </a>                        </li>
                         <li>
-<a href='product/mixer/index.html' >                                <span class="text">Mixers</span>
+<a href='/product/mixer/' >                                <span class="text">Mixers</span>
                                 <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/mixers.png?h=256&amp;w=400&amp;la=en&amp;hash=E6F24736A4281A2CD6E5D0FED807D313983F0794' alt='mixers' /></span>
 </a>                        </li>
                         <li>
-<a href='product/controller/index.html' >                                <span class="text">Controllers</span>
+<a href='/product/controller/' >                                <span class="text">Controllers</span>
                                 <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/controllers.png?h=256&amp;w=400&amp;la=en&amp;hash=7C6EA5011D7DC5CCB8F3F5B1C2D646901F99F754' alt='controllers' /></span>
 </a>                        </li>
                         <li>
-<a href='product/headphones/index.html' >                                <span class="text">Headphones</span>
+<a href='/product/headphones/' >                                <span class="text">Headphones</span>
                                 <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/headphones.png?h=256&amp;w=400&amp;la=en&amp;hash=A683D64511280B46E4F1F9653085FA2FE2DA6CC2' alt='Headphones' /></span>
 </a>                        </li>
                         <li>
-<a href='product/index.html' >                                <span class="text">More</span>
+<a href='/product/' >                                <span class="text">More</span>
                                 <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/other.png?h=256&amp;w=400&amp;la=en&amp;hash=3FB8B51FFD93CA67A2DA9190D4455A83CF3365A4' alt='other' /></span>
 </a>                        </li>
             </ul>
@@ -220,7 +220,7 @@ More                                                                </span>
                     <div class="slider">
                                 <section class="news-feature medium">
 
-            <a class="box" href="news/2016/djsounds-show-216-doc-martin/index.html">
+            <a class="box" href="/news/2016/djsounds-show-216-doc-martin/">
                     <span class="date">
                         22 December, 2016
                     </span>
@@ -242,7 +242,7 @@ More                                                                </span>
         </section>
         <section class="news-feature is-update medium">
 
-            <a class="box" href="news/2016/ddj-sz2-driver-first-release-for-windows-and-mac-os/index.html">
+            <a class="box" href="/news/2016/ddj-sz2-driver-first-release-for-windows-and-mac-os/">
                     <span class="date">
                         20 December, 2016
                     </span>
@@ -265,7 +265,7 @@ More                                                                </span>
         </section>
         <section class="news-feature is-update medium">
 
-            <a class="box" href="news/2016/happy-holidays-sale/index.html">
+            <a class="box" href="/news/2016/happy-holidays-sale/">
                     <span class="date">
                         20 December, 2016
                     </span>
@@ -289,7 +289,7 @@ More                                                                </span>
 
                     </div>
                 </div>
-                <a href="news/index.html" class="ghostbtn ghostbtn-forw ghostbtn-light"><span class="text">Discover more</span></a>
+                <a href="/news/" class="ghostbtn ghostbtn-forw ghostbtn-light"><span class="text">Discover more</span></a>
             </div>
         </section>
     <section class="section">
@@ -298,7 +298,7 @@ More                                                                </span>
             <div class="row product-teasers">
 <div class="col-sm-6">
     <div class="product-teaser">
-        <a href="product/controller/ddj-rx/black/overview/index.html">
+        <a href="/product/controller/ddj-rx/black/overview/">
             <div class="image">
                 <img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-rx/ddj-rx-headerimg.jpg?h=480&amp;w=1600&amp;la=en&amp;hash=B25AAF07D9622254A2D747643C1B727AE5F33DF4' alt='DDJ-RX' />
             </div>
@@ -320,7 +320,7 @@ More                                                                </span>
     </div>
 </div>                <div class="col-sm-6">
     <div class="product-teaser">
-        <a href="product/player/xdj-700/black/overview/index.html">
+        <a href="/product/player/xdj-700/black/overview/">
             <div class="image">
                 <img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/player/xdj-700/xdj-700-header-img.jpg?h=480&amp;w=1600&amp;la=en&amp;hash=F2E617AAAA99A74C5C375D714DD535855BA22004' alt='XDJ-700 header' />
             </div>
@@ -357,7 +357,7 @@ More                                                                </span>
 <p class="desc">Our new controller with full control over the new video plus plack for rekordbox dj.</p>
 </div>
 <div>
-<a href="index.html#" class="controlbtn trigger__open-overlayer video-player" data-title="DDJ-RZX &amp; rekordbox video Official Introduction" data-video="B7GBhSwd-GA" data-autoplay="true" data-volumebar="true" data-seekbar="true" data-volume="100" data-start-at="0">
+<a href="/#" class="controlbtn trigger__open-overlayer video-player" data-title="DDJ-RZX &amp; rekordbox video Official Introduction" data-video="B7GBhSwd-GA" data-autoplay="true" data-volumebar="true" data-seekbar="true" data-volume="100" data-start-at="0">
 <em class="ico"><span class="sr-only">Play</span></em>
 </a>
 </div>
@@ -456,7 +456,7 @@ More                                                                </span>
                 <div class="col-md-8">
                     <div class="footer-breadcrumb clearfix">
     <ul class="clearfix">
-        <li><a href="index.html"><span class="icon-dj"></span><span class="sr-only">DJ</span></a></li>
+        <li><a href="/"><span class="icon-dj"></span><span class="sr-only">DJ</span></a></li>
     </ul>
 </div>
                 </div>
@@ -513,7 +513,7 @@ More                                                                </span>
                                     <div class="folder__container">
 
                                             <p class="item-title">
-                                                <a href='product/index.html' >Products</a>
+                                                <a href='/product/' >Products</a>
                                                 <span class="folder__trigger"></span>
                                             </p>
                                             <div class="folder__content">
@@ -522,17 +522,17 @@ More                                                                </span>
                                                             <p class="item-subtitle">
                                                          </p>
                                                         <ul class="double-list clearfix">
-                                                                <li><a href='product/player/index.html' >DJ player</a></li>
-                                                                <li><a href='product/effector/index.html' >Remix station</a></li>
-                                                                <li><a href='product/mixer/index.html' >DJ mixer</a></li>
-                                                                <li><a href='product/headphones/index.html' >Headphones</a></li>
-                                                                <li><a href='product/controller/index.html' >DJ controller</a></li>
-                                                                <li><a href='product/monitor-speakers/index.html' >Monitor speakers</a></li>
-                                                                <li><a href='product/all-in-one-system/index.html' >All-in-one DJ system</a></li>
-                                                                <li><a href='product/production/index.html' >Production</a></li>
-                                                                <li><a href='product/accessories/index.html' >Accessories</a></li>
-                                                                <li><a href='product/turntable/index.html' >Turntable</a></li>
-                                                                <li><a href='product/software/index.html' >DJ software</a></li>
+                                                                <li><a href='/product/player/' >DJ player</a></li>
+                                                                <li><a href='/product/effector/' >Remix station</a></li>
+                                                                <li><a href='/product/mixer/' >DJ mixer</a></li>
+                                                                <li><a href='/product/headphones/' >Headphones</a></li>
+                                                                <li><a href='/product/controller/' >DJ controller</a></li>
+                                                                <li><a href='/product/monitor-speakers/' >Monitor speakers</a></li>
+                                                                <li><a href='/product/all-in-one-system/' >All-in-one DJ system</a></li>
+                                                                <li><a href='/product/production/' >Production</a></li>
+                                                                <li><a href='/product/accessories/' >Accessories</a></li>
+                                                                <li><a href='/product/turntable/' >Turntable</a></li>
+                                                                <li><a href='/product/software/' >DJ software</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -543,18 +543,18 @@ More                                                                </span>
                                     <div class="folder__container">
 
                                             <p class="item-title">
-                                                <a href='support/index.html' >Support</a>
+                                                <a href='/support/' >Support</a>
                                                 <span class="folder__trigger"></span>
                                             </p>
                                             <div class="folder__content">
                                                 <ul class="clearfix">
-                                                        <li><a href='support/contact/index.html' title='Contact' >Contact</a></li>
-                                                        <li><a href='support/documents/index.html' >Manuals</a></li>
-                                                        <li><a href='support/software/index.html' >Software & firmware</a></li>
-                                                        <li><a href='support/software-information/index.html' >Software information</a></li>
+                                                        <li><a href='/support/contact/' title='Contact' >Contact</a></li>
+                                                        <li><a href='/support/documents/' >Manuals</a></li>
+                                                        <li><a href='/support/software/' >Software & firmware</a></li>
+                                                        <li><a href='/support/software-information/' >Software information</a></li>
                                                         <li><a href='http://faq.pioneerdj.com' class='lnk-external' target='_blank' >FAQ</a></li>
                                                         <li><a href='http://forums.pioneerdj.com/home' class='lnk-external' target='_blank' >Forum</a></li>
-                                                        <li><a href='landing/pioneer-dj-certified/index.html' >Certified Program</a></li>
+                                                        <li><a href='/landing/pioneer-dj-certified/' >Certified Program</a></li>
                                                 </ul>
                                             </div>
                                     </div>
@@ -562,25 +562,25 @@ More                                                                </span>
                                 <div class="col-md-3 clearfix">
                                         <div class="folder__container">
                                             <p class="item-title">
-                                                <a href='news/index.html' title='News' >News</a>
+                                                <a href='/news/' title='News' >News</a>
                                                 <span class="folder__trigger"></span>
                                             </p>
                                         </div>
                                         <div class="folder__container">
                                             <p class="item-title">
-                                                <a href='shops/index.html' >Where to buy</a>
+                                                <a href='/shops/' >Where to buy</a>
                                                 <span class="folder__trigger"></span>
                                             </p>
                                         </div>
                                         <div class="folder__container">
                                             <p class="item-title">
-                                                <a href='company/company-info/index.html' >About us</a>
+                                                <a href='/company/company-info/' >About us</a>
                                                 <span class="folder__trigger"></span>
                                             </p>
                                                 <div class="folder__content">
                                                     <ul class="clearfix">
-                                                            <li><a href='company/company-info/index.html' >Company info</a></li>
-                                                            <li><a href='corporate-contact/index.html' >Corporate contact</a></li>
+                                                            <li><a href='/company/company-info/' >Company info</a></li>
+                                                            <li><a href='/corporate-contact/' >Corporate contact</a></li>
                                                     </ul>
                                                 </div>
                                         </div>
@@ -597,7 +597,7 @@ More                                                                </span>
                         <div class="form">
                             <div class="in">
                                 
-                                <a href="shops/index.html" class="btn btn-dark"><span class="text">Find authorised shops</span></a>
+                                <a href="/shops/" class="btn btn-dark"><span class="text">Find authorised shops</span></a>
                             </div>
                         </div>
                     </div>
@@ -660,13 +660,13 @@ Pioneer Pro Audio</a>                                    </li>
                             <strong>&copy; Pioneer DJ</strong>
                             <ul>
                                     <li>
-                                        <a href='company/privacy-policy/index.html' >privacy policy</a>
+                                        <a href='/company/privacy-policy/' >privacy policy</a>
                                     </li>
                                     <li>
-                                        <a href='company/terms-of-use/index.html' >terms of use</a>
+                                        <a href='/company/terms-of-use/' >terms of use</a>
                                     </li>
                                     <li>
-                                        <a href='company/trademarks/index.html' >trademarks</a>
+                                        <a href='/company/trademarks/' >trademarks</a>
                                     </li>
                             </ul>
                         </div>
@@ -691,17 +691,17 @@ Pioneer Pro Audio</a>                                    </li>
             <div class="outer">
                 <div class="container">
                     <div class="zoomtool__scale clearfix">
-                        <a href="index.html#" class="scale-trigger zoom-out"><i class="ico icon-min"></i></a>
+                        <a href="/#" class="scale-trigger zoom-out"><i class="ico icon-min"></i></a>
                         <div class="slider-wrap">
                             <div class="slider"></div>
                         </div>
-                        <a href="index.html#" class="scale-trigger zoom-in"><i class="ico icon-plus"></i></a>
+                        <a href="/#" class="scale-trigger zoom-in"><i class="ico icon-plus"></i></a>
                     </div>
                     <div class="zoomtool__actions">
-                        <a href="index.html#" class="btn__action download-image"><i class="ico icon-download"></i></a>
+                        <a href="/#" class="btn__action download-image"><i class="ico icon-download"></i></a>
                         
                     </div>
-                    <a href="index.html#" class="btn__action close trigger__close-overlayer"><i class="ico icon-cross"></i></a>
+                    <a href="/#" class="btn__action close trigger__close-overlayer"><i class="ico icon-cross"></i></a>
                 </div>
             </div>
         </div>
@@ -738,10 +738,10 @@ Pioneer Pro Audio</a>                                    </li>
                 <div class="container">
                     <div class="input-wrap">
                         <input type="text" class="input__search" data-no-results="Oops nothing can be found" data-nothing-entered="Please enter a search query"/>
-                        <a href="index.html#" class="trigger_clear-text btn__clear-text"><span class="ico-element icon-clear-cross"></span>Clear entry</a>
+                        <a href="/#" class="trigger_clear-text btn__clear-text"><span class="ico-element icon-clear-cross"></span>Clear entry</a>
                     </div>
                     <div class="button-wrap">
-                        <a href="index.html#" class="btn__search trigger__close-overlayer">
+                        <a href="/#" class="btn__search trigger__close-overlayer">
                             <i class="icon-cross"><span class="sr-only">Close</span></i>
                         </a>
                     </div>
@@ -756,7 +756,7 @@ Pioneer Pro Audio</a>                                    </li>
                         <h3>Top results</h3>
                         <ul><!-- POPULATED WITH JAVASCRIPT --></ul>
                         <p class="button-wrap">
-                            <a href="index.html#" id="view__all" class="btn btn-border trigger__searchpage disabled" data-search-page="/en/search-results/?q=">
+                            <a href="/#" id="view__all" class="btn btn-border trigger__searchpage disabled" data-search-page="/en/search-results/?q=">
                                 <span class="text">See all results</span>
                             </a>
                         </p>
@@ -769,7 +769,7 @@ Pioneer Pro Audio</a>                                    </li>
 </div>
     </div>
       
-    <script src="update/layouts/JsFooter/index-v=t1G3GmOJ5JWe-BQ9xJkaVJPxC4hHw974rCWhubqJaZE1"></script>
+    <script src="/update/layouts/JsFooter/index.js"></script>
 
 
 </body>
