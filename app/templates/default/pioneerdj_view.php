@@ -41,8 +41,8 @@
 <header class="header outer">
     <div class="topbar">
         <div class="container">
-            <a href="/" class="btn-offcanvas trigger__offcanvas"><i class="icon-menu"></i></a>
-                    <a href="/" class="logo">
+            <a href="index.html#" class="btn-offcanvas trigger__offcanvas"><i class="icon-menu"></i></a>
+                    <a href="index.html" class="logo">
                         <img src="/Content/img/pioneer-dj.png" alt="Pioneer DJ School logo" />
                     </a>
             <div class="action-nav">
@@ -69,12 +69,12 @@
                                 <a href="/">Home</a>
                         </li>
                                 <li class="main-nav__products folder__container">
-                                    <a href='/product/player/' >Products</a>
+                                    <a href='/product/' >Products</a>
                                     <span class="folder__trigger"></span>
                                     <div class="folder__content">
                                         <ul>
                                                 <li>
-<a href='/product/player/' >                                                        <span class="image">
+                                                    <a href='/product/player/' >  <span class="image">
                                                                 <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/players.png" alt="players" />
                                                         </span>
                                                                 <span class="text">
@@ -138,7 +138,7 @@ More                                                                </span>
         <section class="experience">
                 <div class="image image-fx image-fx-1">
                     <div class="bg-adapt">
-                        <img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=1020&amp;w=1280&amp;la=en&amp;hash=A37FA56CCD8A9BDD9AC7C03F8E68FD6086415888' alt='Homepage-ddj-sz2-3' />
+                        <img style="display: block;" src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=1020&amp;w=1280&amp;la=en&amp;hash=A37FA56CCD8A9BDD9AC7C03F8E68FD6086415888' alt='Homepage-ddj-sz2-3' />
                         <span data-mq="xs" data-srcset="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=480&amp;w=640&amp;hash=5120A22A02F36A477B749735668E78C5E0D518DF"></span>
                         <span data-mq="sm" data-srcset="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=600&amp;w=800&amp;hash=BE53CFA41B4F33BDC9C45A2BB59B298C410004EF"></span>
                         <span data-mq="md" data-srcset="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=768&amp;w=1024&amp;hash=C202A166F1870C382356B0DAAA164CEA603D8C44"></span>
