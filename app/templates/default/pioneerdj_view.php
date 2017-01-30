@@ -19,7 +19,7 @@
 		<meta name="apple-mobile-web-app-title" content="<?=$array['title'];?>">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 		<link href="https://plus.google.com/u/0/+pioneerdjglobal" rel="publisher" />
 		<link href="/Content/img/app/apple-touch-icon-precomposed-152.png" sizes="152x152" rel="apple-touch-icon-precomposed">
 		<link href="/Content/img/app/apple-touch-icon-precomposed-72.png" sizes="72x72" rel="apple-touch-icon-precomposed">
@@ -37,14 +37,16 @@
 		<link href="/Content/img/app/apple-touch-startup-image-640x920.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 		<link href="/Content/img/app/apple-touch-startup-image-320x460.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
 
+
+
         <script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflTwzEmA/www-widgetapi.js" async=""></script>
         <script src="https://www.youtube.com/player_api"></script>
 
         <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
 
 
-        <meta name="VIcurrentDateTime" content="<?=time();?>" />
-		<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
+        <meta name="VIcurrentDateTime" content="1485771583">
+        <script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
 		<script src="/Bundles/JsHeader/index-v=BMne-U6Vgal8q3NFbvZfdgOMUnIfzy_RdwlKQDCSjtg1"></script>
 		<link href="/Bundles/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
 		<link href="/Content/css/fonts-default.css" rel="stylesheet" type="text/css">
@@ -64,7 +66,7 @@
             <div class="action-nav">
                 <ul>
                     <li>
-                        <a href="index.php#search__wrap" class="site-search-toggle trigger__open-overlayer">
+                        <a href="/index.php#search__wrap" class="site-search-toggle trigger__open-overlayer">
                             <i class="icon-search">
                                 <span class="sr-only">Search</span>
                             </i>
