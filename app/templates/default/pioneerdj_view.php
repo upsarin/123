@@ -55,7 +55,7 @@
             <div class="action-nav">
                 <ul>
                     <li>
-                        <a href="/index.php#search__wrap" class="site-search-toggle trigger__open-overlayer">
+                        <a href="index.php#search__wrap" class="site-search-toggle trigger__open-overlayer">
                             <i class="icon-search">
                                 <span class="sr-only">Search</span>
                             </i>
