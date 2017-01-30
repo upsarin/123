@@ -34,7 +34,14 @@
 		<link href="/Content/img/app/apple-touch-startup-image-640x1096.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 		<link href="/Content/img/app/apple-touch-startup-image-640x920.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 		<link href="/Content/img/app/apple-touch-startup-image-320x460.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
-		<!--<meta name="VIcurrentDateTime" content="<?=time();?>" />
+
+        <script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflTwzEmA/www-widgetapi.js" async=""></script>
+        <script src="https://www.youtube.com/player_api"></script>
+        <script type="text/javascript" async="" src="https://s.adroll.com/j/roundtrip.js"></script>
+        <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+        <script async="true" type="text/javascript" src="https://d.adroll.com/pixel/S3VXXO4N5FEHJH4OPB2QSO/QAEK4WEN5JFWJPZ5LDP6CS?pv=62236406859.142265&amp;cookie=GOC6EJAVX5AHPHAJEBDL7D%3A2%7CS3VXXO4N5FEHJH4OPB2QSO%3A17%7CQAEK4WEN5JFWJPZ5LDP6CS%3A17%7CHDXVDTNONVHMTMSRIZBYOA%3A15&amp;adroll_s_ref=https%3A//<?=$_SERVER['HTTP_HOST']?>/support/&amp;keyw="></script>
+
+        <!--<meta name="VIcurrentDateTime" content="<?=time();?>" />
 		<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script> -->
 		<script src="/Bundles/JsHeader/index-v=BMne-U6Vgal8q3NFbvZfdgOMUnIfzy_RdwlKQDCSjtg1"></script>
 		<link href="/Bundles/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
