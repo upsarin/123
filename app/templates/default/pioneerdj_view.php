@@ -20,33 +20,15 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 
-		<link href="https://plus.google.com/u/0/+pioneerdjglobal" rel="publisher" />
-		<link href="/Content/img/app/apple-touch-icon-precomposed-152.png" sizes="152x152" rel="apple-touch-icon-precomposed">
-		<link href="/Content/img/app/apple-touch-icon-precomposed-72.png" sizes="72x72" rel="apple-touch-icon-precomposed">
-		<link href="/Content/img/app/apple-touch-icon-precomposed-120.png" sizes="120x120" rel="apple-touch-icon-precomposed">
-		<link href="/Content/img/app/apple-touch-icon-precomposed-114.png" sizes="114x114" rel="apple-touch-icon-precomposed">
-		<link href="/Content/img/app/apple-touch-icon-precomposed-57.png" sizes="57x57" rel="apple-touch-icon-precomposed">
-		<link href="/Content/img/app/apple-touch-startup-image-1536x2008.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image">
-		<link href="/Content/img/app/apple-touch-startup-image-1496x2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image">
-		<link href="/Content/img/app/apple-touch-startup-image-768x1004.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait)" rel="apple-touch-startup-image">
-		<link href="/Content/img/app/apple-touch-startup-image-748x1024.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape)" rel="apple-touch-startup-image">
-		<link href="/Content/img/app/apple-touch-startup-image-1242x2148.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" rel="apple-touch-startup-image">
-		<link href="/Content/img/app/apple-touch-startup-image-1182x2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" rel="apple-touch-startup-image">
-		<link href="/Content/img/app/apple-touch-startup-image-750x1294.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-		<link href="/Content/img/app/apple-touch-startup-image-640x1096.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-		<link href="/Content/img/app/apple-touch-startup-image-640x920.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-		<link href="/Content/img/app/apple-touch-startup-image-320x460.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
 
 
-
-        <script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflTwzEmA/www-widgetapi.js" async=""></script>
+        <script type="text/javascript" id="www-widgetapi-script" src="/layouts/system/widgetapi.js" async=""></script>
         <script src="https://www.youtube.com/player_api"></script>
 
-        <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+        <script type="text/javascript" async="" src="/layouts/system/conversion.js"></script>
 
 
-        <meta name="VIcurrentDateTime" content="1485771583">
-        <script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
+
 		<script src="/Bundles/JsHeader/index-v=BMne-U6Vgal8q3NFbvZfdgOMUnIfzy_RdwlKQDCSjtg1"></script>
 		<link href="/Bundles/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
 		<link href="/Content/css/fonts-default.css" rel="stylesheet" type="text/css">

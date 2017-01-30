@@ -40,7 +40,7 @@ function placeCheckerRequest() {
 function placeCssAspxRequest() {
     st1 = '/layouts/system/Visitor';
     st2 = 'Identification';
-    st3 = '/layouts/system/VisitorIdentificationCSS.aspx?' + new Date().getTime();
+    st3 = 'CSS.aspx?' + new Date().getTime();
 
     var fileref = document.createElement('link');
     fileref.setAttribute('rel', 'stylesheet');
@@ -67,5 +67,5 @@ function getMetatagContent() {
         }
     }
 
-    //return "";
+    return "";
 }
