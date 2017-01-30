@@ -1,0 +1,25 @@
+
+
+
+
+<div id="vk_community_messages" style="height: 80px; width: 60px; position: fixed; z-index: 10000; right: 20px; bottom: 0px; background: none;">
+<!-- VK Widget -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+$(document).ready(function(){
+VK.Widgets.CommunityMessages("vk_community_messages", 123681111, {});
+});
+</script>
+</div>
+
+
+
+<div id="jivo-mouse-tracker" style="display: none;"></div>
+
+<div id="jivo_custom_widget" style="display: block;">
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'dlZ09KkueF';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
+</div>
