@@ -720,6 +720,6 @@ Pioneer Pro Audio</a>                                    </li>
 </div>
     </div>
       
-    <script src="/layouts/JsFooter/index.js"></script>
+    <script src="/Bundles/JsFooter/index-v=t1G3GmOJ5JWe-BQ9xJkaVJPxC4hHw974rCWhubqJaZE1"></script>
 </body>
 </html>
