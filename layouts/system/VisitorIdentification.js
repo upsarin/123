@@ -1,24 +1,24 @@
 ﻿function subscribeEvent(event, listener, useCapture) {
-  if (document.addEventListener) {
-    document.addEventListener(event, listener, useCapture);
-  } else if (document.attachEvent) {
-    document.attachEvent(event, listener, useCapture);
-  }
+    if (document.addEventListener) {
+        document.addEventListener(event, listener, useCapture);
+    } else if (document.attachEvent) {
+        document.attachEvent(event, listener, useCapture);
+    }
 }
 
 function unsubscribeEvent(event, listener, useCapture) {
-  if (document.removeEventListener) {
-    document.removeEventListener(event, listener, useCapture);
-  } else if (document.detachEvent) {
-    document.detachEvent(event, listener, useCapture);
-  }
+    if (document.removeEventListener) {
+        document.removeEventListener(event, listener, useCapture);
+    } else if (document.detachEvent) {
+        document.detachEvent(event, listener, useCapture);
+    }
 }
 
 function startActivityHandler(e) {
     unsubscribeEvent("touchstart", arguments.callee, false);
     document.documentElement.onmousemove = null; // We need it here to turn off mouse move too.
 
-   if (true) {
+    if (true) {
         timeoutSleep(0, placeCssAspxRequest);
     }
 };
@@ -47,7 +47,7 @@ function placeCssAspxRequest() {
     fileref.setAttribute('type', 'text/css');
     fileref.setAttribute('href', st1 + st2 + st3);
     document.getElementsByTagName("head")[0].appendChild(fileref);
-    
+
     timeoutSleep(30000, placeCheckerRequest);
 }
 

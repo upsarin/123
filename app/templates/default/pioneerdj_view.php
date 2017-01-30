@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 		<title><?=$array['title'];?></title>
         <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="<?=$array['keyswords'];?>">
 		<meta name="description" content="<?=$array['metakeys'];?>">
 		<meta property="og:title" content="<?=$array['title'];?>" />
 		<meta property="og:site_name" content="<?=$array['title'];?>" />
@@ -16,8 +18,8 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-title" content="<?=$array['title'];?>">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		
-		
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<link href="https://plus.google.com/u/0/+pioneerdjglobal" rel="publisher" />
 		<link href="/Content/img/app/apple-touch-icon-precomposed-152.png" sizes="152x152" rel="apple-touch-icon-precomposed">
 		<link href="/Content/img/app/apple-touch-icon-precomposed-72.png" sizes="72x72" rel="apple-touch-icon-precomposed">
@@ -37,12 +39,12 @@
 
         <script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflTwzEmA/www-widgetapi.js" async=""></script>
         <script src="https://www.youtube.com/player_api"></script>
-        <script type="text/javascript" async="" src="https://s.adroll.com/j/roundtrip.js"></script>
-        <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
-        <script async="true" type="text/javascript" src="https://d.adroll.com/pixel/S3VXXO4N5FEHJH4OPB2QSO/QAEK4WEN5JFWJPZ5LDP6CS?pv=62236406859.142265&amp;cookie=GOC6EJAVX5AHPHAJEBDL7D%3A2%7CS3VXXO4N5FEHJH4OPB2QSO%3A17%7CQAEK4WEN5JFWJPZ5LDP6CS%3A17%7CHDXVDTNONVHMTMSRIZBYOA%3A15&amp;adroll_s_ref=https%3A//<?=$_SERVER['HTTP_HOST']?>/support/&amp;keyw="></script>
 
-        <!--<meta name="VIcurrentDateTime" content="<?=time();?>" />
-		<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script> -->
+        <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+
+
+        <meta name="VIcurrentDateTime" content="<?=time();?>" />
+		<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
 		<script src="/Bundles/JsHeader/index-v=BMne-U6Vgal8q3NFbvZfdgOMUnIfzy_RdwlKQDCSjtg1"></script>
 		<link href="/Bundles/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
 		<link href="/Content/css/fonts-default.css" rel="stylesheet" type="text/css">
