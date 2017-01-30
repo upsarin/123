@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 	<head>
         <meta charset="utf-8">
@@ -33,14 +34,14 @@
 		<link href="/Content/img/app/apple-touch-startup-image-640x1096.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 		<link href="/Content/img/app/apple-touch-startup-image-640x920.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 		<link href="/Content/img/app/apple-touch-startup-image-320x460.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
-		<meta name="VIcurrentDateTime" content="<?=time();?>" />
-		<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
+		<!--<meta name="VIcurrentDateTime" content="<?=time();?>" />
+		<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script> -->
 		<script src="/Bundles/JsHeader/index-v=BMne-U6Vgal8q3NFbvZfdgOMUnIfzy_RdwlKQDCSjtg1"></script>
 		<link href="/Bundles/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
 		<link href="/Content/css/fonts-default.css" rel="stylesheet" type="text/css">
 	</head>
 <body class="header__experience-mode cookie-is-visible">
-    <div class="page-home">      
+    <div class="page-home">
         <div class="outer">
     <div class="bg">
         
@@ -54,7 +55,7 @@
             <div class="action-nav">
                 <ul>
                     <li>
-                        <a href="#search__wrap" class="site-search-toggle trigger__open-overlayer">
+                        <a href="/index.php#search__wrap" class="site-search-toggle trigger__open-overlayer">
                             <i class="icon-search">
                                 <span class="sr-only">Search</span>
                             </i>
