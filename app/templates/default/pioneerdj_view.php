@@ -19,17 +19,9 @@
 		<meta name="apple-mobile-web-app-title" content="<?=$array['title'];?>">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-
-
-
-        <script type="text/javascript" id="www-widgetapi-script" src="/layouts/system/widgetapi.js" async=""></script>
         <script src="https://www.youtube.com/player_api"></script>
 
-        <script type="text/javascript" async="" src="/layouts/system/conversion.js"></script>
-
-
-
-		<script src="/Bundles/JsHeader/index-v=BMne-U6Vgal8q3NFbvZfdgOMUnIfzy_RdwlKQDCSjtg1"></script>
+        <script src="/Bundles/JsHeader/index-v=BMne-U6Vgal8q3NFbvZfdgOMUnIfzy_RdwlKQDCSjtg1"></script>
 		<link href="/Bundles/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
 		<link href="/Content/css/fonts-default.css" rel="stylesheet" type="text/css">
 	</head>
@@ -48,7 +40,7 @@
             <div class="action-nav">
                 <ul>
                     <li>
-                        <a href="/index.php#search__wrap" class="site-search-toggle trigger__open-overlayer">
+                        <a href="index.html#search__wrap" class="site-search-toggle trigger__open-overlayer">
                             <i class="icon-search">
                                 <span class="sr-only">Search</span>
                             </i>
