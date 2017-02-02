@@ -1,514 +1,269 @@
-       <div class="signup-for-lesson-shadow">
-
-            <div class="content-container-wrapper signup-for-lesson">
-
-                <a href="#" class="close"></a>
-
-                <div class="content-container">
-
-                    <div class="content">
-
-
-
-                        <form class="form-horizontal">
-
-                            <fieldset>
-
-
-
-                                
-
-                                <h2 class="block-header">Записаться на пробное бесплатное занятие</h2>
-
-                                <div class="row">
-
-
-
-                                    
-
-                                    <div class="form-group">
-
-                                        <label class="col-md-4 col-sm-4 control-label" for="name">Представтесь</label>
-
-                                        <div class="input-box col-md-8 col-sm-8">
-
-                                            <input id="name" name="name" type="text" placeholder="" class="form-control input-md" required="">
-
-                                        </div>
-
-                                    </div>
-
-
-
-                                    
-
-                                    <div class="form-group">
-
-                                        <label class="col-md-4 col-sm-4 control-label" for="email">Email</label>
-
-                                        <div class="input-box col-md-8 col-sm-8">
-
-                                            <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
-
-                                        </div>
-
-                                    </div>
-
-
-
-                                    
-
-                                    <div class="form-group">
-
-                                        <label class="col-md-4 col-sm-4 control-label" for="phone">Моб.телефон</label>
-
-                                        <div class="input-box col-md-8 col-sm-8">
-
-                                            <input id="phone" name="phone" type="text" placeholder="" class="form-control input-md" required="">
-
-                                        </div>
-
-                                    </div>
-
-
-
-                                    
-
-                                    <div class="form-group">
-
-                                        <label class="col-md-4 col-sm-4 control-label" for="city">Город</label>
-
-                                        <div class="input-box select-box col-md-8 col-sm-8">
-											<div class="btn-group bootstrap-select form-control">
-												
-												<select class="selectpicker" id="city_form">
-												  <option value="moscow" <?=($_SESSION['user']['city'] == "moscow") ? "selected='selected'" : "" ?>>Москва</option>
-												  <option value="peter" <?=($_SESSION['user']['city'] == "peter") ? "selected='selected'" : "" ?>>Санкт-Петербург</option>
-												  <option value="nsk" <?=($_SESSION['user']['city'] == "nsk") ? "selected='selected'" : "" ?>>Новосибирск</option>
-												  <option value="almati" <?=($_SESSION['user']['city'] == "almati") ? "selected='selected'" : "" ?>>Алматы</option>
-												</select>
-
-												
-											</div>
-
-                                        </div>
-
-                                    </div>
-
-
-
-                                    
-
-                                    <div class="form-group">
-
-                                        <label class="col-md-4 col-sm-4 control-label" for="service">Услуга</label>
-
-                                        <div class="input-box select-box col-md-8 col-sm-8">
-
-                                            <div class="btn-group bootstrap-select form-control">
-												<select class="selectpicker" id="course_form">
-													<?if($_SESSION['user']['city'] == "peter"){ ?>
-														<option value="course-base">Базовый курс DJ Школы</option>
-														<option value="pro-course">PRO курс DJ Школы</option>
-														<option value="scratch-base">Scratch DJ курс DJ Школы</option>
-														<option value="kids-course">Kids курс DJ Школы</option>
-														<option value="midi-course">MIDI курс DJ Школы</option>
-														<option value="vinyl-course">Vinyl курс DJ Школы</option>
-														
-														<option value="music-write-base">Базовый курс Школы Написания Музыки</option>
-														<option value="music-write-pro">PRO курс Школы Написания Музыки</option>
-														<option value="music-write-level-up">Level UP курс Школы Написания Музыки</option>
-														<option value="salfedgio-course">Сольфеджио курс Школы Написания Музыки</option>
-														<option value="vocal-course">Vocal курс Школы Написания Музыки</option>
-													<? } else if($_SESSION['user']['city'] == "moscow"){ ?>
-														<option value="course-base">Базовый курс DJ Школы</option>
-														<option value="pro-course">PRO курс DJ Школы</option>
-														<option value="scratch-base">Scratch DJ курс DJ Школы</option>
-														<option value="kids-course">Kids курс DJ Школы</option>
-														<option value="midi-course">MIDI курс DJ Школы</option>
-														<option value="vinyl-course">Vinyl курс DJ Школы</option>
-														
-														<option value="music-write-base">Базовый курс Школы Написания Музыки</option>
-														<option value="music-write-pro">PRO курс Школы Написания Музыки</option>
-														<option value="music-write-level-up">Level UP курс Школы Написания Музыки</option>
-													<? } else if($_SESSION['user']['city'] == "nsk"){ ?>
-														<option value="course-base">Базовый курс DJ Школы</option>
-														<option value="pro-course">PRO курс DJ Школы</option>
-														
-														<option value="kids-course">Kids курс DJ Школы</option>
-														<option value="midi-course">MIDI курс DJ Школы</option>
-														<option value="vinyl-course">Vinyl курс DJ Школы</option>
-														
-														<option value="music-write-base">Базовый курс Школы Написания Музыки</option>
-														<option value="music-write-pro">PRO курс Школы Написания Музыки</option>
-														<option value="music-write-level-up">Level UP курс Школы Написания Музыки</option>
-													<? } else if($_SESSION['user']['city'] == "almati"){ ?>
-														<option value="course-base">Базовый курс DJ Школы</option>
-														<option value="kids-course">Kids курс DJ Школы</option>
-														<option value="midi-course">MIDI курс DJ Школы</option>
-														<option value="pro-course">PRO курс DJ Школы</option>
-														<option value="scratch-base">Scratch DJ курс DJ Школы</option>
-														<option value="vinyl-course">Vinyl курс DJ Школы</option>
-													<? } ?>
-												</select>
-											</div>
-
-                                        </div>
-
-                                    </div>
-
-
-
-                                    
-
-                                    <div class="form-group form-group-button">
-
-                                        <a class="square-button" href="#"><em><span><button id="singlebutton" name="singlebutton">ОТПРАВИТЬ</button></span></em></a>
-
-                                    </div>
-
-
-
+<div class="experience-wrap">
+    <section class="experience">
+        <div class="image image-fx image-fx-1">
+            <div class="bg-adapt">
+                <img style="display: block;" src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=1020&amp;w=1280&amp;la=en&amp;hash=A37FA56CCD8A9BDD9AC7C03F8E68FD6086415888' alt='Homepage-ddj-sz2-3' />
+                <span data-mq="xs" data-srcset="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=480&amp;w=640&amp;hash=5120A22A02F36A477B749735668E78C5E0D518DF"></span>
+                <span data-mq="sm" data-srcset="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=600&amp;w=800&amp;hash=BE53CFA41B4F33BDC9C45A2BB59B298C410004EF"></span>
+                <span data-mq="md" data-srcset="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=768&amp;w=1024&amp;hash=C202A166F1870C382356B0DAAA164CEA603D8C44"></span>
+                <span data-mq="lg" data-srcset="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg"></span>
+            </div>
+            <div class="image-fx-overlay"></div>
+        </div>
+        <div class="wheel"></div>
+        <a href="/product/controller/ddj-sz2/black/overview/" class="body">
+            <div class="in">
+                <h1 class="quote"><span class="ellipsis">Хочешь быть настоящим Dj - Мы поможем!<br>Просто запишись на пробное бесплатное занятие</span></h1>
+                <span class="ghostbtn ghostbtn-large ghostbtn-forw ghostbtn-light"><span class="text">Подать заявку</span></span>
+            </div>
+        </a>
+    </section>
+    <nav class="productcat-nav">
+        <ul>
+            <li>
+                <a href='/product/player/' >                                <span class="text">Players</span>
+                    <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/players.png?h=256&amp;w=400&amp;la=en&amp;hash=8C5DF8DD2CF7C891FD0C34363773C3399B009082' alt='players' /></span>
+                </a>                        </li>
+            <li>
+                <a href='/product/mixer/' >                                <span class="text">Mixers</span>
+                    <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/mixers.png?h=256&amp;w=400&amp;la=en&amp;hash=E6F24736A4281A2CD6E5D0FED807D313983F0794' alt='mixers' /></span>
+                </a>                        </li>
+            <li>
+                <a href='/product/controller/' >                                <span class="text">Controllers</span>
+                    <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/controllers.png?h=256&amp;w=400&amp;la=en&amp;hash=7C6EA5011D7DC5CCB8F3F5B1C2D646901F99F754' alt='controllers' /></span>
+                </a>                        </li>
+            <li>
+                <a href='/product/headphones/' >                                <span class="text">Headphones</span>
+                    <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/headphones.png?h=256&amp;w=400&amp;la=en&amp;hash=A683D64511280B46E4F1F9653085FA2FE2DA6CC2' alt='Headphones' /></span>
+                </a>                        </li>
+            <li>
+                <a href='/product/' >                                <span class="text">More</span>
+                    <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/other.png?h=256&amp;w=400&amp;la=en&amp;hash=3FB8B51FFD93CA67A2DA9190D4455A83CF3365A4' alt='other' /></span>
+                </a>                        </li>
+        </ul>
+    </nav>
+</div>
+<div class="bg-experience">
+
+    <section class="section news-featured padding-top-0 bg-dark">
+        <div class="container">
+            <h2 class="h2 light">
+                News
+            </h2>
+            <div class="row equalizer" data-equalizer-watch=".box">
+                <div class="slider">
+                    <section class="news-feature medium">
+                        <a class="box" href="/news/2016/djsounds-show-216-doc-martin/">
+                                    <span class="date">
+                                        22 December, 2016
+                                    </span>
+                            <picture class="image" style="background-image: url('https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/news/2016/djsounds-show/djss-2016-doc-martin-head.jpg?mh=343&amp;c=1&amp;cw=413&amp;hash=C72DA59FA9FD9AEBBA7F39D247171FA4ED6D4A8B');">
+                                <div class="img-adapt">
                                 </div>
-
-                            </fieldset>
-
-                        </form>
-
-
-
-                    </div>
-
+                            </picture>
+                            <span class="body">
+                                    <h2 class="title">DJsounds Show - Doc Martin</h2>
+                                    <span class="desc">
+            
+                                    </span>
+                                </span>
+                            <span class="tilebtn"><i class="ico"></i></span>
+                        </a>
+                    </section>
+                    <section class="news-feature is-update medium">
+                        <a class="box" href="/news/2016/ddj-sz2-driver-first-release-for-windows-and-mac-os/">
+                                    <span class="date">
+                                        20 December, 2016
+                                    </span>
+                            <picture class="image" style="background-image: url('https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-sz2/headerimg_01.jpg?mh=343&amp;c=1&amp;cw=413&amp;hash=AC0BA6698FBB3249F5B58F060FF552B838D306E1');">
+                                <div class="img-adapt">
+                                </div>
+                                <span class="picto"></span>
+                            </picture>
+                            <span class="body">
+                                    <h2 class="title">DDJ-SZ2  Driver first release for Windows / Mac OS</h2>
+                                    <span class="desc">
+            
+                                    </span>
+                                </span>
+                            <span class="tilebtn"><i class="ico"></i></span>
+                        </a>
+                    </section>
+                    <section class="news-feature is-update medium">
+                        <a class="box" href="/news/2016/happy-holidays-sale/">
+                                    <span class="date">
+                                        20 December, 2016
+                                    </span>
+                            <picture class="image" style="background-image: url('https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/news/2016/holiday-app-sale/appsale-header.jpg?mh=343&amp;c=1&amp;cw=413&amp;hash=EBD78DB05AA0A7D7500E0F9A7A501BC7B4CD3BE4');">
+                                <div class="img-adapt">
+                                </div>
+                                <span class="picto"></span>
+                            </picture>
+                            <span class="body">
+                                    <h2 class="title">As the holidays are coming, we’re offering a discount on our DJ apps</h2>
+                                    <span class="desc">
+            
+                                    </span>
+                                </span>
+                            <span class="tilebtn"><i class="ico"></i></span>
+                        </a>
+                    </section>
                 </div>
-
             </div>
-
+            <a href="/news/" class="ghostbtn ghostbtn-forw ghostbtn-light"><span class="text">Discover more</span></a>
         </div>
-
-        <div class="content-container-wrapper content-normal sign-for-lesson-container">
-
-            <div class="content-container">
-
-                <div class="content">
-
-                    <div class="sign_for_lesson"><div class="round_slider"></div>
-						<span class="sign_label" style="    margin-top: -50px;
-    font-size: 27px;">Хочешь быть настоящим Dj - Мы поможем! </span> <br /> 
-						<span style="    margin-top: 30px;" class="sign_label"> Просто запишись на пробное бесплатное занятие</span><a href="#" class="button-apply"><span>Подать заявку<em></em></span></a></div>
-
-                    <nav class="main-menu nav navbar-nav">
-
-                        <ul class="nav navbar-nav">
-
-                            
-
-                            
-
-                            <li><a href="/courses"><span class="menu-label">КУРСЫ</span><span class="image-container"><img src="css/images/icon_courses.png"></span></a></li>
-
-                            
-
-                            <li><a href="/services"><span class="menu-label">УСЛУГИ</span><span class="image-container"><img src="css/images/icon_services.png"></span></a></li>
-
-                            
-
-                            <li><a href="/contacts"><span class="menu-label">КОНТАКТЫ</span><span class="image-container"><img src="css/images/icon_contacts.png"></span></a></li>
-
-                            
-
-                            <li><a href="/apply"><span class="menu-label">ПОДАТЬ ЗАЯВКУ</span><span class="image-container"><img src="css/images/icon_add_apply.png"></span></a></li>
-
-                            
-
-                        </ul>
-
-                    </nav>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="content-container-wrapper content-normal">
-
-            <div class="content-container">
-
-                <div class="content">
-
-                    <div class="news-container">
-
-                        <h2 class="block-header">НОВОСТИ</h2>
-						<?
-							$array['id'] = "100";
-							$array['content']['content'] = Element::GetList($array, $array['filter'], $limit="6");
-							
-							
-						?>
-                        <div class="row">
-
-                            <div class="sections-holder responsive">
-
-                                
-
-                                
-							<?if(count($array['content']['content']) > 0){?>  
-								<?foreach($array['content']['content'] as $element){?>
-								
-									<?
-									$filter = array("content_id" => $element['id']);
-									$images = Element::SelectAll('files', $filter, null, null);
-									?>
-                                <section class="news col-sm-4 col-md-4">
-
-                                    <a href="/news/detail/<?=$element['alias']?>/">
-
-                                        <div class="image-pattern" style="height: 320px;
-    display: table-cell;
-    /* margin: auto 0px; */
-    width: 320px;">
-
-											<? if(count($images)) { ?>
-													<img class="image" src="/<?=$images[0]['path']?>" alt="" style="    width: 100%;
-    height: 100%;">
-													
-											<? } else { ?>
-													<img class="image" src="/css/images/logo.png" alt="" style="    width: 100%;
-    height: 100%;">
-											<? } ?>
-                                            
-
-                                        </div>
-
-                                        <span class="short-description" style="height: 102px; background: #3a5ee1;"><?=$element['title']?></span>
-
-                                        <span class="button-more"><em></em></span>
-
-                                        
-
-                                    </a>
-
-                                </section>
-								<? } ?>
-							<? } ?>
-                            
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="h2 light">Featured Products</h2>
+            <div class="row product-teasers">
+                <div class="col-sm-6">
+                    <div class="product-teaser">
+                        <a href="/product/controller/ddj-rx/black/overview/">
+                            <div class="image">
+                                <img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-rx/ddj-rx-headerimg.jpg?h=480&amp;w=1600&amp;la=en&amp;hash=B25AAF07D9622254A2D747643C1B727AE5F33DF4' alt='DDJ-RX' />
                             </div>
-
-                        </div>
-
-                        <a href="/news/" class="button-more-news"><span>ПОДРОБНЕЕ</span></a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="content-container-wrapper content-normal actions">
-
-            <div class="content-container">
-
-                <div class="content">
-
-                    <div class="action-container">
-
-                        <h2 class="block-header">АКЦИИ И УСЛУГИ</h2>
-
-                        <div class="row">
-
-                            <div class="sections-holder ">
-
-                                
-
-                                <section class="action col-md-12">
-
-                                    <a href="/services/detail/rent/">
-
-                                        <div class="image-pattern">
-
-                                            <img class="image" src="css/images/content/index/services/rent.jpg">
-											
-                                        </div>
-
-                                        <span class="button-more"><em></em></span>
-
-                                    </a>
-
-                                </section>
-
-                                
-
-                                <section class="action col-md-12">
-
-                                    <a href="/services/detail/partnership">
-
-                                        <div class="image-pattern">
-
-                                            <img class="image" src="css/images/content/index/services/partnership.jpg">
-
-                                        </div>
-
-                                        <span class="button-more"><em></em></span>
-
-                                    </a>
-
-                                </section>
-
-                                
-
-                                <section class="action col-md-12">
-
-                                    <a href="/services/detail/actionsystem">
-
-                                        <div class="image-pattern">
-
-                                            <img class="image" src="css/images/content/index/services/action.jpg">
-
-                                        </div>
-
-                                        <span class="button-more"><em></em></span>
-
-                                    </a>
-
-                                </section>
-
-                                
-
-                                <section class="action col-md-12">
-
-                                    <a href="/services/detail/traning">
-
-                                        <div class="image-pattern">
-
-                                            <img class="image" src="css/images/content/index/services/traning.jpg">
-
-                                        </div>
-
-                                        <span class="button-more"><em></em></span>
-
-                                    </a>
-
-                                </section>
-
-                                
-
+                            <div class="body">
+                                <h3 class="name">DDJ-RX</h3>
+                                <p class="desc ellipsis" style="word-wrap: break-word;">Professional 4-channel controller for rekordbox dj</p>
+                                <span class="ghostbtn ghostbtn-forw ghostbtn ghostbtn-light"><span class="text">Find out more</span></span>
                             </div>
-
-                        </div>
-
+                        </a>
+                        <a data-start-at="0"
+                           data-seekbar="true"
+                           data-volumebar="true"
+                           data-autoplay="true"
+                           data-video="rIkSHaJwCH4"
+                           data-title="DDJ-RX"
+                           class="controlbtn trigger__open-overlayer video-player"
+                           href="https://www.youtube.com/watch?v=rIkSHaJwCH4"
+                           style=""><i class="ico"><span class="sr-only">Play</span></i></a>
                     </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="content-container-wrapper new-videos-container-wrapper">
-
-            <div class="content-container">
-
-                <div class="content">
-
-                    <div class="new-videos-container">
-
-                        <h2 class="block-header">Новые видео от pioneerdjtv</h2>
-
-                        <div class="row">
-
-                            <div class="sections-holder">
-
-							<?
-							$array['id'] = "106";
-							$array['filter_video_6'] = array("cat" => "6");
-							$array['content']['video_6'] = Element::GetList($array, $array['filter_video_6'], $limit="2");
-							?>
-							
-							<?foreach($array['content']['video_6'] as $element){?>
-
-                                <section class="new-videos left col-sm-6 col-md-6">
-
-                                    <a href="https://www.youtube.com/pioneerdjtvru">
-
-                                        <div class="image-pattern">
-
-                                            <iframe width="560" height="315" src="<?=$element['url']?>" frameborder="0" allowfullscreen style="    width: 100%;"></iframe>
-
-                                        </div>
-
-                                        <!--<span class="round_button" href=""><em><span class="button_round_bg play"></span></em></span>-->
-
-                                    </a>
-
-                                </section>
-
-							<? } ?>
-
-							
-							</div>
-
-                        </div>
-
-                    </div>
-
-                
-
-                    <div class="new-videos-container">
-
-                        <h2 class="block-header">Новые видео от pioneerdjschool</h2>
-
-                        <div class="row">
-
-                            <div class="sections-holder">
-
-                            <?
-							$array['id'] = "106";
-							$array['filter_video_7'] = array("cat" => "7");
-							$array['content']['video_7'] = Element::GetList($array, $array['filter_video_7'], $limit="2");
-							?>
-							
-							<?foreach($array['content']['video_7'] as $element){?>   
-
-                                <section class="new-videos left col-sm-6 col-md-6">
-
-                                    <a href="https://www.youtube.com/pioneerdjschoolru">
-
-                                        <div class="image-pattern">
-
-                                            <iframe width="560" height="315" src="<?=$element['url']?>" frameborder="0" allowfullscreen style="    width: 100%;"></iframe>
-
-                                        </div>
-
-                                        <!--<span class="round_button" href=""><em><span class="button_round_bg play"></span></em></span>-->
-
-                                    </a>
-
-                                </section>
-							<? } ?>
-                                
-
-
-                                
-
+                </div>                <div class="col-sm-6">
+                    <div class="product-teaser">
+                        <a href="/product/player/xdj-700/black/overview/">
+                            <div class="image">
+                                <img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/player/xdj-700/xdj-700-header-img.jpg?h=480&amp;w=1600&amp;la=en&amp;hash=F2E617AAAA99A74C5C375D714DD535855BA22004' alt='XDJ-700 header' />
                             </div>
-
-                        </div>
-
+                            <div class="body">
+                                <h3 class="name">XDJ-700</h3>
+                                <p class="desc ellipsis" style="word-wrap: break-word;">rekordbox-ready, compact digital deck</p>
+                                <span class="ghostbtn ghostbtn-forw ghostbtn ghostbtn-light"><span class="text">Find out more</span></span>
+                            </div>
+                        </a>
+                        <a data-start-at="0"
+                           data-seekbar="true"
+                           data-volumebar="true"
+                           data-autoplay="true"
+                           data-video="4xPteW07WWI"
+                           data-title="XDJ-700"
+                           class="controlbtn trigger__open-overlayer video-player"
+                           href="https://www.youtube.com/watch?v=4xPteW07WWI"
+                           style=""><i class="ico"><span class="sr-only">Play</span></i></a>
                     </div>
-
-                </div>
-
-            </div>
-
+                </div>            </div>
         </div>
+    </section>
+    <section class="hero hero-with-ghostbtn">
+        <div class="image bg-adapt">
+            <a data-mq="xs" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-rzx/ddj-rzx-full-width.jpg?w=768&amp;la=en"></a>
+            <a data-mq="sm" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-rzx/ddj-rzx-full-width.jpg?w=992&amp;la=en"></a>
+            <a data-mq="md" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-rzx/ddj-rzx-full-width.jpg?w=1200&amp;la=en"></a>
+            <a data-mq="lg" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-rzx/ddj-rzx-full-width.jpg?la=en"></a>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="head">
+                    <p class="name">The DDJ-RZX</p>
+                    <p class="desc">Our new controller with full control over the new video plus plack for rekordbox dj.</p>
+                </div>
+                <div>
+                    <a href="/#" class="controlbtn trigger__open-overlayer video-player" data-title="DDJ-RZX &amp; rekordbox video Official Introduction" data-video="B7GBhSwd-GA" data-autoplay="true" data-volumebar="true" data-seekbar="true" data-volume="100" data-start-at="0">
+                        <em class="ico"><span class="sr-only">Play</span></em>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="h2 light">In the mix</h2>
+            <div class="row row-full">
+                <div class="col">
+                    <div class="krossbanner">
+                        <div class="head image-fx ">
+                            <div class="bg-adapt">
+                                <a data-mq="xs" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/rekordbox_banner2.jpg?mh=210&amp;w=640&amp;hash=F5038710554AB40206AE0F4299D20F46D22B8551"></a>
+                                <a data-mq="sm" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/rekordbox_banner2.jpg?mh=210&amp;w=640&amp;hash=F5038710554AB40206AE0F4299D20F46D22B8551"></a>
+                                <a data-mq="md" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/rekordbox_banner2.jpg?mh=210&amp;w=900&amp;hash=0EEE356F98537E5EF56737277ECE65B9289C414C"></a>
+                                <a data-mq="lg" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/rekordbox_banner2.jpg?h=267&amp;w=1266&amp;hash=69919DFDF212F6142C471ECBACAEF7470FA21336"></a>
+                            </div>
+                            <div class="image-fx-overlay"></div>
+                        </div>
+                        <a href='http://rekordbox.com/en/' target='_blank' title='rekordbox.com' >                                <div class="body">
+                                <p class="ellipsis"><p><strong>The perfect platform to perform.</strong></p>
+                                <p>rekordbox makes DJing creative and hassle-free, helping you manage your music, prepare sets, edit playlists on the fly, and review your performances.</p></p>
+                            </div>
+                            <span class="tilebtn"><span class="ico icon-tilebtn-more"><span class="sr-only">More</span></span></span>
+                        </a>                        </div>
+                </div>
+                <div class="col">
+                    <div class="krossbanner">
+                        <div class="head image-fx image-fx-6">
+                            <div class="bg-adapt">
+                                <a data-mq="xs" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/studiomonitorbanner24.jpg?mh=210&amp;w=640&amp;hash=A42EAC839CEDCDB34B7839CF640252854C6B48FD"></a>
+                                <a data-mq="sm" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/studiomonitorbanner24.jpg?mh=210&amp;w=640&amp;hash=A42EAC839CEDCDB34B7839CF640252854C6B48FD"></a>
+                                <a data-mq="md" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/studiomonitorbanner24.jpg?mh=210&amp;w=900&amp;hash=305270D5B347622B6659A5E4FACF11011F2F9786"></a>
+                                <a data-mq="lg" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/studiomonitorbanner24.jpg?h=267&amp;w=1266&amp;hash=AB847624C88BBFDFF310C150B40D314CCBAAC868"></a>
+                            </div>
+                            <div class="image-fx-overlay"></div>
+                        </div>
+                        <a href='http://pioneerproaudio.com/en/studiomonitors/index.html' target='_blank' title='Pioneer Pro Audio' >                                <div class="body">
+                                <p class="ellipsis"><p><strong>Studio Monitors</strong></p>
+                                <p>Clean sound reproduction and ultimate comfort for producers. This series faithfully reproduces audio across the frequencies.</p></p>
+                            </div>
+                            <span class="tilebtn"><span class="ico icon-tilebtn-more"><span class="sr-only">More</span></span></span>
+                        </a>                        </div>
+                </div>
+                <div class="col">
+                    <div class="krossbanner">
+                        <div class="head image-fx image-fx-1">
+                            <h3>Pioneer Professional Audio</h3>
+                            <div class="bg-adapt">
+                                <a data-mq="xs" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/proaudio_banner2.jpg?mh=210&amp;w=640&amp;hash=80F9C000DA8668327835556E64B6690F06CB2DD1"></a>
+                                <a data-mq="sm" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/proaudio_banner2.jpg?mh=210&amp;w=640&amp;hash=80F9C000DA8668327835556E64B6690F06CB2DD1"></a>
+                                <a data-mq="md" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/proaudio_banner2.jpg?mh=210&amp;w=900&amp;hash=64485B26DC1A15C2618920C61112C2D4DC1A8810"></a>
+                                <a data-mq="lg" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/proaudio_banner2.jpg?h=267&amp;w=1266&amp;hash=4D3CC27C501BFCBBA0F826730CDF7F1CB7BAECD1"></a>
+                            </div>
+                            <div class="image-fx-overlay"></div>
+                        </div>
+                        <a href='http://pioneerproaudio.com/en/index.html' target='_blank' title='Pioneer Pro Audio' >                                <div class="body">
+                                <p class="ellipsis"><p><strong>Professional Audio</strong></p>
+                                <p>The powerful combination of innovative technology and dance industry expertise delivers the best dance music sound to clubbers all over the world.</p></p>
+                            </div>
+                            <span class="tilebtn"><span class="ico icon-tilebtn-more"><span class="sr-only">More</span></span></span>
+                        </a>                        </div>
+                </div>
+                <div class="col">
+                    <div class="krossbanner">
+                        <div class="head image-fx image-fx-6">
+                            <div class="bg-adapt">
+                                <a data-mq="xs" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/kuvo_banner.jpg?mh=210&amp;w=640&amp;hash=19C72E3E80FE3CAD7FBCE5D07539EB7FC0413B35"></a>
+                                <a data-mq="sm" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/kuvo_banner.jpg?mh=210&amp;w=640&amp;hash=19C72E3E80FE3CAD7FBCE5D07539EB7FC0413B35"></a>
+                                <a data-mq="md" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/kuvo_banner.jpg?mh=210&amp;w=900&amp;hash=78FDA37668889F22AB134BF8DD9B3A7EF0826527"></a>
+                                <a data-mq="lg" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/kuvo_banner.jpg?h=267&amp;w=1266&amp;hash=57503E434D503CB220032E46BDA6BEA88DB2CFB6"></a>
+                            </div>
+                            <div class="image-fx-overlay"></div>
+                        </div>
+                        <a href='http://kuvo.com/' target='_blank' title='KUVO' >                                <div class="body">
+                                <p class="ellipsis"><p><strong>The clubbing connection</strong></p>
+                                <p>Thousands of DJs and clubs share their latest set lists and tracks on KUVO. Join the community to get live set info, discover new music, and connect with other clubbers.</p></p>
+                            </div>
+                            <span class="tilebtn"><span class="ico icon-tilebtn-more"><span class="sr-only">More</span></span></span>
+                        </a>                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-        
-
+</div>
