@@ -43,7 +43,7 @@
             <div class="action-nav">
                 <ul>
                     <li>
-                        <a href="index.html#search__wrap" class="site-search-toggle trigger__open-overlayer">
+                        <a href="index.html#search__wrap" class="site-search-toggle trigger__open-overlayer" style="visibility: hidden">
                             <i class="icon-search">
                                 <span class="sr-only">Search</span>
                             </i>
@@ -129,7 +129,7 @@ More                                                                </span>
         </div>
     </div>
 </header>
-            <div class="experience-wrap">
+    <div class="experience-wrap">
         <section class="experience">
                 <div class="image image-fx image-fx-1">
                     <div class="bg-adapt">
@@ -144,8 +144,8 @@ More                                                                </span>
             <div class="wheel"></div>
             <a href="/product/controller/ddj-sz2/black/overview/" class="body">
                 <div class="in">
-                    <h1 class="quote"><span class="ellipsis">Freedom to control<br>Meet the DDJ-SZ2 controller</span></h1>
-                    <span class="ghostbtn ghostbtn-large ghostbtn-forw ghostbtn-light"><span class="text">Find out more</span></span>
+                    <h1 class="quote"><span class="ellipsis">Хочешь быть настоящим Dj - Мы поможем!<br>Просто запишись на пробное бесплатное занятие</span></h1>
+                    <span class="ghostbtn ghostbtn-large ghostbtn-forw ghostbtn-light"><span class="text">Подать заявку</span></span>
                 </div>
             </a>
         </section>
