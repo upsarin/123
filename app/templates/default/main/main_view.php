@@ -91,94 +91,74 @@
     </section>
     <section class="section">
         <div class="container">
-            <h2 class="h2 light">Featured Products</h2>
+            <h2 class="h2 light">НОВЫЕ ВИДЕО ОТ PIONEERDJTV</h2>
+
             <div class="row product-teasers">
-                <div class="col-sm-6">
-                    <div class="product-teaser">
-                        <a href="/product/controller/ddj-rx/black/overview/">
-                            <div class="image">
-                                <img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-rx/ddj-rx-headerimg.jpg?h=480&amp;w=1600&amp;la=en&amp;hash=B25AAF07D9622254A2D747643C1B727AE5F33DF4' alt='DDJ-RX' />
-                            </div>
-                            <div class="body">
-                                <h3 class="name">DDJ-RX</h3>
-                                <p class="desc ellipsis" style="word-wrap: break-word;">Professional 4-channel controller for rekordbox dj</p>
-                                <span class="ghostbtn ghostbtn-forw ghostbtn ghostbtn-light"><span class="text">Find out more</span></span>
-                            </div>
-                        </a>
-                        <a data-start-at="0"
-                           data-seekbar="true"
-                           data-volumebar="true"
-                           data-autoplay="true"
-                           data-video="rIkSHaJwCH4"
-                           data-title="DDJ-RX"
-                           class="controlbtn trigger__open-overlayer video-player"
-                           href="https://www.youtube.com/watch?v=rIkSHaJwCH4"
-                           style=""><i class="ico"><span class="sr-only">Play</span></i></a>
+                <?
+                $array['id'] = "106";
+                $array['filter_video_6'] = array("cat" => "6");
+                $array['content']['video_6'] = Element::GetList($array, $array['filter_video_6'], $limit="2");
+                ?>
+
+                <?foreach($array['content']['video_6'] as $element){ ?>
+                    <div class="col-sm-6">
+                        <div class="product-teaser">
+
+
+                                    <iframe width="560" height="325" src="<?=$element['url']?>" frameborder="0" allowfullscreen style="    width: 100%;"></iframe>
+
+
+
+
+                        </div>
                     </div>
-                </div>                <div class="col-sm-6">
-                    <div class="product-teaser">
-                        <a href="/product/player/xdj-700/black/overview/">
-                            <div class="image">
-                                <img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/player/xdj-700/xdj-700-header-img.jpg?h=480&amp;w=1600&amp;la=en&amp;hash=F2E617AAAA99A74C5C375D714DD535855BA22004' alt='XDJ-700 header' />
-                            </div>
-                            <div class="body">
-                                <h3 class="name">XDJ-700</h3>
-                                <p class="desc ellipsis" style="word-wrap: break-word;">rekordbox-ready, compact digital deck</p>
-                                <span class="ghostbtn ghostbtn-forw ghostbtn ghostbtn-light"><span class="text">Find out more</span></span>
-                            </div>
-                        </a>
-                        <a data-start-at="0"
-                           data-seekbar="true"
-                           data-volumebar="true"
-                           data-autoplay="true"
-                           data-video="4xPteW07WWI"
-                           data-title="XDJ-700"
-                           class="controlbtn trigger__open-overlayer video-player"
-                           href="https://www.youtube.com/watch?v=4xPteW07WWI"
-                           style=""><i class="ico"><span class="sr-only">Play</span></i></a>
+                <? } ?>
+            </div>
+            <h2 class="h2 light">Новые видео от pioneerdjschool</h2>
+
+            <div class="row product-teasers">
+                <?
+                $array['id'] = "106";
+                $array['filter_video_7'] = array("cat" => "7");
+                $array['content']['video_7'] = Element::GetList($array, $array['filter_video_7'], $limit="2");
+                ?>
+
+                <?foreach($array['content']['video_7'] as $element){?>
+                    <div class="col-sm-6">
+                        <div class="product-teaser">
+
+
+                            <iframe width="560" height="325" src="<?=$element['url']?>" frameborder="0" allowfullscreen style="    width: 100%;"></iframe>
+
+
+
+
+                        </div>
                     </div>
-                </div>            </div>
-        </div>
-    </section>
-    <section class="hero hero-with-ghostbtn">
-        <div class="image bg-adapt">
-            <a data-mq="xs" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-rzx/ddj-rzx-full-width.jpg?w=768&amp;la=en"></a>
-            <a data-mq="sm" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-rzx/ddj-rzx-full-width.jpg?w=992&amp;la=en"></a>
-            <a data-mq="md" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-rzx/ddj-rzx-full-width.jpg?w=1200&amp;la=en"></a>
-            <a data-mq="lg" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-rzx/ddj-rzx-full-width.jpg?la=en"></a>
-        </div>
-        <div class="content">
-            <div class="container">
-                <div class="head">
-                    <p class="name">The DDJ-RZX</p>
-                    <p class="desc">Our new controller with full control over the new video plus plack for rekordbox dj.</p>
-                </div>
-                <div>
-                    <a href="/#" class="controlbtn trigger__open-overlayer video-player" data-title="DDJ-RZX &amp; rekordbox video Official Introduction" data-video="B7GBhSwd-GA" data-autoplay="true" data-volumebar="true" data-seekbar="true" data-volume="100" data-start-at="0">
-                        <em class="ico"><span class="sr-only">Play</span></em>
-                    </a>
-                </div>
+                <? } ?>
             </div>
         </div>
     </section>
+
     <section class="section">
         <div class="container">
-            <h2 class="h2 light">In the mix</h2>
+            <h2 class="h2 light">АКЦИИ И УСЛУГИ</h2>
             <div class="row row-full">
                 <div class="col">
                     <div class="krossbanner">
                         <div class="head image-fx ">
                             <div class="bg-adapt">
-                                <a data-mq="xs" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/rekordbox_banner2.jpg?mh=210&amp;w=640&amp;hash=F5038710554AB40206AE0F4299D20F46D22B8551"></a>
-                                <a data-mq="sm" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/rekordbox_banner2.jpg?mh=210&amp;w=640&amp;hash=F5038710554AB40206AE0F4299D20F46D22B8551"></a>
-                                <a data-mq="md" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/rekordbox_banner2.jpg?mh=210&amp;w=900&amp;hash=0EEE356F98537E5EF56737277ECE65B9289C414C"></a>
-                                <a data-mq="lg" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/rekordbox_banner2.jpg?h=267&amp;w=1266&amp;hash=69919DFDF212F6142C471ECBACAEF7470FA21336"></a>
+                                <a data-mq="xs" href="/css/images/content/index/services/rent.jpg?mh=210&amp;w=640&amp;hash=F5038710554AB40206AE0F4299D20F46D22B8551"></a>
+                                <a data-mq="sm" href="/css/images/content/index/services/rent.jpg?mh=210&amp;w=640&amp;hash=F5038710554AB40206AE0F4299D20F46D22B8551"></a>
+                                <a data-mq="md" href="/css/images/content/index/services/rent.jpg?mh=210&amp;w=900&amp;hash=0EEE356F98537E5EF56737277ECE65B9289C414C"></a>
+                                <a data-mq="lg" href="/css/images/content/index/services/rent.jpg?h=267&amp;w=1266&amp;hash=69919DFDF212F6142C471ECBACAEF7470FA21336"></a>
                             </div>
                             <div class="image-fx-overlay"></div>
                         </div>
-                        <a href='http://rekordbox.com/en/' target='_blank' title='rekordbox.com' >                                <div class="body">
-                                <p class="ellipsis"><p><strong>The perfect platform to perform.</strong></p>
-                                <p>rekordbox makes DJing creative and hassle-free, helping you manage your music, prepare sets, edit playlists on the fly, and review your performances.</p></p>
+                        <a href='/services/detail/rent/' target='_blank' title='Аренда оборудования' >
+                            <div class="body">
+                                <p class="ellipsis"><p><strong>Мы предоставляем в аренду самое актуальное DJ оборудование по демократичным ценам.</strong></p>
+                                <p>Теперь Ваша вечеринка будет не только весёлой но и выгодной!</p></p>
                             </div>
                             <span class="tilebtn"><span class="ico icon-tilebtn-more"><span class="sr-only">More</span></span></span>
                         </a>                        </div>
@@ -187,16 +167,17 @@
                     <div class="krossbanner">
                         <div class="head image-fx image-fx-6">
                             <div class="bg-adapt">
-                                <a data-mq="xs" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/studiomonitorbanner24.jpg?mh=210&amp;w=640&amp;hash=A42EAC839CEDCDB34B7839CF640252854C6B48FD"></a>
-                                <a data-mq="sm" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/studiomonitorbanner24.jpg?mh=210&amp;w=640&amp;hash=A42EAC839CEDCDB34B7839CF640252854C6B48FD"></a>
-                                <a data-mq="md" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/studiomonitorbanner24.jpg?mh=210&amp;w=900&amp;hash=305270D5B347622B6659A5E4FACF11011F2F9786"></a>
-                                <a data-mq="lg" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/studiomonitorbanner24.jpg?h=267&amp;w=1266&amp;hash=AB847624C88BBFDFF310C150B40D314CCBAAC868"></a>
+                                <a data-mq="xs" href="/css/images/content/index/services/partnership.jpg?mh=210&amp;w=640&amp;hash=A42EAC839CEDCDB34B7839CF640252854C6B48FD"></a>
+                                <a data-mq="sm" href="/css/images/content/index/services/partnership.jpg?mh=210&amp;w=640&amp;hash=A42EAC839CEDCDB34B7839CF640252854C6B48FD"></a>
+                                <a data-mq="md" href="/css/images/content/index/services/partnership.jpg?mh=210&amp;w=900&amp;hash=305270D5B347622B6659A5E4FACF11011F2F9786"></a>
+                                <a data-mq="lg" href="/css/images/content/index/services/partnership.jpg?h=267&amp;w=1266&amp;hash=AB847624C88BBFDFF310C150B40D314CCBAAC868"></a>
                             </div>
                             <div class="image-fx-overlay"></div>
                         </div>
-                        <a href='http://pioneerproaudio.com/en/studiomonitors/index.html' target='_blank' title='Pioneer Pro Audio' >                                <div class="body">
-                                <p class="ellipsis"><p><strong>Studio Monitors</strong></p>
-                                <p>Clean sound reproduction and ultimate comfort for producers. This series faithfully reproduces audio across the frequencies.</p></p>
+                        <a href='/services/detail/partnership' target='_blank' title='Партнерская программа' >
+                            <div class="body">
+                                <p class="ellipsis"><p><strong>Приглашайте друзей и получайте 1000 рублей за каждого студента, оплатившего обучение по вашей рекомендации. </strong></p>
+                                <p>Приглашенный вами студент так же получит скидку 1000 руб.</p></p>
                             </div>
                             <span class="tilebtn"><span class="ico icon-tilebtn-more"><span class="sr-only">More</span></span></span>
                         </a>                        </div>
@@ -204,18 +185,18 @@
                 <div class="col">
                     <div class="krossbanner">
                         <div class="head image-fx image-fx-1">
-                            <h3>Pioneer Professional Audio</h3>
+
                             <div class="bg-adapt">
-                                <a data-mq="xs" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/proaudio_banner2.jpg?mh=210&amp;w=640&amp;hash=80F9C000DA8668327835556E64B6690F06CB2DD1"></a>
-                                <a data-mq="sm" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/proaudio_banner2.jpg?mh=210&amp;w=640&amp;hash=80F9C000DA8668327835556E64B6690F06CB2DD1"></a>
-                                <a data-mq="md" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/proaudio_banner2.jpg?mh=210&amp;w=900&amp;hash=64485B26DC1A15C2618920C61112C2D4DC1A8810"></a>
-                                <a data-mq="lg" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/proaudio_banner2.jpg?h=267&amp;w=1266&amp;hash=4D3CC27C501BFCBBA0F826730CDF7F1CB7BAECD1"></a>
+                                <a data-mq="xs" href="/css/images/content/index/services/action.jpg?mh=210&amp;w=640&amp;hash=80F9C000DA8668327835556E64B6690F06CB2DD1"></a>
+                                <a data-mq="sm" href="/css/images/content/index/services/action.jpg?mh=210&amp;w=640&amp;hash=80F9C000DA8668327835556E64B6690F06CB2DD1"></a>
+                                <a data-mq="md" href="/css/images/content/index/services/action.jpg?mh=210&amp;w=900&amp;hash=64485B26DC1A15C2618920C61112C2D4DC1A8810"></a>
+                                <a data-mq="lg" href="/css/images/content/index/services/action.jpg?h=267&amp;w=1266&amp;hash=4D3CC27C501BFCBBA0F826730CDF7F1CB7BAECD1"></a>
                             </div>
                             <div class="image-fx-overlay"></div>
                         </div>
-                        <a href='http://pioneerproaudio.com/en/index.html' target='_blank' title='Pioneer Pro Audio' >                                <div class="body">
-                                <p class="ellipsis"><p><strong>Professional Audio</strong></p>
-                                <p>The powerful combination of innovative technology and dance industry expertise delivers the best dance music sound to clubbers all over the world.</p></p>
+                        <a href='/services/detail/skidochny-sistem' target='_blank' title='Скидочная система' >                                <div class="body">
+                                <p class="ellipsis"><p><strong>Подарочная карта - вы вносите депозит и оформляете данную карту на человека, которому собираетесь сделать презент.</strong></p>
+                                <p>После торжества данный человек может потратить депозит карты на обучение в DJ Школе, на приобретение оборудования в DJ Магазине, либо на тренинг в нашем DJ Центре в формате абонемента или разовых посещений.</p></p>
                             </div>
                             <span class="tilebtn"><span class="ico icon-tilebtn-more"><span class="sr-only">More</span></span></span>
                         </a>                        </div>
@@ -224,16 +205,16 @@
                     <div class="krossbanner">
                         <div class="head image-fx image-fx-6">
                             <div class="bg-adapt">
-                                <a data-mq="xs" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/kuvo_banner.jpg?mh=210&amp;w=640&amp;hash=19C72E3E80FE3CAD7FBCE5D07539EB7FC0413B35"></a>
-                                <a data-mq="sm" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/kuvo_banner.jpg?mh=210&amp;w=640&amp;hash=19C72E3E80FE3CAD7FBCE5D07539EB7FC0413B35"></a>
-                                <a data-mq="md" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/kuvo_banner.jpg?mh=210&amp;w=900&amp;hash=78FDA37668889F22AB134BF8DD9B3A7EF0826527"></a>
-                                <a data-mq="lg" href="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/grooving/kuvo_banner.jpg?h=267&amp;w=1266&amp;hash=57503E434D503CB220032E46BDA6BEA88DB2CFB6"></a>
+                                <a data-mq="xs" href="/css/images/content/index/services/traning.jpg?mh=210&amp;w=640&amp;hash=19C72E3E80FE3CAD7FBCE5D07539EB7FC0413B35"></a>
+                                <a data-mq="sm" href="/css/images/content/index/services/traning.jpg?mh=210&amp;w=640&amp;hash=19C72E3E80FE3CAD7FBCE5D07539EB7FC0413B35"></a>
+                                <a data-mq="md" href="/css/images/content/index/services/traning.jpg?mh=210&amp;w=900&amp;hash=78FDA37668889F22AB134BF8DD9B3A7EF0826527"></a>
+                                <a data-mq="lg" href="/css/images/content/index/services/traning.jpg?h=267&amp;w=1266&amp;hash=57503E434D503CB220032E46BDA6BEA88DB2CFB6"></a>
                             </div>
                             <div class="image-fx-overlay"></div>
                         </div>
-                        <a href='http://kuvo.com/' target='_blank' title='KUVO' >                                <div class="body">
-                                <p class="ellipsis"><p><strong>The clubbing connection</strong></p>
-                                <p>Thousands of DJs and clubs share their latest set lists and tracks on KUVO. Join the community to get live set info, discover new music, and connect with other clubbers.</p></p>
+                        <a href='/services/detail/traning/' target='_blank' title='Тренинг площадка' >                                <div class="body">
+                                <p class="ellipsis"><p><strong>Для тренинга предоставляется абсолютно любое DJ Оборудование которое представлено в DJ Центре. </strong></p>
+                                <p>Бронирование даты и времени происходит заранее.</p></p>
                             </div>
                             <span class="tilebtn"><span class="ico icon-tilebtn-more"><span class="sr-only">More</span></span></span>
                         </a>                        </div>

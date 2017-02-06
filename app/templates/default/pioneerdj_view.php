@@ -21,12 +21,12 @@
 
 
 
-
+        <link href="/Content/css/fonts-default.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" id="www-widgetapi-script" src="/js/widgetapi.js" async=""></script>
         <script src="https://www.youtube.com/player_api"></script>
         <script src="/Bundles/JsHeader/index-v=BMne-U6Vgal8q3NFbvZfdgOMUnIfzy_RdwlKQDCSjtg1"></script>
 		<link href="/Bundles/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
-		<link href="/Content/css/fonts-default.css" rel="stylesheet" type="text/css">
+
 	</head>
     <body class="header__experience-mode cookie-is-visible">
         <div class="page-home">
@@ -61,59 +61,19 @@
                             <nav class="main-nav">
                                     <ul>
                                         <li class="main-nav__home">
-                                                <a href="/">Home</a>
+                                                <a href="/">Главная</a>
                                         </li>
                                                 <li class="main-nav__products folder__container">
-                                                    <a href='/product/' >Products</a>
-                                                    <span class="folder__trigger"></span>
-                                                    <div class="folder__content">
-                                                        <ul>
-                                                                <li>
-                                                                    <a href='/product/player/' >  <span class="image">
-                                                                                <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/players.png" alt="players" />
-                                                                        </span>
-                                                                                <span class="text">
-                Players                                                                </span>
-                </a>                                                </li>
-                                                                <li>
-                <a href='/product/mixer/' >                                                        <span class="image">
-                                                                                <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/mixers.png" alt="mixers" />
-                                                                        </span>
-                                                                                <span class="text">
-                Mixers                                                                </span>
-                </a>                                                </li>
-                                                                <li>
-                <a href='/product/controller/' >                                                        <span class="image">
-                                                                                <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/controllers.png" alt="controllers" />
-                                                                        </span>
-                                                                                <span class="text">
-                Controllers                                                                </span>
-                </a>                                                </li>
-                                                                <li>
-                <a href='/product/headphones/' >                                                        <span class="image">
-                                                                                <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/headphones.png" alt="Headphones" />
-                                                                        </span>
-                                                                                <span class="text">
-                Headphones                                                                </span>
-                </a>                                                </li>
-                                                                <li>
-                <a href='/product/' >                                                        <span class="image">
-                                                                                <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/other.png" alt="other" />
-                                                                        </span>
-                                                                                <span class="text">
-                More                                                                </span>
-                </a>                                                </li>
-                                                        </ul>
-                                                    </div>
+                                                    <a href='/news/' >Новости</a>
                                                 </li>
                                                     <li>
-                                                        <a href='/news/' title='News' >News</a>
+                                                        <a href='/courses/' title='Курсы' >Курсы</a>
                                                     </li>
                                                     <li>
-                                                        <a href='/support/' title='Support' >Support</a>
+                                                        <a href='/services/' title='Услуги' >Услуги</a>
                                                     </li>
                                                     <li>
-                                                        <a href='/shops/' title='Where to Buy' >Find a store</a>
+                                                        <a href='/contacts/' title='Контакты' >Контакты</a>
                                                     </li>
                                     </ul>
                             </nav>
@@ -142,126 +102,66 @@
                         <li><a href="/"><span class="icon-dj"></span><span class="sr-only">DJ</span></a></li>
                     </ul>
                 </div>
-                                </div>
-                                <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
 
-                <div class="footer-countryselector clearfix">
-                    <div class="country-placeholder">
-                        <div class="select__styled navigate-select select__footer-dark pos-always-above">
-                            <select style="display: none;">
-                                    <option data-icon="flag flag-INT" value="/en/"
-                                            selected="selected">
-                                        <span class="country-label">Global</span>
-                                    </option>
-                                    <option data-icon="flag flag-JP" value="/ja-jp/">
-                                        <span class="country-label">日本</span>
-                                    </option>
-                                    <option data-icon="flag flag-ES" value="/es-es/">
-                                        <span class="country-label">Espa&#241;a</span>
-                                    </option>
-                                    <option data-icon="flag flag-US" value="/en-us/">
-                                        <span class="country-label">USA</span>
-                                    </option>
-                                    <option data-icon="flag flag-GB" value="/en-gb/">
-                                        <span class="country-label">United Kingdom</span>
-                                    </option>
-                                    <option data-icon="flag flag-FR" value="/fr-fr/">
-                                        <span class="country-label">France</span>
-                                    </option>
-                                    <option data-icon="flag flag-DE" value="/de-de/">
-                                        <span class="country-label">Deutschland</span>
-                                    </option>
-                                    <option data-icon="flag flag-IT" value="/it-it/">
-                                        <span class="country-label">Italia</span>
-                                    </option>
-                                    <option data-icon="flag flag-NL" value="/nl-nl/">
-                                        <span class="country-label">Nederland</span>
-                                    </option>
-                                    <option data-icon="flag flag-PT" value="/pt-pt/">
-                                        <span class="country-label">Portugal</span>
-                                    </option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
+                        <div class="footer-countryselector clearfix">
+                            <div class="country-placeholder">
+                                <div class="select__styled navigate-select select__footer-dark pos-always-above">
+                                    <select style="display: none;">
+                                            <option data-icon="flag flag-INT" value="/moscow/"
+                                                    selected="selected">
+                                                <span class="country-label">Moscow</span>
+                                            </option>
+                                            <option data-icon="flag flag-INT" value="/nsk/">
+                                                <span class="country-label">Novosibirsk</span>
+                                            </option>
+                                            <option data-icon="flag flag-INT" value="/almati/">
+                                                <span class="country-label">Almaty</span>
+                                            </option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="row equalizer" data-equalizer-watch=".equalize">
+                        </div>
+            </div>
+        </div>
+        <div class="row equalizer" data-equalizer-watch=".equalize">
                                 <div class="col-md-8">
                                         <div class="footer-links equalize">
                                             <div class="row">
-                                                <div class="col-md-6 clearfix">
-                                                    <div class="folder__container">
-                                                            <p class="item-title">
-                                                                <a href='/product/' >Products</a>
-                                                                <span class="folder__trigger"></span>
-                                                            </p>
-                                                            <div class="folder__content">
-                                                                    <ul class="clearfix">
-                                                                        <li>
-                                                                            <p class="item-subtitle">
-                                                                         </p>
-                                                                        <ul class="double-list clearfix">
-                                                                                <li><a href='/product/player/' >DJ player</a></li>
-                                                                                <li><a href='/product/effector/' >Remix station</a></li>
-                                                                                <li><a href='/product/mixer/' >DJ mixer</a></li>
-                                                                                <li><a href='/product/headphones/' >Headphones</a></li>
-                                                                                <li><a href='/product/controller/' >DJ controller</a></li>
-                                                                                <li><a href='/product/monitor-speakers/' >Monitor speakers</a></li>
-                                                                                <li><a href='/product/all-in-one-system/' >All-in-one DJ system</a></li>
-                                                                                <li><a href='/product/production/' >Production</a></li>
-                                                                                <li><a href='/product/accessories/' >Accessories</a></li>
-                                                                                <li><a href='/product/turntable/' >Turntable</a></li>
-                                                                                <li><a href='/product/software/' >DJ software</a></li>
-                                                                        </ul>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                    </div>
-                                                </div>
+
                                                 <div class="col-md-3 clearfix">
                                                     <div class="folder__container">
                                                             <p class="item-title">
-                                                                <a href='/support/' >Support</a>
+                                                                <a href='/news/' >Новости</a>
                                                                 <span class="folder__trigger"></span>
                                                             </p>
-                                                            <div class="folder__content">
-                                                                <ul class="clearfix">
-                                                                        <li><a href='/support/contact/' title='Contact' >Contact</a></li>
-                                                                        <li><a href='/support/documents/' >Manuals</a></li>
-                                                                        <li><a href='/support/software/' >Software & firmware</a></li>
-                                                                        <li><a href='/support/software-information/' >Software information</a></li>
-                                                                        <li><a href='http://faq.pioneerdj.com' class='lnk-external' target='_blank' >FAQ</a></li>
-                                                                        <li><a href='http://forums.pioneerdj.com/home' class='lnk-external' target='_blank' >Forum</a></li>
-                                                                        <li><a href='/landing/pioneer-dj-certified/' >Certified Program</a></li>
-                                                                </ul>
-                                                            </div>
+
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3 clearfix">
                                                         <div class="folder__container">
                                                             <p class="item-title">
-                                                                <a href='/news/' title='News' >News</a>
+                                                                <a href='/courses/' title='Курсы' >Курсы</a>
                                                                 <span class="folder__trigger"></span>
                                                             </p>
                                                         </div>
+                                                </div>
+                                                <div class="col-md-3 clearfix">
                                                         <div class="folder__container">
                                                             <p class="item-title">
-                                                                <a href='/shops/' >Where to buy</a>
+                                                                <a href='/services/' >Услуги</a>
                                                                 <span class="folder__trigger"></span>
                                                             </p>
                                                         </div>
+                                                </div>
+                                                <div class="col-md-3 clearfix">
                                                         <div class="folder__container">
                                                             <p class="item-title">
-                                                                <a href='/company/company-info/' >About us</a>
+                                                                <a href='/contacts/' >Контакты</a>
                                                                 <span class="folder__trigger"></span>
                                                             </p>
-                                                                <div class="folder__content">
-                                                                    <ul class="clearfix">
-                                                                            <li><a href='/company/company-info/' >Company info</a></li>
-                                                                            <li><a href='/corporate-contact/' >Corporate contact</a></li>
-                                                                    </ul>
-                                                                </div>
+
                                                         </div>
                                                 </div>
                                             </div>
@@ -270,12 +170,12 @@
                                 <div class="col-md-4">
                                     <div class="footer-storelocator equalize" style="height: 224px;">
                                         <div class="intro">
-                                            <i class="ico"></i> Find a local store or an online shop.
+                                            <i class="ico"></i> Официальный интернет магазин.
                                         </div>
                                         <div class="form">
                                             <div class="in">
 
-                                                <a href="/shops/" class="btn btn-dark"><span class="text">Find authorised shops</span></a>
+                                                <a href="http://pioneerdjstore.ru" class="btn btn-dark"><span class="text">Перейти</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -288,23 +188,7 @@
                             <div class="row">
                                 <div class="col-md-8">
                                         <div class="footer-elsewhere">
-                                            <ul class="clearfix">
-                                                    <li>
-                <a href='http://www.kuvo.com/' target='_blank' >                                                <span class="image"><img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/kuvo-org.png" /></span>
-                KUVO</a>                                    </li>
-                                                    <li>
-                <a href='http://www.pioneerdjradio.com/' target='_blank' >                                                <span class="image"><img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/dj-radio-org.png" /></span>
-                Radio</a>                                    </li>
-                                                    <li>
-                <a href='http://www.djsounds.com/' target='_blank' >                                                <span class="image"><img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/dj-sounds-org.png" /></span>
-                DJsounds</a>                                    </li>
-                                                    <li>
-                <a href='http://www.pioneerdjinibiza.com' target='_blank' >                                                <span class="image"><img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/ibiza-org.png" /></span>
-                Ibiza</a>                                    </li>
-                                                    <li>
-                <a href='http://www.pioneerproaudio.com' target='_blank' >                                                <span class="image"><img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/pro-audio-gold.png" /></span>
-                Pioneer Pro Audio</a>                                    </li>
-                                            </ul>
+
                                         </div>
                                 </div>
                                 <div class="col-md-4">
@@ -333,17 +217,7 @@
                                 <div class="col-md-6">
                                         <div class="footer-legal">
                                             <strong>&copy; Pioneer DJ</strong>
-                                            <ul>
-                                                    <li>
-                                                        <a href='/company/privacy-policy/' >privacy policy</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='/company/terms-of-use/' >terms of use</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='/company/trademarks/' >trademarks</a>
-                                                    </li>
-                                            </ul>
+
                                         </div>
                                 </div>
                                 <div class="col-md-6">
