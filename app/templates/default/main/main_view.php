@@ -21,23 +21,19 @@
     <nav class="productcat-nav">
         <ul>
             <li>
-                <a href='/product/player/' >                                <span class="text">Players</span>
+                <a href='/contacts/' >                                <span class="text">Контакты</span>
                     <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/players.png?h=256&amp;w=400&amp;la=en&amp;hash=8C5DF8DD2CF7C891FD0C34363773C3399B009082' alt='players' /></span>
                 </a>                        </li>
             <li>
-                <a href='/product/mixer/' >                                <span class="text">Mixers</span>
+                <a href='/courses/' >                                <span class="text">Курсы</span>
                     <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/mixers.png?h=256&amp;w=400&amp;la=en&amp;hash=E6F24736A4281A2CD6E5D0FED807D313983F0794' alt='mixers' /></span>
                 </a>                        </li>
             <li>
-                <a href='/product/controller/' >                                <span class="text">Controllers</span>
+                <a href='/services/' >                                <span class="text">Услуги</span>
                     <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/controllers.png?h=256&amp;w=400&amp;la=en&amp;hash=7C6EA5011D7DC5CCB8F3F5B1C2D646901F99F754' alt='controllers' /></span>
                 </a>                        </li>
             <li>
-                <a href='/product/headphones/' >                                <span class="text">Headphones</span>
-                    <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/headphones.png?h=256&amp;w=400&amp;la=en&amp;hash=A683D64511280B46E4F1F9653085FA2FE2DA6CC2' alt='Headphones' /></span>
-                </a>                        </li>
-            <li>
-                <a href='/product/' >                                <span class="text">More</span>
+                <a href='/apply/' >                                <span class="text">Подать заявку</span>
                     <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/other.png?h=256&amp;w=400&amp;la=en&amp;hash=3FB8B51FFD93CA67A2DA9190D4455A83CF3365A4' alt='other' /></span>
                 </a>                        </li>
         </ul>
@@ -48,69 +44,49 @@
     <section class="section news-featured padding-top-0 bg-dark">
         <div class="container">
             <h2 class="h2 light">
-                News
+                НОВОСТИ
             </h2>
             <div class="row equalizer" data-equalizer-watch=".box">
                 <div class="slider">
-                    <section class="news-feature medium">
-                        <a class="box" href="/news/2016/djsounds-show-216-doc-martin/">
-                                    <span class="date">
-                                        22 December, 2016
+                    <?
+                     $array['id'] = "100";
+                     $array['content']['content'] = Element::GetList($array, $array['filter'], $limit="6");
+                    ?>
+                    <?if(count($array['content']['content']) > 0){?>
+                    <?foreach($array['content']['content'] as $element){?>
+
+                        <?
+                         $filter = array("content_id" => $element['id']);
+                         $images = Element::SelectAll('files', $filter, null, null);
+                        ?>
+                        <section class="news-feature medium">
+                            <a class="box" href="/news/detail/<?=$element['alias']?>/">
+                                        <span class="date">
+
+                                        </span>
+                                <? if(count($images)) { ?>
+                                    <picture class="image" style="background-image: url('/<?=$images[0]['path']?>?mh=343&amp;c=1&amp;cw=413&amp;hash=C72DA59FA9FD9AEBBA7F39D247171FA4ED6D4A8B');">
+                                <? } else { ?>
+                                    <picture class="image" style="background-image: url('/css/images/logo.png?mh=343&amp;c=1&amp;cw=413&amp;hash=C72DA59FA9FD9AEBBA7F39D247171FA4ED6D4A8B');">
+                                <? } ?>
+                                        <div class="img-adapt">
+                                        </div>
+                                    </picture>
+                                <span class="body">
+                                        <h2 class="title"><?=$element['title']?></h2>
+                                        <span class="desc">
+
+                                        </span>
                                     </span>
-                            <picture class="image" style="background-image: url('https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/news/2016/djsounds-show/djss-2016-doc-martin-head.jpg?mh=343&amp;c=1&amp;cw=413&amp;hash=C72DA59FA9FD9AEBBA7F39D247171FA4ED6D4A8B');">
-                                <div class="img-adapt">
-                                </div>
-                            </picture>
-                            <span class="body">
-                                    <h2 class="title">DJsounds Show - Doc Martin</h2>
-                                    <span class="desc">
-            
-                                    </span>
-                                </span>
-                            <span class="tilebtn"><i class="ico"></i></span>
-                        </a>
-                    </section>
-                    <section class="news-feature is-update medium">
-                        <a class="box" href="/news/2016/ddj-sz2-driver-first-release-for-windows-and-mac-os/">
-                                    <span class="date">
-                                        20 December, 2016
-                                    </span>
-                            <picture class="image" style="background-image: url('https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/controller/ddj-sz2/headerimg_01.jpg?mh=343&amp;c=1&amp;cw=413&amp;hash=AC0BA6698FBB3249F5B58F060FF552B838D306E1');">
-                                <div class="img-adapt">
-                                </div>
-                                <span class="picto"></span>
-                            </picture>
-                            <span class="body">
-                                    <h2 class="title">DDJ-SZ2  Driver first release for Windows / Mac OS</h2>
-                                    <span class="desc">
-            
-                                    </span>
-                                </span>
-                            <span class="tilebtn"><i class="ico"></i></span>
-                        </a>
-                    </section>
-                    <section class="news-feature is-update medium">
-                        <a class="box" href="/news/2016/happy-holidays-sale/">
-                                    <span class="date">
-                                        20 December, 2016
-                                    </span>
-                            <picture class="image" style="background-image: url('https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/news/2016/holiday-app-sale/appsale-header.jpg?mh=343&amp;c=1&amp;cw=413&amp;hash=EBD78DB05AA0A7D7500E0F9A7A501BC7B4CD3BE4');">
-                                <div class="img-adapt">
-                                </div>
-                                <span class="picto"></span>
-                            </picture>
-                            <span class="body">
-                                    <h2 class="title">As the holidays are coming, we’re offering a discount on our DJ apps</h2>
-                                    <span class="desc">
-            
-                                    </span>
-                                </span>
-                            <span class="tilebtn"><i class="ico"></i></span>
-                        </a>
-                    </section>
+                                <span class="tilebtn"><i class="ico"></i></span>
+                            </a>
+                        </section>
+                    <? } ?>
+                    <? } ?>
+
                 </div>
             </div>
-            <a href="/news/" class="ghostbtn ghostbtn-forw ghostbtn-light"><span class="text">Discover more</span></a>
+            <a href="/news/" class="ghostbtn ghostbtn-forw ghostbtn-light"><span class="text">Узнать больше...</span></a>
         </div>
     </section>
     <section class="section">
