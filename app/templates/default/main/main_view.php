@@ -33,7 +33,7 @@
                     <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/controllers.png?h=256&amp;w=400&amp;la=en&amp;hash=7C6EA5011D7DC5CCB8F3F5B1C2D646901F99F754' alt='controllers' /></span>
                 </a>                        </li>
             <li>
-                <a href='/apply/' >                                <span class="text">Подать заявку</span>
+                <a href='/apply/' >                                <span class="text">Заявка</span>
                     <span class="image"><img src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/navigation/other.png?h=256&amp;w=400&amp;la=en&amp;hash=3FB8B51FFD93CA67A2DA9190D4455A83CF3365A4' alt='other' /></span>
                 </a>                        </li>
         </ul>
