@@ -202,11 +202,13 @@ class Model
 					
 					if($array['model'] == 'services'){
 						$array['filter']['alter']['city_array'] = $_SESSION['user']['city'];
-					}
+					} else if($array['model'] == 'courses'){
+                        $array['filter']['alter']['city_courses_array'] = $_SESSION['user']['city'];
+                    }
 					
 					$array['content']['content'] = Element::GetList($array, $array['filter'], $limit);
 						
-					if($limit != null && $array['model'] != 'services'){
+					if($limit != null && ($array['model'] != 'services' || $array['model'] != 'courses')){
 						$max_pages = Element::GetList($array, $array['filter']);
 						$array['pagination']['max_pages'] = count($max_pages) / $limit;
 						

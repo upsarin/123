@@ -380,7 +380,7 @@
                 <div class="content">
                     <div class="action-container">
                         <div class="image-container" style="text-align:center">
-                            <img class="course-image" src="/css/images/content/courses/moscow/music/levelup.png">
+                            <img class="course-image" src="/css/images/content/courses/moscow/DJ/music-write-level-up.png">
                         </div>
 
                         <h2 class="block-header">Level UP курс Школы Написания Музыки</h2>
@@ -490,7 +490,7 @@
                                 
                                 <section class="col-md-4 col-sm-4">
                                     <a href="/courses/detail/music-write-base/">
-                                        <div class="image-container" style="height: 320px;"><img class="image" src="/css/images/content/courses/moscow/music/base.png"></div>
+                                        <div class="image-container" style="height: 320px;"><img class="image" src="/css/images/content/courses/moscow/DJ/music-write-base.png"></div>
 
                                         <span class="short-description" style="height: 333px;">
                                             <h4 class="name">Базовый курс Школы Написания Музыки</h4>

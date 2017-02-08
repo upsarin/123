@@ -1,36 +1,78 @@
+<style>
+    .page-home .header .navbar, .cookie-is-visible .page-home .header .navbar {
+        background: #2a2937;
+    }
 
-        <div class="content-container-wrapper school">
-            <div class="content-container">
-                <div class="content courses">
-                    <h2 class="block-header">Услуги</h2>
-                    <div class="row">
-                        <div class="sections-holder responsive">
-                            
-							
-						<?foreach($array['content']['content'] as $element){
-							$filter = array("content_id" => $element['id']);
-							$images = Element::SelectAll('files', $filter, null, null);
-						?>
-							<section class="col-md-4 col-sm-4 ">
-                                <a href="/services/detail/<?=$element['alias']?>" >
-								<? if(count($images)>0){?>
-                                    <div class="image-container">
-										<img class="image" src="<?=$images[0]['path']?>" >
-									</div>
-								<? } ?>
-                                    <div class="short-description">
-                                        <h4 class="name"><?=$element['title']?></h4>
-                                        <h4 class="description"><?=$element['preview_desc']?></h4>
+    .product-grid .product .head .image img {
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+</style>
+
+
+<div class="section">
+    <div class="section category-toolbar">
+        <div class="container">
+
+            <p class="">
+            </p><p>
+            <h1 class="quote">Услуги</h1>
+            <h4 class="quote"><span class="ellipsis">Хочешь быть настоящим Dj - Мы поможем!<br>Просто запишись на пробное бесплатное занятие</span></h4>
+            </p>
+            <p><span class="ghostbtn ghostbtn-large ghostbtn-forw ghostbtn-light"><span class="text" style="color: black;">Подать заявку</span></span></p>
+        </div>
+    </div>
+
+    <div class="section section-productcat-products">
+        <div class="container">
+            <div class="product-grid">
+                <ul class="product-grid-list equalizer" data-equalizer-watch=".in">
+
+
+                    <?
+                    usort($array['content']['content'], 'sortById');
+                    ?>
+
+                    <? foreach($array['content']['content'] as $element){ ?>
+                        <?if($_SESSION['user']['city']['path']){?>
+                            <li class="product-grid-item">
+                                <a class="product" href="/services/detail/<?=$element['alias']?>/">
+                                    <div class="in" style="height: 419px;">
+                                        <div class="head">
+                                            <div class="image">
+                                                <img src="/css/images/content/services/services/<?=$element['name']?>.jpg?h=240&amp;w=320&amp;hash=7EE269C66BB9D6C0D8EAADA73395CE0BB00DCEB0" alt="CDJ-TOUR1">
+                                            </div>
+                                            <div class="product-info">
+                                            </div>
+                                        </div>
+                                        <div class="body">
+                                            <h2 class="name"><?=$element['title']?></h2>
+                                            <p class="desc"></p>
+
+                                            <p class="longdesc"><?=strip_tags($element['preview_desc'])?></p>
+                                        </div>
                                     </div>
-                                    <span class="button-more"><em></em></span>
+                                    <div class="foot">
 
+
+
+                                                <span class="tilebtn">
+                                                    <span class="ico icon-tilebtn-more">
+                                                        <span class="sr-only">
+                                                            More
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                    </div>
                                 </a>
-                            </section>
+                            </li>
                         <? } ?>
-                            
-                           
-                        </div>
-                    </div>
-                </div>
+                    <? } ?>
+                </ul>
             </div>
         </div>
+    </div>
+
+</div>

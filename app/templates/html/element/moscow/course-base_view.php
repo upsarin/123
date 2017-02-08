@@ -533,7 +533,7 @@
                                 
                                 <section class="col-md-4 col-sm-4">
                                     <a href="/courses/detail/music-write-base/" >
-                                        <div class="image-container"><img class="image" src="/css/images/content/courses/moscow/music/base.png" ></div>
+                                        <div class="image-container"><img class="image" src="/css/images/content/courses/moscow/DJ/music-write-base.png" ></div>
 
                                         <span class="short-description">
                                             <h4 class="name">Базовый курс Школы Написания Музыки</h4>
