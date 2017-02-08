@@ -1,121 +1,99 @@
-		<?
-			if($_SESSION['user']['city'] == "moscow"){
-				$city = "moscow";
-			} else if($_SESSION['user']['city'] == "peter"){
-				$city = "peter";
-			} else if($_SESSION['user']['city'] == "nsk"){
-				$city = "novosibirsk";
-			} else if($_SESSION['user']['city'] == "almati"){
-				$city = "almaty";
-			}
-		?>
-		
-		<div class="page-image contacts"><img src="/css/images/header_banner_1.png"></div>
-        <header class="header navbar navbar-white navbar-static-top">
-            <div class="">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-				<div class="contacts-block">
+<style>
+    .page-home .header .navbar, .cookie-is-visible .page-home .header .navbar {
+        display: block;
+        width: 100%;
+        background: #2a2937;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        -ms-transition: all 300ms;
+        -o-transition: all 300ms;
+        transition: all 300ms;
+    }
+    .js-sticky__wrap {
+        position: relative;
+        margin-top: 50px;
+    }
+    .sr-only {
+        position: relative;
+        width: 450px;
+        height: 50px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+</style>
 
-                    <div class="btn-group bootstrap-select">
-					
-						<button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" title="">
-									<? if($_SESSION['user']['city'] == "moscow"){ ?>
-										<span class="filter-option pull-left"><span class="title">Pioneer DJ&nbsp;</span> <span class="address">Moscow</span><span class="phone">+7 916 942-52-48</span></span>&nbsp;<span class="bs-caret"><span class="caret"></span></span>
-									<? } else if($_SESSION['user']['city'] == "peter"){ ?>
-										<span class="filter-option pull-left"><span class="title">Pioneer DJ&nbsp;</span> <span class="address">St. Petersburg</span><span class="phone">+7 812 984-91-44</span></span>&nbsp;<span class="bs-caret"><span class="caret"></span></span>
-									<? } else if($_SESSION['user']['city'] == "nsk"){ ?>
-										<span class="filter-option pull-left"><span class="title">Pioneer DJ&nbsp;</span> <span class="address">Novosibirsk</span><span class="phone">+7 913 015-90-09</span></span>&nbsp;<span class="bs-caret"><span class="caret"></span></span>
-									<? } else if($_SESSION['user']['city'] == "almati"){ ?>
-										<span class="filter-option pull-left"><span class="title">Pioneer DJ&nbsp;</span> <span class="address">Almaty</span><span class="phone">+7 747 336-22-02</span></span>&nbsp;<span class="bs-caret"><span class="caret"></span></span>
-									<? } else { ?>
-										<span class="filter-option pull-left"><span class="title">Pioneer DJ&nbsp;</span> <span class="address">Moscow</span><span class="phone">+7 916 942-52-48</span></span>&nbsp;<span class="bs-caret"><span class="caret"></span></span>
-									<? } ?>
-								
-							
-						</button>
-						<div class="dropdown-menu open" role="combobox">
-							<ul class="dropdown-menu inner" role="listbox" aria-expanded="false">
-								<li data-original-index="0" class="cityChoise" id="moscow">
-									<a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-										<span class="title">Pioneer DJ&nbsp;</span> <span class="address">Moscow</span><span class="phone">+7 916 942-52-48</span><span class="glyphicon glyphicon-ok check-mark"></span>
-									</a>
-								</li>
-								<li data-original-index="1" class="cityChoise" id="peter">
-									<a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-										<span class="title">Pioneer DJ&nbsp;</span> <span class="address">St. Petersburg</span><span class="phone">+7 812 984-91-44</span><span class="glyphicon glyphicon-ok check-mark"></span>
-									</a>
-								</li>
-								<li data-original-index="2" class="cityChoise" id="nsk">
-									<a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true">
-										<span class="title">Pioneer DJ&nbsp;</span> <span class="address">Novosibirsk</span><span class="phone">+7 913 015-90-09</span><span class="glyphicon glyphicon-ok check-mark"></span>
-									</a>
-								</li>
-								<li data-original-index="3" class="cityChoise" id="almati">
-									<a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-										<span class="title">Pioneer DJ&nbsp;</span> <span class="address">Almaty</span><span class="phone">+7 747 336-22-02</span><span class="glyphicon glyphicon-ok check-mark"></span>
-									</a>
-								</li>
-							</ul>
-						</div>
-				</div>
-
-                </div>
-                    <div class="navbar-brand">
-                        <a href="/" class="logo-image"><img src="/css/images/logo.png"></a>
-                    </div>
-                </div>
-				
-                <div class="navbar-container header-container">
-                    <nav class="collapse navbar-collapse menu">
-                        <ul class="nav navbar-nav ">
-                            
-                            
-                            <li <?=($array['id'] == 100) ? 'class="active"' : ''?>><a href="/news"><span>Новости</span></a></li>
-                            
-                            <li <?=($array['id'] == 101) ? 'class="active"' : ''?>><a href="/courses"><span>Курсы</span></a></li>
-                            
-                            <li <?=($array['id'] == 102) ? 'class="active"' : ''?>><a href="/services"><span>Услуги</span></a></li>
-                            
-                            <li <?=($array['id'] == 103) ? 'class="active"' : ''?>><a href="/contacts"><span>Контакты</span></a></li>
-                            
-                        </ul>
-                    </nav>
-                </div>
+<div class="js-sticky__wrap" style="height: 100px;">
+    <header class="simple-header sticky_simple-header">
+        <div class="content">
+            <div class="container">
+                <h1 class="sr-only">DJ Школа</h1>
             </div>
-        </header>
-        <div class="content-container-wrapper search-line">
-            <div class="content-container">
-                <div class="content">
-                        <form class="form-horizontal">
-                            <fieldset>
-                                    
-                                <div class="form-group">
-                                    <div class="col-md-8 col-sm-12 input-box">
-                                            <div class="col-md-8 col-sm-8 col-xs-12 single-line input-box">
-                                                <input id="textinput" name="name" type="text" placeholder="" class="form-control input-md" required="">
-                                            </div>
-                                            <div class="col-md-4 col-sm-4 single-line input-box">
-                                                <button class="form-button" id="singlebutton" name="singlebutton"><span></span></button>
-                                            </div>
+        </div>
+    </header>
+
+</div>
+<div class="section">
+    <div class="section category-toolbar">
+        <div class="container">
+            <p class="">
+            </p><p><h3 class="quote"><span class="ellipsis">Хочешь быть настоящим Dj - Мы поможем!<br>Просто запишись на пробное бесплатное занятие</span></h3>
+            </p>
+            <p><span class="ghostbtn ghostbtn-large ghostbtn-forw ghostbtn-light"><span class="text" style="color: black;">Подать заявку</span></span></p>
+        </div>
+    </div>
+
+    <div class="section section-productcat-products">
+        <div class="container">
+            <div class="product-grid">
+                <ul class="product-grid-list equalizer" data-equalizer-watch=".in">
+
+                    <pre>
+                        <?print_r($array['content']['content'][0]);?>
+                    </pre>
+                    <? foreach($array['content']['content'] as $element){ ?>
+                    <li class="product-grid-item">
+                        <a class="product" href="/en/product/player/cdj-tour1/black/overview/">
+                            <div class="in" style="height: 419px;">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="/css/images/content/courses/<?=$city?>/DJ/<?=$element['name']?>.png?h=240&amp;w=320&amp;hash=7EE269C66BB9D6C0D8EAADA73395CE0BB00DCEB0" alt="CDJ-TOUR1">
                                     </div>
-                                    <div class="input-box select-box col-sm-12 col-md-4">
-                                        <div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" data-id="service" title="Nothing selected"><span class="filter-option pull-left">Nothing selected</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"></ul></div><select id="service" name="service" class="selectpicker form-control" tabindex="-98">
-                                            
-                                            
-                                        </select></div>
+                                    <div class="product-info">
                                     </div>
                                 </div>
-                            </fieldset>
-                        </form>
-                </div>
+                                <div class="body">
+                                    <h2 class="name">CDJ-TOUR1</h2>
+                                    <p class="desc">TOUR system multi-player with fold-out touch screen</p>
+                                    <p>Headline act</p>
+
+                                    <p class="longdesc">Tour from festival to arena with the CDJ-TOUR1 and perform at the highest level. Together with the DJM-TOUR1 mixer you'll play the main stag...</p>
+                                </div>
+                            </div>
+                            <div class="foot">
+
+
+
+                                        <span class="tilebtn">
+                                            <span class="ico icon-tilebtn-more">
+                                                <span class="sr-only">
+                                                    More
+                                                </span>
+                                            </span>
+                                        </span>
+                            </div>
+                        </a>
+                    </li>
+                    <? } ?>
+                </ul>
             </div>
-        </div>				
-		
-		<?
-			include("app/templates/html/list/". $_SESSION['user']['city'] ."/courseList_view.php");
-		?>
+        </div>
+    </div>
+
+</div>

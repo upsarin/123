@@ -25,6 +25,7 @@
         <script type="text/javascript" id="www-widgetapi-script" src="/js/widgetapi.js" async=""></script>
         <script src="https://www.youtube.com/player_api"></script>
         <script src="/Bundles/JsHeader/index-v=BMne-U6Vgal8q3NFbvZfdgOMUnIfzy_RdwlKQDCSjtg1"></script>
+        <script src="/Bundles/JsFooter/index-v=t1G3GmOJ5JWe-BQ9xJkaVJPxC4hHw974rCWhubqJaZE1"></script>
 		<link href="/Bundles/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
 
 	</head>
@@ -89,7 +90,9 @@
                         </div>
                     </div>
                 </header>
-
+                    <?
+                    $city = "moscow";
+                    ?>
                     <? include $content; ?>
 
                     <div class="footer">
@@ -315,6 +318,6 @@
     </div>
         </div>
 
-        <script src="/Bundles/JsFooter/index-v=t1G3GmOJ5JWe-BQ9xJkaVJPxC4hHw974rCWhubqJaZE1"></script>
+
     </body>
 </html>

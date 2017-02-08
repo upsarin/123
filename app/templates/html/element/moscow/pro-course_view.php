@@ -380,7 +380,7 @@
                 <div class="content">
                     <div class="action-container">
                         <div class="image-container" style="text-align:center">
-                            <img class="course-image" src="/css/images/content/courses/moscow/DJ/pro.png">
+                            <img class="course-image" src="/css/images/content/courses/moscow/DJ/pro-course.png">
                         </div>
 
                         <h2 class="block-header">PRO курс DJ Школы</h2>
@@ -516,7 +516,7 @@
                                 
                                 <section class="col-md-4 col-sm-4">
                                     <a href="/courses/detail/course-base/">
-                                        <div class="image-container" style="height: 320px;"><img class="image" src="/css/images/content/courses/moscow/DJ/base.png"></div>
+                                        <div class="image-container" style="height: 320px;"><img class="image" src="/css/images/content/courses/moscow/DJ/course-base.png"></div>
 
                                         <span class="short-description" style="height: 328px;">
                                             <h4 class="name">Базовый курс DJ Школы</h4>
@@ -528,7 +528,7 @@
                                 
                                 <section class="col-md-4 col-sm-4">
                                     <a href="/courses/detail/scratch-base/">
-                                        <div class="image-container" style="height: 320px;"><img class="image" src="/css/images/content/courses/moscow/DJ/scratch.png"></div>
+                                        <div class="image-container" style="height: 320px;"><img class="image" src="/css/images/content/courses/moscow/DJ/scratch-base.png"></div>
 
                                         <span class="short-description" style="height: 328px;">
                                             <h4 class="name">Scratch DJ курс DJ Школы</h4>
