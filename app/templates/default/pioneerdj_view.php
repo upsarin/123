@@ -37,8 +37,8 @@
                     <div class="topbar">
                         <div class="container">
                             <a href="index.html#" class="btn-offcanvas trigger__offcanvas"><i class="icon-menu"></i></a>
-                                    <a href="index.html" class="logo">
-                                        <img src="/Content/img/pioneer-dj.png" alt="Pioneer DJ School logo" />
+                                    <a href="/" class="logo">
+                                        <img src="/css/images/logo.png" alt="Pioneer DJ School logo" />
                                     </a>
                             <div class="action-nav">
                                 <ul>
@@ -56,7 +56,7 @@
                     <div class="navbar" id="navbar">
                         <div class="container">
                                     <a href="/" class="logo">
-                                        <img src="/Content/img/pioneer-dj.png" alt="Pioneer DJ School logo" />
+                                        <img src="/css/images/logo.png" alt="Pioneer DJ School logo" />
                                     </a>
                             <nav class="main-nav">
                                     <ul>
