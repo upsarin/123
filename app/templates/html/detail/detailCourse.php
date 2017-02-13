@@ -8,6 +8,98 @@
             margin-top: -250px;
         }
     }
+    .course-cons .bg {
+        max-width: 767px;
+        background: url(/css/images/cons-bg.png) no-repeat center center;
+        width: 100%;
+        height: 400px;
+        margin: 20px auto;
+        background-size: 100% auto;
+        position: relative;
+    }
+    .course-cons ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .course-cons .bg:after {
+        content: "";
+        max-width: 280px;
+        max-height: 280px;
+        height: 360px;
+        width: 360px;
+        background: url(/css/images/round_slider.png) no-repeat center center;
+        animation-name: rotation;
+        animation-duration: 120s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        opacity: 0.25;
+        position: absolute;
+        left: 241px;
+        top: 42px;
+        background-size: 100% 100%;
+    }
+    .btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+        display: table;
+        content: " ";
+    }
+    .content {
+        width: 100%;
+        padding-top: 1px;
+        position: relative;
+        padding-bottom: 50px;
+    }
+    .content-container {
+        max-width: 988px;
+        margin: 0 auto;
+    }
+    .course-cons {
+        height: 450px;
+        background: #343245;
+        padding-top: 10px;
+    }
+    .course-cons ul li:nth-child(1) .cons-label {
+        top: -8px;
+    }
+    .course-cons ul li:nth-child(2) .cons-label {
+        top: 50px;
+    }
+    .course-cons ul li:nth-child(3) .cons-label {
+        top: 116px;
+    }
+    .course-cons ul li:nth-child(4) .cons-label {
+        top: 218px;
+    }
+    .course-cons ul li:nth-child(5) .cons-label {
+        top: 296px;
+    }
+    .course-cons ul li:nth-child(6) .cons-label {
+        top: 366px;
+    }
+    .course-cons ul li:nth-child(7) .cons-label {
+        top: 52px;
+        right: 0px;
+    }
+    .course-cons ul li:nth-child(8) .cons-label {
+        top: 116px;
+        right: 0px;
+    }
+    .course-cons ul li:nth-child(9) .cons-label {
+        top: 225px;
+        right: 0px;
+    }
+    .course-cons ul li:nth-child(10) .cons-label {
+        top: 287px;
+        right: 10px;
+    }
+
+    .cons-label {
+        position: absolute;
+        font-size: 13px;
+        color: #ffffff;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
 </style>
 
 <?
@@ -38,7 +130,7 @@ $images = Element::SelectAll('files', $filter, null, null);
         <div class="image-gallery">
             <div class="image img-adapt">
                 <a href="#zoom-tool-01" class="btn trigger__open-overlayer zoom-tool" data-classes="light zoom">
-                    <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/mixer/djm-tour1/djm-tour1-main.png?h=768&amp;w=1024&amp;hash=DC8ADBBD5251B43ABBB5B9828753D61C42BBB91A" data-full="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/mixer/djm-tour1/djm-tour1-main.jpg" data-large="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/mixer/djm-tour1/djm-tour1-main.png?h=768&amp;w=1024&amp;hash=DC8ADBBD5251B43ABBB5B9828753D61C42BBB91A" data-small="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/mixer/djm-tour1/djm-tour1-main.png?h=169&amp;w=169&amp;hash=6E4209C34F7A3F9C0486104FFD65B4535165D670" alt="DJM-TOUR1" class="zoomtool-capable image-switch-target" rel="productView">
+                    <img src="/css/images/content/courses/<?=$_SESSION['user']['city']?>/DJ/<?=$element['name']?>.png?h=768&amp;w=1024&amp;hash=DC8ADBBD5251B43ABBB5B9828753D61C42BBB91A" data-full="/css/images/content/courses/<?=$_SESSION['user']['city']?>/DJ/<?=$element['name']?>.png" data-large="/css/images/content/courses/<?=$_SESSION['user']['city']?>/DJ/<?=$element['name']?>.png?h=768&amp;w=1024&amp;hash=DC8ADBBD5251B43ABBB5B9828753D61C42BBB91A" data-small="/css/images/content/courses/<?=$_SESSION['user']['city']?>/DJ/<?=$element['name']?>.png?h=169&amp;w=169&amp;hash=6E4209C34F7A3F9C0486104FFD65B4535165D670" alt="<?=$element['title']?>" class="zoomtool-capable image-switch-target" rel="productView">
                 </a>
 
 
@@ -51,291 +143,52 @@ $images = Element::SelectAll('files', $filter, null, null);
 
     </div>
 </div>
-<div class="section section-product-info">
-    <div class="container">
-
-        <!--
-            Add class has-serie if this highlight block exists
-            Add class has-latest-update if this highlight block exists
-        -->
-
-        <div class="info has-serie has-latest-update row">
-
-            <div class="col usp">
-                <p><?=$element['preview_desc']?></p>
-            </div>
-        </div>
-
-    </div>
-</div>
-<div class="section section-product-features">
-    <div class="container">
-        <h2 class="h2">Key features</h2>
-        <div class="row features-key">
-            <div class="list">
-                <ul>
-                    <li>
-                        <div class="feature compact active">
-                            <div class="head">
-                                <h3 class="h3">Warm sound at any venue</h3>
-                                <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/32-bit-da-convertor-ess.jpg?h=500&amp;w=500&amp;hash=33725A2A1A98EC1EE726352EC03F03D88EC264D4" alt="32-bit-da-convertor-ess">
-                            </div>
-                            <div class="body">
-                                <p>A 32-bit D/A convertor, made by ESS Technologies, delivers incredibly low noise and distortion even at super-high volumes. Additionally the 96 kHz/24-bit sound card, 64-bit floating point mixing processing, enhanced dithering technology and a low-jitter clock combine to provide an accurate, natural analogue sound.</p>
+<?=$element['special'];?>
+<?=$element[$_SESSION['user']['city'] .'_features']?>
+<?=$element[$_SESSION['user']['city'] .'_desc']?>
 
 
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature compact">
-                            <div class="head">
-                                <h3 class="h3">Connect to front of house</h3>
-                                <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/digital-out.jpg?h=500&amp;w=500&amp;hash=9BB4FD4120B7E499EC107D2EF2A56DE0089B58F6" alt="digital-out-n">
-                            </div>
-                            <div class="body">
-                                <p>The AES/EBU digital output lets you connect directly to the PA, regardless of its positioning. Together with the word clock input it ensures high-grade digital audio signal transmission to front of house for precise synchronisation and the best possible sound quality.</p>
-
-
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature compact">
-                            <div class="head">
-                                <h3 class="h3">13-inch fold-out touch screen</h3>
-                                <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/djm-fold-out-screen.jpg?h=500&amp;w=500&amp;hash=3C2744166B862D23598B6539C36CA827647690F6" alt="djm-fold-out-screen-n">
-                            </div>
-                            <div class="body">
-                                <p>Use multicoloured touch display to browse and select tracks from up to 4 CDJs connected via Pro DJ Link. Choose between a horizontal multi-wave view or a vertical view that also includes an RMS meter so you can monitor and control the volume for each channel.</p>
-
-
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature compact">
-                            <div class="head">
-                                <h3 class="h3">5-port LAN hub</h3>
-                                <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/5-port-lan-hub.jpg?h=500&amp;w=500&amp;hash=66B7DC3A354A88A1DEE485E60E607DFE74CA48A1" alt="5-port-lan-hub-n">
-                            </div>
-                            <div class="body">
-                                <p>A 5-port LAN hub means you can connect up to 5 players or laptops to the DJM-TOUR1. Via Pro DJ Link you can share one source across up to 4 players – and if you're using rekordbox dj you get access to a host of advanced performance features on top.</p>
-
-
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature compact">
-                            <div class="head">
-                                <h3 class="h3">Easy b2b cueing</h3>
-                                <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/b2b-cueing-second-headphone.jpg?h=500&amp;w=500&amp;hash=3B2961C5035790AF0B77AF35B9ADA97FD8869AEE" alt="b2b-cueing-second-hedphone-n">
-                            </div>
-                            <div class="body">
-                                <p>2 independent headphone sections let you and another DJ cue tracks at the same time without hearing each other's input. Each headphone also has its own volume control for ease and comfort.</p>
-
-
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature compact">
-                            <div class="head">
-                                <h3 class="h3">Flexible connectivity</h3>
-                                <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/xlr-aux-in.jpg?h=500&amp;w=500&amp;hash=0A741753076BA6EA946BAA93F56619E1D3A254C8" alt="xls-aux-in">
-                            </div>
-                            <div class="body">
-                                <p>Hook up your choice of external devices including drum machines, effectors, synths and samplers using XLR/TRS combination Aux-in.</p>
-
-
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="viewmaster jogwheel" style="top: 0px;">
-                <div class="view">
-                    <div class="picture-wrap"><div class="picture active"><img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/32-bit-da-convertor-ess.jpg?h=500&amp;w=500&amp;hash=33725A2A1A98EC1EE726352EC03F03D88EC264D4"></div><div class="picture"><img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/digital-out.jpg?h=500&amp;w=500&amp;hash=9BB4FD4120B7E499EC107D2EF2A56DE0089B58F6"></div><div class="picture"><img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/djm-fold-out-screen.jpg?h=500&amp;w=500&amp;hash=3C2744166B862D23598B6539C36CA827647690F6"></div><div class="picture"><img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/5-port-lan-hub.jpg?h=500&amp;w=500&amp;hash=66B7DC3A354A88A1DEE485E60E607DFE74CA48A1"></div><div class="picture"><img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/b2b-cueing-second-headphone.jpg?h=500&amp;w=500&amp;hash=3B2961C5035790AF0B77AF35B9ADA97FD8869AEE"></div><div class="picture"><img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/xlr-aux-in.jpg?h=500&amp;w=500&amp;hash=0A741753076BA6EA946BAA93F56619E1D3A254C8"></div></div>
-                    <div class="mask"></div>
-                    <a href="#" class="controlbtn trigger__open-overlayer video-player hidden" data-title="" style=""><span class="ico icon-controlbtn-play"><span class="sr-only">Play</span></span></a>
-                </div>
-            </div>
-        </div>
-        <div class="row features-other equalizer" data-equalizer-watch="li">
-            <ul>
-                <li style="height: 443px;">
-                    <div class="picture">
-                        <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/familiar-layout.jpg?h=169&amp;w=169&amp;hash=4CFD70A072CB943A61C14DD121EDDE24AF6FFC52">
-                    </div>
-                    <div class="body">
-                        <h4>Familiar layout</h4>
-                        <p>
-                            The DJM-TOUR1 will feel instantly familiar as it shares its layout with the <a href="/en/product/mixer/djm-900nxs2/black/overview/">DJM-900NXS2</a>. Likewise it also features improved channel fader/EQ curves, high-quality Sound Colour FX, quantized Beat FX, and an Independent Send/Return.
-                        </p>
-                    </div>
-                </li>
-                <li style="height: 443px;">
-                    <div class="picture">
-                        <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/sound-color-fx.jpg?h=169&amp;w=169&amp;hash=5C79F01A738C04AC84B6CE1145148717093DBF3D">
-                    </div>
-                    <div class="body">
-                        <h4>Sound Color FX</h4>
-                        <p>
-                            6 studio-quality sound FX - Sweep, Filter, Crush, Dub Echo, Noise and Space - are available on every channel. Use the parameter control knob to fine-tune the FX.
-                        </p>
-                    </div>
-                </li>
-                <li style="height: 443px;">
-                    <div class="picture">
-                        <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/beat-fx.jpg?h=169&amp;w=169&amp;hash=E942C9D2064DA638E84EA94BA1D59C660AC129D5">
-                    </div>
-                    <div class="body">
-                        <h4>Beat FX</h4>
-                        <p>
-                            Use the large X-Pad to engage 14 different types of Beat FX and adjust the parameters with just one finger. A high-res OLED display instantly shows you which FX are in play.
-                        </p>
-                    </div>
-                </li>
-                <li style="height: 443px;">
-                    <div class="picture">
-                        <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-900nxs2/djm900nxs2-send-return.jpg?h=169&amp;w=169&amp;hash=DDD14C8514718099985D2E45699FA52E6E615D4A">
-                    </div>
-                    <div class="body">
-                        <h4>Independent Send/Return</h4>
-                        <p>
-                            Use built-in FX and an external FX unit at the same time. Simply connect external hardware via Aux. Or connect your iPhone/iPad via USB to engage instrument and FX apps - try it with the <a href="/en/product/software/rmx-1000-ipad-app/software/overview/">RMX-1000 for iPad</a>.
-                        </p>
-                    </div>
-                </li>
-                <li style="height: 509px;">
-                    <div class="picture">
-                        <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/festival-proof-design.jpg?h=169&amp;w=169&amp;hash=704FC1F0C827C6325D7280B13D00D7E8F2739EAB">
-                    </div>
-                    <div class="body">
-                        <h4>Festival-proof design</h4>
-                        <p>
-                            The DJM-TOUR1's rigid design comes with isolator feet for stability on any surface and reinforced sides. What's more, the LAN ports have NEUTRIK etherCON® connectors with a latch lock, so compatible cables will stay in place whatever vibrations and knocks are thrown at them.
-                        </p>
-                    </div>
-                </li>
-                <li style="height: 509px;">
-                    <div class="picture">
-                        <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/separate-power-supply.jpg?h=169&amp;w=169&amp;hash=C22BB4A27BF1B1758D661D7E1ACF6546192CC97B">
-                    </div>
-                    <div class="body">
-                        <h4>Separate power supply</h4>
-                        <p>
-                            The separate power supply ensures uncompromised performance for optimum sound quality, while power factor correction (PFC) reduces distortion across the frequencies.
-                        </p>
-                    </div>
-                </li>
-                <li style="height: 509px;">
-                    <div class="picture">
-                        <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/screen-adjustments.jpg?h=169&amp;w=169&amp;hash=4DCF7AC00CBA091F987304B73B57AF04B5AFE50B">
-                    </div>
-                    <div class="body">
-                        <h4>Screen adjustments</h4>
-                        <p>
-                            Tilt the screen to suit your preference, adjust the lighting or attach the display shade to protect the sun's glare when you're playing outside.
-                        </p>
-                    </div>
-                </li>
-                <li style="height: 509px;">
-                    <div class="picture">
-                        <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/mixer/djm-tour1/built-in-kuvo-gateway.jpg?h=169&amp;w=169&amp;hash=DEC4F3EF73E71973919E8DE0F8C0062B60FA86ED">
-                    </div>
-                    <div class="body">
-                        <h4>Built-in KUVO Gateway</h4>
-                        <p>
-                            The DJM-TOUR1 is our first mixer to have a KUVO Gateway on board so you can easily connect to <a href="http://kuvo.com" target="_blank" class="lnk-external">KUVO</a> and broadcast your set information, in real time, to fans around the world.
-                        </p>
-                    </div>
-                </li>
-                <li style="">
-                    <div class="picture">
-                        <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/features/software/rekordbox-dvs/rekordbox-dvs-logo.jpg?h=169&amp;w=169&amp;hash=356F3646586D085AA0E947ED342D4DF4D41367A9">
-                    </div>
-                    <div class="body">
-                        <h4>rekordbox dvs</h4>
-                        <p>
-                            When you use our <a href="/en/product/software/rekordbox-dj/software/overview/">rekordbox dj</a> DJ software, you can buy the <a href="/en/product/software/rekordbox-dvs/software/overview/">rekordbox dvs</a> Plus Pack to get low latency scratch control with music from your rekordbox library. <a class="lnk-external" target="_blank" href="https://rekordbox.com/en/store/#dvsbuyup">Find out more</a>
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="actions">
-            <a class="ghostbtn ghostbtn-large ghostbtn-forw" href="/en/product/mixer/djm-tour1/black/specifications/"><span class="text">See all specifications</span></a>
-        </div>
-    </div>
-</div>
 <div class="section section-product-combine bg-dark-1 color-light">
     <div class="container product-combine">
-        <h2 class="h2 no-line color-light">Combine with...</h2>
+        <h2 class="h2 no-line color-light">РЕКОМЕНДУЕМЫЕ КУРСЫ</h2>
 
         <div class="row equalizer" data-equalizer-watch=".equalizer-item">
             <div class="col-md-9">
-                <h4 class="color-light">Related products</h4>
+
                 <div class="row">
-                    <div class="col-md-4 equalizer-item" style="height: 239px;">
+                    <?
+                    $array['id'] = "101";
+                    $array['filter']['!id'] = $element['id'];
+                    $array['filter']['alter']['city_courses_array'] = $_SESSION['user']['city'];
+                    $array['content']['related'] = Element::GetList($array, $array['filter'], $limit="3");
+                    ?>
+                    <?if(count($array['content']['related']) > 0){?>
+                        <?foreach($array['content']['related'] as $element_related){?>
 
-                        <a href="/en/product/player/cdj-tour1/black/overview" class="product clearfix">
-                        <span class="visual-wrap">
-                            <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/player/cdj-tour1/cdj-tour1-main.png?h=250&amp;w=400&amp;hash=D222B2974AEEBAAACDA6B5913693BDD85BF118C0" alt="CDJ-TOUR1">
-                        </span>
-                            <span class="content-wrap">
-                                <h5 class="no-line">CDJ-TOUR1</h5>
-                                                            <p class="desc">TOUR system multi-player with fold-out touch...</p>
-                        </span>
-                        </a>
-                    </div>
-                    <div class="col-md-4 equalizer-item" style="height: 239px;">
+                            <?
+                            $filter_related = array("content_id" => $element_related['id']);
+                            $images_related = Element::SelectAll('files', $filter_related, null, null);
+                            ?>
+                            <div class="col-md-4 equalizer-item" style="height: 239px;">
 
-                        <a href="/en/product/effector/rmx-1000/black/overview" class="product clearfix">
-                        <span class="visual-wrap">
-                            <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/effector/rmx-1000/black/rmx-1000-main.png?h=250&amp;w=400&amp;hash=387FF6E1D84BBF94CE5EBB1C37A75DCFA33D33CF" alt="RMX-1000">
-                        </span>
-                            <span class="content-wrap">
-                                <h5 class="no-line">RMX-1000</h5>
-                                                            <p class="desc">3-in-1 remix station for editing, performing...</p>
-                        </span>
-                        </a>
-                    </div>
-                    <div class="col-md-4 equalizer-item" style="height: 239px;">
-
-                        <a href="/en/product/headphones/hdj-2000mk2/black/overview" class="product clearfix">
-                        <span class="visual-wrap">
-                            <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/headphones/hdj-2000mk2/black/hdj-2000mk2-main-if.png?h=250&amp;w=400&amp;hash=2DCC879989B0566D3194F767911D1318F80D0597" alt="HDJ-2000MK2">
-                        </span>
-                            <span class="content-wrap">
-                                <h5 class="no-line">HDJ-2000MK2</h5>
-                                                            <p class="desc">Flagship pro-DJ monitor headphones</p>
-                        </span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-3">
-                <h4 class="color-light">Accessories</h4>
-                <div class="row">
-                    <div class="col-md-12 equalizer-item" style="height: 239px;">
-                        <div class="product-accessories">
-                            <a href="/en/product/accessories/flt-djmtour1/flight-case/overview" class="item item-1">
-                                <span class="visual-wrap bg-none">
-                                    <img src="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/products/accessories/flt-djmtour1/flt-djm-tour1-main.png?h=170&amp;w=310&amp;hash=AADA7A5F897E744C6517A7F0432B74B16A272F39">
+                                <a href="/courses/detail/<?=$element_related['alias']?>/" class="product clearfix">
+                                <span class="visual-wrap">
+                                    <img src="/css/images/content/courses/<?=$_SESSION['user']['city']?>/DJ/<?=$element['name']?>.png?h=250&amp;w=400&amp;hash=D222B2974AEEBAAACDA6B5913693BDD85BF118C0" alt="<?=$element_related['title']?>">
                                 </span>
-                            </a>
+                                    <span class="content-wrap">
+                                        <h5 class="no-line"><?=$element_related['title']?></h5>
 
-                        </div>
-                    </div>
+                                </span>
+                                </a>
+                            </div>
+                        <? } ?>
+                    <? } ?>
                 </div>
 
             </div>
         </div>
 
-        <a href="/en/product/mixer/djm-tour1/black/related-products/" class="ghostbtn ghostbtn-forw ghostbtn-light"><span class="text">See all</span></a>
+        <a href="/courses/" class="ghostbtn ghostbtn-forw ghostbtn-light"><span class="text">Посмотреть все</span></a>
 
     </div>
 </div>
