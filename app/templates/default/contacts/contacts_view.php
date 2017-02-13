@@ -1,18 +1,7 @@
 
 <style>
     .page-home .header .navbar, .cookie-is-visible .page-home .header .navbar {
-        display: block;
-        width: 100%;
         background: #2a2937;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 1;
-        -webkit-transition: all 300ms;
-        -moz-transition: all 300ms;
-        -ms-transition: all 300ms;
-        -o-transition: all 300ms;
-        transition: all 300ms;
     }
     .js-sticky__wrap {
         position: relative;
@@ -66,7 +55,23 @@
         margin-right: -7px;
         list-style: none;
     }
-
+    a.button-more-news:hover {
+        background-image: url(/css/images/button_more_bg_hover.png);
+        color: #0c0f15;
+        text-decoration: none;
+    }
+    a.button-more-news {
+        width: 151px;
+        height: 34px;
+        text-align: center;
+        display: block;
+        color: black;
+        margin-top: 30px;
+        line-height: 34px;
+        font-size: 12px;
+        background: url(/css/images/button_more_bg.png) no-repeat center center;
+        z-index: 1;
+    }
 </style>
 
 <div class="js-sticky__wrap" style="height: 100px; margin-bottom: 0px;">
@@ -222,9 +227,19 @@
                     </div>
                 </div>
             </div>
+            <div class="content-container-wrapper franchise-offer">
+                <div class="content-container">
+                    <div class="content">
+
+                        <h2 class="block-header">Франшиза Pioneer DJ School</h2>
+                        <a href="/franchise" class="button-more-news"><span>ПОДРОБНЕЕ</span></a>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
     </div>
 
 </div>
+
