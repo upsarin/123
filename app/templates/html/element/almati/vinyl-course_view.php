@@ -1,4 +1,4 @@
-		<div class="page-image contacts"><img id="detail_banner" src="/css/images/content/courses/moscow/baner/djvinyl.jpg"></div>
+		<div class="page-image contacts"><img id="detail_banner" src="/css/images/content/courses/moscow/baner/vinyl-course.jpg"></div>
         <header class="header navbar navbar-white navbar-static-top">
             <div class="">
                 <div class="navbar-header">

@@ -1,4 +1,4 @@
-		<div class="page-image contacts"><img id="detail_banner" src="/css/images/content/courses/moscow/baner/djpro.jpg"></div>
+		<div class="page-image contacts"><img id="detail_banner" src="/css/images/content/courses/moscow/baner/pro-course.jpg"></div>
         <header class="header navbar navbar-white navbar-static-top">
             <div class="">
                 <div class="navbar-header">
@@ -496,7 +496,7 @@
             </div>
         </div>
 		<div class="content-container-wrapper course-footer">
-        <div class="page-image"><img src="/css/images/content/courses/peter/baner/djpro.jpg"></div>
+        <div class="page-image"><img src="/css/images/content/courses/peter/baner/pro-course.jpg"></div>
             <div class="content-container">
                 <div class="content">
                     <div class="row">

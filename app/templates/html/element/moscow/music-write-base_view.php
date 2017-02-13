@@ -1,5 +1,5 @@
 		
-		<div class="page-image contacts"><img id="detail_banner" src="/css/images/content/courses/moscow/baner/base.jpg"></div>
+		<div class="page-image contacts"><img id="detail_banner" src="/css/images/content/courses/moscow/baner/music-write-base.jpg"></div>
         <header class="header navbar navbar-white navbar-static-top">
             <div class="">
                 <div class="navbar-header">

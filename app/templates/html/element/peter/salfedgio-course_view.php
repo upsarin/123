@@ -458,7 +458,7 @@
             </div>
         </div>
 		<div class="content-container-wrapper course-footer">
-        <div class="page-image"><img src="/css/images/content/courses/peter/baner/solfedjio.jpg"></div>
+        <div class="page-image"><img src="/css/images/content/courses/peter/baner/salfedgio-course.jpg"></div>
             <div class="content-container">
                 <div class="content">
                     <div class="row">

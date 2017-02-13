@@ -105,13 +105,14 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8">
-                                    <div class="footer-breadcrumb clearfix">
-                    <ul class="clearfix">
-                        <li><a href="/"><span class="icon-dj"></span><span class="sr-only">DJ</span></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
+                                    <!--<div class="footer-breadcrumb clearfix">
+                                        <ul class="clearfix">
+                                            <li><a href="/"><span class="icon-dj"></span><span class="sr-only">DJ</span></a></li>
+                                        </ul>
+                                    </div>-->
+                                    <?minc::pos("breadcrumbs", null, null, null)?>
+                                 </div>
+                    <div class="col-md-4">
 
                         <div class="footer-countryselector clearfix">
                             <div class="country-placeholder">
