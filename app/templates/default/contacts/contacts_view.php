@@ -78,7 +78,7 @@
     <header class="simple-header sticky_simple-header">
         <div class="content">
             <div class="container">
-                <a href="/en/support/" onclick="window.history.go(-1); return false;" class="ghostbtn ghostbtn-small ghostbtn-back ghostbtn-light">
+                <a href="/" onclick="window.history.go(-1); return false;" class="ghostbtn ghostbtn-small ghostbtn-back ghostbtn-light">
                     <span class="text">На предыдущую страницу</span>
                 </a>
                 <h1 class="h2">Контакты</h1>
@@ -227,6 +227,8 @@
                     </div>
                 </div>
             </div>
+
+            <!--
             <div class="content-container-wrapper franchise-offer">
                 <div class="content-container">
                     <div class="content">
@@ -236,7 +238,7 @@
                     </div>
                 </div>
             </div>
-
+            -->
         </div>
 
     </div>

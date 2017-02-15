@@ -110,7 +110,7 @@ $images = Element::SelectAll('files', $filter, null, null);
 
 <div class="js-sticky__wrap" style="height: 480px; margin-bottom: 0px;">
     <header class="hero sticky_hero">
-        <div class="image bg-adapt" style="background-image: url(&quot;/css/images/content/courses/<?=$_SESSION['user']['city']?>/baner/<?=$element['name']?>.jpg?mh=600&amp;c=1&amp;cw=2000&amp;hash=0D2DFF733EF51C66941EB5413B4D7F2A7723A5C9&quot;);">
+        <div class="image bg-adapt" style="background-image: url(&quot;/css/images/content/courses/<?=$_SESSION['user']['city']?>/baner/<?=$element['name']?>.jpg?mh=600&amp;c=1&amp;cw=2000&amp;hash=0D2DFF733EF51C66941EB5413B4D7F2A7723A5C9&quot;);background-size: cover;">
         </div>
         <div class="content">
             <div class="container">
@@ -143,7 +143,7 @@ $images = Element::SelectAll('files', $filter, null, null);
 
     </div>
 </div>
-<?=$element['special'];?>
+<?//=$element['special'];?>
 <?=$element[$_SESSION['user']['city'] .'_features']?>
 <?=$element[$_SESSION['user']['city'] .'_desc']?>
 
@@ -176,7 +176,7 @@ $images = Element::SelectAll('files', $filter, null, null);
                                     <img src="/css/images/content/courses/<?=$_SESSION['user']['city']?>/DJ/<?=$element['name']?>.png?h=250&amp;w=400&amp;hash=D222B2974AEEBAAACDA6B5913693BDD85BF118C0" alt="<?=$element_related['title']?>">
                                 </span>
                                     <span class="content-wrap">
-                                        <h5 class="no-line"><?=$element_related['title']?></h5>
+                                        <h6 class="no-line"><?=$element_related['title']?></h6>
 
                                 </span>
                                 </a>
