@@ -1,7 +1,10 @@
-
-
-
 $(document).ready(function(){
+
+	$("a[href='/apply/']").click(function(){
+        console.log("test");
+        return false;
+	});
+	/*
 	$('.module-window').click(function(){
 		console.log(this.id);
 		return false;
@@ -127,4 +130,5 @@ function logoMove(loaderWidth)
 			// }, 1000);
 			
 		// });
-	}
+		*/
+	});

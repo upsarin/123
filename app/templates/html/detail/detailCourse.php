@@ -100,6 +100,115 @@
         font-weight: 500;
         text-transform: uppercase;
     }
+    @media (max-width: 767px) {
+
+        .hero .head {
+            left: 20px;
+            right: 20px;
+            top: 70px;
+            font-size: 18px;
+            z-index: 3;
+        }
+        .section {
+            margin-top: -230px;
+        }
+        .course-cons .bg {
+            max-width: 767px;
+            background: url(/css/images/cons-bg.png) no-repeat center center;
+            width: 100%;
+            height: 170px;
+            margin: 20px auto;
+            background-size: 80% auto;
+            position: relative;
+        }
+
+        .cons-label {
+            position: absolute;
+            font-size: 8px;
+            color: #ffffff;
+            font-weight: 500;
+            text-transform: uppercase;
+
+        }
+        .content {
+            width: 100%;
+            padding-top: 1px;
+            position: relative;
+            padding-bottom: 0px;
+        }
+        .course-cons ul li:nth-child(1) .cons-label {
+            top: 155px;
+            left: 35px;
+        }
+        .course-cons ul li:nth-child(2) .cons-label {
+            top: 19px;
+            left: 5px;
+        }
+        .course-cons ul li:nth-child(3) .cons-label {
+            top: 91px;
+            left: 5px;
+        }
+        .course-cons ul li:nth-child(4) .cons-label {
+            top: 45px;
+            left: 10px;
+        }
+        .course-cons ul li:nth-child(5) .cons-label {
+            top: 126px;
+            left: 5px;
+        }
+        .course-cons ul li:nth-child(6) .cons-label {
+            top: -8px;
+            left: 5px;
+        }
+        .course-cons ul li:nth-child(7) .cons-label {
+            top: 46px;
+            right: 5px;
+        }
+        .course-cons ul li:nth-child(8) .cons-label {
+            top: 93px;
+            right: 5px;
+        }
+        .course-cons ul li:nth-child(9) .cons-label {
+            top: 131px;
+            right: 13px;
+        }
+        .course-cons ul li:nth-child(10) .cons-label {
+            top: 5px;
+            right: 10px;
+        }
+        .course-cons .bg:after {
+            content: "";
+            max-width: 280px;
+            max-height: 280px;
+            height: 360px;
+            width: 360px;
+            background: url(/css/images/round_slider.png) no-repeat center center;
+            animation-name: rotation;
+            animation-duration: 120s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            opacity: 0.25;
+            position: absolute;
+            left: 69px;
+            top: -63px;
+            background-size: 45% 45%;
+        }
+        .features-key .feature .head img {
+            display: block;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            top: 0%;
+            opacity: .4;
+            height: 100%;
+        }
+        .section-product-info {
+            margin-top: -30px;
+            padding-bottom: 290px;
+        }
+    }
 </style>
 
 <?
@@ -143,7 +252,7 @@ $images = Element::SelectAll('files', $filter, null, null);
 
     </div>
 </div>
-<?//=$element['special'];?>
+<?=$element['special'];?>
 <?=$element[$_SESSION['user']['city'] .'_features']?>
 <?=$element[$_SESSION['user']['city'] .'_desc']?>
 

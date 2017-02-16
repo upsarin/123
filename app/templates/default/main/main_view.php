@@ -1,3 +1,20 @@
+
+<style>
+    @media (max-width: 767px) {
+        .krossbanner .head .bg-adapt {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            background-size: cover;
+            background-position: 560px 70%;
+            z-index: 1;
+            /* width: 100%; */
+        }
+    }
+</style>
 <div class="experience-wrap">
     <section class="experience">
         <div class="image image-fx image-fx-1">
@@ -11,7 +28,7 @@
             <div class="image-fx-overlay"></div>
         </div>
         <div class="wheel"></div>
-        <a href="/product/controller/ddj-sz2/black/overview/" class="body">
+        <a href="/apply/" class="body">
             <div class="in">
                 <h1 class="quote"><span class="ellipsis">Хочешь быть настоящим Dj - Мы поможем!<br>Просто запишись на пробное бесплатное занятие</span></h1>
                 <span class="ghostbtn ghostbtn-large ghostbtn-forw ghostbtn-light"><span class="text">Подать заявку</span></span>

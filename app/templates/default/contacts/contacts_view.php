@@ -72,6 +72,29 @@
         background: url(/css/images/button_more_bg.png) no-repeat center center;
         z-index: 1;
     }
+    @media (max-width: 991px){
+
+        .footer-social {
+            border-top: none;
+            padding: 20px 0 0 0;
+            margin: 15px 0 0 0;
+        }
+        .footer-social ul {
+            float: left;
+            position: relative;
+            left: 25%;
+        }
+        .row {
+            margin-left: -7px;
+            margin-right: -7px;
+            list-style: none;
+            font-size: 12px;
+        }
+        .footer-social ul li {
+            margin: 0 0 0 4px;
+            float: left;
+        }
+    }
 </style>
 
 <div class="js-sticky__wrap" style="height: 100px; margin-bottom: 0px;">
