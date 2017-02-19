@@ -3,6 +3,10 @@
     .hero .head {
         top: 180px;
     }
+    .section-product-info {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     @media (max-width: 767px) {
         .section {
             margin-top: -250px;

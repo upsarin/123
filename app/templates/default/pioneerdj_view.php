@@ -187,7 +187,7 @@
                                         <div class="form">
                                             <div class="in">
 
-                                                <a href="http://pioneerdjstore.ru" class="btn btn-dark"><span class="text">Перейти</span></a>
+                                                <a href="http://pioneerdjstore.ru" target='_blank' class="btn btn-dark"><span class="text">Перейти</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -206,20 +206,15 @@
                                 <div class="col-md-4">
                                         <div class="footer-social">
                                             <ul class="clearfix">
+
                                                     <li>
-                                                        <a href='https://plus.google.com/+pioneerdjglobal/posts' class='icon-googleplus' target='_blank' >Google</a>
+                                                        <a href='https://www.instagram.com/pioneerdjmsk/' class='icon-instagram' target='_blank' >Instagram</a>
                                                     </li>
                                                     <li>
-                                                        <a href='https://www.instagram.com/pioneerdjglobal/' class='icon-instagram' target='_blank' >Instagram</a>
+                                                        <a href='https://www.facebook.com/PioneerDJmsk/' class='icon-facebook' target='_blank' >Facebook</a>
                                                     </li>
                                                     <li>
-                                                        <a href='https://twitter.com/PioneerDJglobal' class='icon-twitter' target='_blank' >Twitter</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='https://www.facebook.com/pioneer.dj.global' class='icon-facebook' target='_blank' >Facebook</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='https://www.youtube.com/user/pioneerdjglobal' class='icon-youtube' target='_blank' >YouTube</a>
+                                                        <a href='https://www.youtube.com/pioneerdjschoolru' class='icon-youtube' target='_blank' >YouTube</a>
                                                     </li>
                                             </ul>
                                         </div>
@@ -228,7 +223,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                         <div class="footer-legal">
-                                            <strong>&copy; Pioneer DJ</strong>
+                                            <strong>&copy; Pioneer DJ School</strong>
 
                                         </div>
                                 </div>

@@ -30,7 +30,7 @@
         <div class="wheel"></div>
         <a href="/apply/" class="body">
             <div class="in">
-                <h1 class="quote"><span class="ellipsis">Хочешь быть настоящим Dj - Мы поможем!<br>Просто запишись на пробное бесплатное занятие</span></h1>
+                <h1 class="quote"><span class="ellipsis">Хочешь быть настоящим Dj <br /> Мы поможем!<br>Просто запишись на пробное бесплатное занятие</span></h1>
                 <span class="ghostbtn ghostbtn-large ghostbtn-forw ghostbtn-light"><span class="text">Подать заявку</span></span>
             </div>
         </a>
@@ -172,7 +172,7 @@
                             </div>
                             <div class="image-fx-overlay"></div>
                         </div>
-                        <a href='/services/detail/rent/' target='_blank' title='Аренда оборудования' >
+                        <a href='/services/detail/rent/' title='Аренда оборудования' >
                             <div class="body">
                                 <p class="ellipsis"><p><strong>Мы предоставляем в аренду самое актуальное DJ оборудование по демократичным ценам.</strong></p>
                                 <p>Теперь Ваша вечеринка будет не только весёлой но и выгодной!</p></p>
@@ -191,7 +191,7 @@
                             </div>
                             <div class="image-fx-overlay"></div>
                         </div>
-                        <a href='/services/detail/partnership' target='_blank' title='Партнерская программа' >
+                        <a href='/services/detail/partnership' title='Партнерская программа' >
                             <div class="body">
                                 <p class="ellipsis"><p><strong>Приглашайте друзей и получайте 1000 рублей за каждого студента, оплатившего обучение по вашей рекомендации. </strong></p>
                                 <p>Приглашенный вами студент так же получит скидку 1000 руб.</p></p>
@@ -211,7 +211,7 @@
                             </div>
                             <div class="image-fx-overlay"></div>
                         </div>
-                        <a href='/services/detail/skidochny-sistem' target='_blank' title='Скидочная система' >                                <div class="body">
+                        <a href='/services/detail/skidochny-sistem' title='Скидочная система' >                                <div class="body">
                                 <p class="ellipsis"><p><strong>Подарочная карта - вы вносите депозит и оформляете данную карту на человека, которому собираетесь сделать презент.</strong></p>
                                 <p>После торжества данный человек может потратить депозит карты на обучение в DJ Школе, на приобретение оборудования в DJ Магазине, либо на тренинг в нашем DJ Центре в формате абонемента или разовых посещений.</p></p>
                             </div>
@@ -229,7 +229,7 @@
                             </div>
                             <div class="image-fx-overlay"></div>
                         </div>
-                        <a href='/services/detail/traning/' target='_blank' title='Тренинг площадка' >                                <div class="body">
+                        <a href='/services/detail/traning/' title='Тренинг площадка' >                                <div class="body">
                                 <p class="ellipsis"><p><strong>Для тренинга предоставляется абсолютно любое DJ Оборудование которое представлено в DJ Центре. </strong></p>
                                 <p>Бронирование даты и времени происходит заранее.</p></p>
                             </div>
