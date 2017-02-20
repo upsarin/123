@@ -18,10 +18,9 @@
 
             <p class="">
             </p><p>
-            <h1 class="quote">Услуги</h1>
-            <h4 class="quote"><span class="ellipsis">Хочешь быть настоящим Dj - Мы поможем!<br>Просто запишись на пробное бесплатное занятие</span></h4>
-            </p>
-            <p><span class="ghostbtn ghostbtn-large ghostbtn-forw ghostbtn-light"><span class="text" style="color: black;">Подать заявку</span></span></p>
+            <h1 class="quote">Услуги и Акции</h1>
+
+
         </div>
     </div>
 

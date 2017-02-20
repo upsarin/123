@@ -213,6 +213,9 @@
             padding-bottom: 290px;
         }
     }
+    .product-combine .product .content-wrap {
+        min-height: 90px;
+    }
 </style>
 
 <?
@@ -256,9 +259,11 @@ $images = Element::SelectAll('files', $filter, null, null);
 
     </div>
 </div>
+
 <?=$element['special'];?>
 <?=$element[$_SESSION['user']['city'] .'_features']?>
 <?=$element[$_SESSION['user']['city'] .'_desc']?>
+
 
 
 <div class="section section-product-combine bg-dark-1 color-light">
@@ -286,7 +291,7 @@ $images = Element::SelectAll('files', $filter, null, null);
 
                                 <a href="/courses/detail/<?=$element_related['alias']?>/" class="product clearfix">
                                 <span class="visual-wrap">
-                                    <img src="/css/images/content/courses/<?=$_SESSION['user']['city']?>/DJ/<?=$element['name']?>.png?h=250&amp;w=400&amp;hash=D222B2974AEEBAAACDA6B5913693BDD85BF118C0" alt="<?=$element_related['title']?>">
+                                    <img src="/css/images/content/courses/<?=$_SESSION['user']['city']?>/DJ/<?=$element_related['name']?>.png?h=250&amp;w=400&amp;hash=D222B2974AEEBAAACDA6B5913693BDD85BF118C0" alt="<?=$element_related['title']?>">
                                 </span>
                                     <span class="content-wrap">
                                         <h6 class="no-line"><?=$element_related['title']?></h6>

@@ -113,7 +113,8 @@
 <div class="section section-contact">
     <div class="container">
         <h2>DJ ЦЕНТРЫ ОТ БРЕНДА PIONEER DJ</h2>
-
+        <br />
+        <br />
         <div class="folder folder_bigbold">
             <div class="folder__container">
                 <h3 class="folder__trigger">Москва</h3>
