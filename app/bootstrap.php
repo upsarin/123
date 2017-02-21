@@ -6,7 +6,7 @@
 	require_once ("app/core/sessions.php");
 	require_once ("app/classes/Main_classes.php");
 	require_once ("app/core/dbo.php");
-	
+
 	
 	
 	//описать и вывести все параметры сайта из БД fields {system}, ну а пока что так
@@ -23,7 +23,7 @@
 	
 	require_once ("app/core/router.php");
 
-    User::check_city();
+
     /*
     ?><pre><?
     print_r($_SESSION);
