@@ -7,6 +7,18 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
+    @media (max-width: 480px){
+        .course-cons .bg:after {
+            background: none !important;
+        }
+    }
+    @media (max-width: 481px){
+        .course-cons .bg:after {
+            left: 99px !important;
+            top: -63px !important;
+            background-size: 50% 50%;
+        }
+    }
     @media (max-width: 767px) {
         .section {
             margin-top: -250px;

@@ -3,6 +3,7 @@
 	session_start();
 	
 	require_once ("app/classes/User.php");
+	require_once ("app/core/sessions.php");
 	require_once ("app/classes/Main_classes.php");
 	require_once ("app/core/dbo.php");
 	
@@ -24,5 +25,5 @@
 	
 	User::check();
 	Router::start();
-	session_start();
+
 

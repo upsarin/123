@@ -115,6 +115,7 @@
         <h2>DJ ЦЕНТРЫ ОТ БРЕНДА PIONEER DJ</h2>
         <br />
         <br />
+        <br />
         <div class="folder folder_bigbold">
             <div class="folder__container">
                 <h3 class="folder__trigger">Москва</h3>
@@ -134,14 +135,20 @@
                                     </div>
                                     <div class="col-md-5 col-sm-5 col-xs-5">
                                         <span class="phone">&#43;7 916 942-52-48</span>
+                                        <br/>
 
-                                        <a href="#" class="email"><span>msk_info@pioneerdjschool.ru</span></a>
                                         <a href="#" class="email"><span>info@pioneerdjschool.ru</span></a>
-                                        <a class="mail-us" href="mailto:msk_info@pioneerdjschool.ru"><span class="mail-us-label">Написать нам</span><span class="round_button" ><em ><span class="button_round_bg"><i class="fa fa-envelope-o fa-2x"></i></span></em></span></a>
+                                        <a class="mail-us" href="mailto:info@pioneerdjschool.ru">
+                                        <br />
+                                        <span class="mail-us-label">Написать нам</span><span class="round_button" ><em >
+                                            <span class="button_round_bg"><i class="fa fa-envelope-o fa-2x"></i></span></em></span></a>
                                     </div>
 
                                     <div class="footer-social">
                                         <ul class="clearfix">
+                                            <li>
+                                                <a href='https://vk.com/pioneerdjmsk' class='icon-vk' target='_blank' ></a>
+                                            </li>
                                             <li>
                                                 <a href="https://instagram.com/pioneerdjmsk" class="icon-instagram" target="_blank">Instagram</a>
                                             </li>
@@ -175,17 +182,20 @@
 
                                 <li class="row">
                                     <div class="col-md-4 col-sm-4 col-xs-5 ">
-                                        <address><strong>Pioneer DJ Novosibirsk</strong><br>Проспект Димитрова, д. 7, оф. 407<br>Ежедневно с 10.00 до 22.00</address>
+                                        <address><strong>Pioneer DJ Novosibirsk</strong><br>Проспект Димитрова, д. 7,<br/> оф. 407<br>Ежедневно с 10.00 до 22.00</address>
                                     </div>
                                     <div class="col-md-5 col-sm-5 col-xs-5">
                                         <span class="phone">+7 913 015-90-09</span>
-
-                                        <a href="#" class="email"><span>nsk_info@pioneerdjschool.ru</span></a>
-                                        <a class="mail-us" href="mailto:nsk_info@pioneerdjschool.ru"><span class="mail-us-label">Написать нам</span><span class="round_button"><em><span class="button_round_bg"><i class="fa fa-envelope-o fa-2x"></i></span></em></span></a>
+                                        <br/>
+                                        <a href="#" class="email"><span>info@pioneerdjschool.ru</span></a>
+                                        <a class="mail-us" href="mailto:info@pioneerdjschool.ru"><br /><span class="mail-us-label">Написать нам</span><span class="round_button"><em><span class="button_round_bg"><i class="fa fa-envelope-o fa-2x"></i></span></em></span></a>
                                     </div>
 
                                     <div class="footer-social">
                                         <ul class="clearfix">
+                                            <li>
+                                                <a href='https://vk.com/pioneerdjnsk' class='icon-vk' target='_blank' ></a>
+                                            </li>
                                             <li>
                                                 <a href="https://instagram.com/pioneerdjnsk" class="icon-instagram" target="_blank">Instagram</a>
                                             </li>
@@ -223,13 +233,16 @@
                                     </div>
                                     <div class="col-md-5 col-sm-5 col-xs-5">
                                         <span class="phone">+7 747 336-22-02</span>
-
-                                        <a href="#" class="email"><span>almati_info@pioneerdjschool.ru</span></a>
-                                        <a class="mail-us" href="mailto:almati_info@pioneerdjschool.ru"><span class="mail-us-label">Написать нам</span><span class="round_button"><em><span class="button_round_bg"><i class="fa fa-envelope-o fa-2x"></i></span></em></span></a>
+                                        <br/>
+                                        <a href="#" class="email"><span>info@pioneerdjschool.ru</span></a>
+                                        <a class="mail-us" href="mailto:info@pioneerdjschool.ru"><br /><span class="mail-us-label">Написать нам</span><span class="round_button"><em><span class="button_round_bg"><i class="fa fa-envelope-o fa-2x"></i></span></em></span></a>
                                     </div>
 
                                     <div class="footer-social">
                                         <ul class="clearfix">
+                                            <li>
+                                                <a href='https://vk.com/pioneerdjalmaty' class='icon-vk' target='_blank' ></a>
+                                            </li>
                                             <li>
                                                 <a href="https://instagram.com/pioneerdjalmaty" class="icon-instagram" target="_blank">Instagram</a>
                                             </li>

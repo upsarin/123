@@ -34,6 +34,14 @@
                 float: right;
                 display: none;
             }
+            .icon-vk{
+                background: url(/images/50.jpg) !important;
+                background-size: cover !important;
+            }
+            .icon-vk:hover{
+                background: url(/images/50hover.jpg) !important;
+                background-size: cover !important;
+            }
         </style>
 	</head>
     <body class="header__experience-mode cookie-is-visible">
@@ -97,9 +105,7 @@
                         </div>
                     </div>
                 </header>
-                    <?
-                        $_SESSION['user']['city'] = "moscow";
-                    ?>
+
 
                     <? include $content; ?>
 
@@ -206,7 +212,9 @@
                                 <div class="col-md-4">
                                         <div class="footer-social">
                                             <ul class="clearfix">
-
+                                                    <li>
+                                                        <a href='<?=$_SESSION['user']['vk_link']?>' class='icon-vk' target='_blank' ></a>
+                                                    </li>
                                                     <li>
                                                         <a href='https://www.instagram.com/pioneerdjmsk/' class='icon-instagram' target='_blank' >Instagram</a>
                                                     </li>
