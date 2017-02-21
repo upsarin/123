@@ -3,9 +3,27 @@
     .hero .head {
         top: 180px;
     }
+    @media (max-width: 481px) {
+        .hero .head {
+            top: 80px !important;
+        }
+        .section.section-product-info {
+            margin-top: -220px;
+            margin-bottom: -20px;
+        }
+    }
+    @media (max-width: 1001px){
+        .bg .section {
+            margin-top: 0px;
+        }
+    }
     @media (max-width: 767px) {
         .section {
             margin-top: -250px;
+        }
+        .section.section-product-info {
+            margin-top: -220px !important;
+            margin-bottom: -20px;
         }
     }
     .section-product-info {

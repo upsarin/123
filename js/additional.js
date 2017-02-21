@@ -1,8 +1,12 @@
 $(document).ready(function(){
 
 	$("a[href='/apply/']").click(function(){
-        console.log("test");
+        $(".search-border").css({display: "block"})
         return false;
+	});
+	$("a.trigger__close-overlayer").click(function(){
+        $(".search-border").css({display: "none"})
+		return false;
 	});
 	/*
 	$('.module-window').click(function(){

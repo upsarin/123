@@ -30,9 +30,120 @@
 		<link href="/Bundles/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
         <script src="//api-maps.yandex.ru/2.0/?load=package.full,package.route,package.geocode&amp;lang=ru-RU" type="text/javascript"></script>
         <style>
+            .input-wrap {
+                margin-top: 60px;
+            }
+            .bg .section {
+                padding-top: 50px;
+            }
+            @media (max-width: 780px){
+                select.input__search {
+                    padding-right: 16% !important;
+                }
+                .search-border {
+                    width: 100% !important;
+                    left: 0px !important;
+                    right: 0px !important;
+                }
+                #search__wrap #search-field {
+                    margin-left: 0px !important;
+                    margin-right: 0px !important;
+                }
+            }
+            select.input__search:hover{
+                cursor:pointer;
+            }
+            select.input__search option {
+
+                background: #2a2937;
+                border:none;
+                outline: none;
+                font-family: "pdj",Arial,sans-serif;
+                line-height: 40px;
+                color: white;
+                text-transform: uppercase
+            }
+            select.input__search option:hover {
+                background: white;
+                color: #2a2937;
+                cursor: pointer;
+            }
+            select.input__search {
+                border-radius: 0;
+
+                height: 40px;
+
+                border: 0;
+                font-size: 16px;
+
+                -webkit-appearance: none;
+
+                width: 100%;
+                padding: 0;
+                background: none;
+                border: none;
+                border-bottom: 4px solid #3a5ee1;
+                outline: none;
+                font-family: "pdj",Arial,sans-serif;
+
+                line-height: 40px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            .form-send-wrap{
+                padding: 40px;
+                float: right;
+            }
+            .form-send:hover {
+                background: #fff;
+                color: #3a5ee1;
+            }
+            .form-send {
+                background: #3a5ee1;
+                padding: 20px;
+                font-family: "pdj",Arial,sans-serif;
+                font-size: 20px;
+                line-height: 40px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            .input-wrap .selectboxit-arrow-container{
+                color: white;
+                top: -30px;
+                position: relative;
+                float: right;
+            }
+            .search-border {
+                display: none;
+                position: fixed;
+                top: 74px;
+                width: 59%;
+                left: 19%;
+                right: 20%;
+            }
+            #search__wrap #search-field {
+                height: 400px;
+                position: relative;
+                z-index: 3;
+                top: 0px;
+                background: #2a2937;
+                padding: 24px 0 0;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            @media (min-width: 1001px){
+                .header .navbar .container .action-nav {
+                    top: -10px;
+                    position: relative;
+                }
+            }
+            @media (max-width: 550px){
+                .header .topbar .container .logo {
+                    margin: 0 15% !important;
+                }
+            }
             .header .navbar .container .action-nav {
                 float: right;
-                display: none;
             }
             .icon-vk{
                 background: url(/images/50.jpg) !important;
@@ -42,11 +153,80 @@
                 background: url(/images/50hover.jpg) !important;
                 background-size: cover !important;
             }
+            .item-search {
+                width: 200px;
+            }
+            .select__footer-dark .selectboxit-container .selectboxit-list a .selectboxit-option-icon-container .flag {
+                width: 20px;
+                display: none;
+            }
+            .select__footer-dark .selectboxit-container .selectboxit-list a {
+                display: block;
+                height: auto;
+                color: #24f6d6;
+                background: none;
+                text-transform: uppercase;
+                padding: 10px 15px;
+                text-indent: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 15px !important;
+            }
+            .action-nav .select__footer-dark .selectboxit-container .selectboxit-btn {
+                background: none;
+            }
+            @media (max-width: 1000px) {
+                .header .topbar .container .logo {
+                    margin: 0 200px;
+                }
+                .header .topbar .container .action-nav {
+                    position: absolute;
+                    right: 7px;
+                    top: 12px;
+                    width: 160px;
+                }
+                .action-nav .footer-countryselector {
+                    background: none;
+                    width: 190px;
+                }
+                .footer-countryselector .country-placeholder {
+                    width: 100%;
+                }
+                .bg .section {
+                    margin-top: 20px;
+                }
+            }
+            @media (max-width: 767px) {
+                .header .topbar .container .action-nav {
+                    top: 0px;
+                    right: 27px;
+                }
+
+                .action-nav .select__footer-dark .selectboxit-container .selectboxit-btn {
+                    width: 100%;
+                    height: auto;
+                    background: none;
+                }
+            }
+            .input-wrap label {
+                color: white;
+            }
+            .hero .ghostbtn.ghostbtn-large.ghostbtn-forw.ghostbtn-light {
+                position: relative;
+                left: 56%;
+                top: 0px;
+            }
+            @media(max-width: 480px){
+                .image.bg-adapt {
+                    height: 260px;
+                }
+
+            }
         </style>
 	</head>
     <body class="header__experience-mode cookie-is-visible">
         <div class="page-home">
-            <div class="outer">
+        <div class="outer">
                 <div class="bg">
 
                 <header class="header outer">
@@ -59,11 +239,19 @@
                             <div class="action-nav">
                                 <ul>
                                     <li>
-                                        <a href="index.html#search__wrap" class="site-search-toggle trigger__open-overlayer" style="visibility: hidden">
-                                            <i class="icon-search">
-                                                <span class="sr-only">Search</span>
-                                            </i>
-                                        </a>
+                                        <div class="footer-countryselector clearfix">
+                                            <div class="country-placeholder">
+                                                <div class="select__styled navigate-select select__footer-dark pos-always-below">
+                                                    <select style="display: none;">
+                                                        <?foreach($_SESSION['user']['city_array'] as $key => $val){?>
+                                                            <option data-icon="flag flag-INT" value="/<?=$array['name']?>/?city=<?=$val['id']?>" <?=($_SESSION['user']['city'] == $val['id']) ? 'selected="selected"' : ''?>>
+                                                                <span class="country-label"><?=$val['title']?></span>
+                                                            </option>
+                                                        <? } ?>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -96,11 +284,17 @@
                             <div class="action-nav">
                                 <ul>
                                     <li class="item-search">
-                                        <a href="#search__wrap" class="site-search-toggle trigger__open-overlayer">
-                                            <i class="icon-search"></i>
-                                        </a>
+                                        <div class="select__styled navigate-select select__footer-dark pos-always-below">
+                                            <select style="display: none;">
+                                                <?foreach($_SESSION['user']['city_array'] as $key => $val){?>
+                                                    <option data-icon="flag flag-INT" value="<?=($array['name'] == "main") ? "/index.php" : "/". $array['name'] ."/"?>?city=<?=$val['id']?>" <?=($_SESSION['user']['city'] == $val['id']) ? 'selected="selected"' : ''?>>
+                                                        <span class="country-label"><?=$val['title']?></span>
+                                                    </option>
+                                                <? } ?>
+                                            </select>
+                                        </div>
                                     </li>
-                                                    </ul>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -121,27 +315,7 @@
                                     </div>-->
                                     <?minc::pos("breadcrumbs", null, null, null)?>
                                  </div>
-                    <div class="col-md-4">
 
-                        <div class="footer-countryselector clearfix">
-                            <div class="country-placeholder">
-                                <div class="select__styled navigate-select select__footer-dark pos-always-above">
-                                    <select style="display: none;">
-                                            <option data-icon="flag flag-INT" value="/moscow/"
-                                                    selected="selected">
-                                                <span class="country-label">Moscow</span>
-                                            </option>
-                                            <option data-icon="flag flag-INT" value="/nsk/">
-                                                <span class="country-label">Novosibirsk</span>
-                                            </option>
-                                            <option data-icon="flag flag-INT" value="/almati/">
-                                                <span class="country-label">Almaty</span>
-                                            </option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-            </div>
         </div>
         <div class="row equalizer" data-equalizer-watch=".equalize">
                                 <div class="col-md-8">
@@ -216,13 +390,13 @@
                                                         <a href='<?=$_SESSION['user']['vk_link']?>' class='icon-vk' target='_blank' ></a>
                                                     </li>
                                                     <li>
-                                                        <a href='https://www.instagram.com/pioneerdjmsk/' class='icon-instagram' target='_blank' >Instagram</a>
+                                                        <a href='<?=$_SESSION['user']['instagram_link']?>' class='icon-instagram' target='_blank' >Instagram</a>
                                                     </li>
                                                     <li>
-                                                        <a href='https://www.facebook.com/PioneerDJmsk/' class='icon-facebook' target='_blank' >Facebook</a>
+                                                        <a href='<?=$_SESSION['user']['facebook_link']?>' class='icon-facebook' target='_blank' >Facebook</a>
                                                     </li>
                                                     <li>
-                                                        <a href='https://www.youtube.com/pioneerdjschoolru' class='icon-youtube' target='_blank' >YouTube</a>
+                                                        <a href='<?=$_SESSION['user']['youtube_link']?>' class='icon-youtube' target='_blank' >YouTube</a>
                                                     </li>
                                             </ul>
                                         </div>
@@ -248,7 +422,7 @@
                 </div>
                 </div>
             </div>
-            <div style="display: none;">
+        <div style="display: none;">
             <div id="zoom-tool-01" class="zoomtool">
                 <div class="zoomtool__topbar">
                     <div class="outer">
@@ -292,14 +466,32 @@
                 </div>
             </div>
         </div>
-            <div style="display: none;">
-        <div id="search__wrap">
+        <div class="search-border" style="">
+            <div id="search__wrap">
             <div id="search-field">
                 <div class="outer">
                     <div class="container">
                         <div class="input-wrap">
-                            <input type="text" class="input__search" data-no-results="Oops nothing can be found" data-nothing-entered="Please enter a search query"/>
-                            <a href="/#" class="trigger_clear-text btn__clear-text"><span class="ico-element icon-clear-cross"></span>Clear entry</a>
+                            <select class="input__search" id="form_course">
+                                <?
+                                $courses['id'] = "101";
+
+                                $courses['filter']['alter']['city_courses_array'] = $_SESSION['user']['city'];
+                                $courses['content']['courses'] = Element::GetList($courses, $courses['filter']);
+                                ?>
+                                <?foreach($courses['content']['courses'] as $courses_el){ ?>
+                                    <option val="<?=$courses_el['name']?>"><?=$courses_el['title']?></option>
+                                <? } ?>
+                            </select>
+                            <span id="" class="selectboxit-arrow-container" unselectable="on"><i id="" class="selectboxit-arrow icon-arrow-f-d" unselectable="on"></i></span>
+                            <br/><label for="form_name">Имя</label><br/>
+                            <input type="text" id="form_name" class="input__search" data-nothing-entered="Пожалуйста введите свое имя" placeholder="Ваше Имя" />
+                            <br/><label for="form_phone">Телефон</label><br/>
+                            <input type="text" id="form_phone" class="input__search" data-nothing-entered="Пожалуйста введите свой телефон" placeholder="Ваш телефон" />
+
+                            <div class="form-send-wrap">
+                                <a class="form-send" href="" >Записаться</a>
+                            </div>
                         </div>
                         <div class="button-wrap">
                             <a href="/#" class="btn__search trigger__close-overlayer">
@@ -309,25 +501,10 @@
                     </div>
                 </div>
             </div>
-            <span class="loading-icon-search"></span>
-            <div id="result-wrap">
-                <div class="outer outer-search-content">
-                    <div class="container">
-                        <div class="boxed-content">
-                            <h3>Top results</h3>
-                            <ul><!-- POPULATED WITH JAVASCRIPT --></ul>
-                            <p class="button-wrap">
-                                <a href="/#" id="view__all" class="btn btn-border trigger__searchpage disabled" data-search-page="/en/search-results/?q=">
-                                    <span class="text">See all results</span>
-                                </a>
-                            </p>
-                            <p>Didn’t find what you’re looking for? Maybe use fewer words or a more general search term.<br />If you still have no luck you can contact our <a href="support/contact/index.html">customer service</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
+        </div>
+
         </div>
 
         <script src="/Bundles/JsFooter/index-v=t1G3GmOJ5JWe-BQ9xJkaVJPxC4hHw974rCWhubqJaZE1"></script>

@@ -17,13 +17,20 @@
 	require_once ("app/core/view.php");
 	require_once ("app/core/module_router.php");
 	require_once ("app/core/controller.php");
-	
-	
-	
+
+
+
 	
 	require_once ("app/core/router.php");
-	
+
+    User::check_city();
+    /*
+    ?><pre><?
+    print_r($_SESSION);
+    ?></pre><?
+    */
 	User::check();
 	Router::start();
+
 
 

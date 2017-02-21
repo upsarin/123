@@ -3,13 +3,215 @@
     .hero .head {
         top: 180px;
     }
+    @media (max-width: 400px){
+
+    }
+    .section.section-product-combine {
+        margin-top: -80px;
+    }
+    @media (max-width: 1000px){
+        .section.section-product-combine {
+            margin-top: -100px;
+        }
+        .content-container-wrapper.course-cons {
+            margin-bottom: -20px;
+        }
+        .section.section-product-info {
+            margin-bottom: 70px;
+        }
+    }
     .section-product-info {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    @media (max-width: 480px){
+
+    @media (max-width: 320px) {
+        .cons-label {
+            font-size: 6px !important;
+        }
+        .course-cons ul li:nth-child(1) .cons-label {
+            top: 137px !important;
+            left: 24px !important;
+        }
+        .course-cons ul li:nth-child(2) .cons-label {
+            top: 16px !important;
+            left: 20px !important;
+        }
+        .course-cons ul li:nth-child(3) .cons-label {
+            top: 89px !important;
+            left: 11px !important;
+        }
+        .course-cons ul li:nth-child(4) .cons-label {
+            top: 36px !important;
+            left: 13px !important;
+        }
+        .course-cons ul li:nth-child(5) .cons-label {
+            top: 115px !important;
+            left: 2px !important;
+        }
+        .course-cons ul li:nth-child(6) .cons-label {
+            top: 16px !important;
+            left: 5px !important;
+        }
+        .course-cons ul li:nth-child(7) .cons-label {
+            top: 56px !important;
+            right: 5px !important;
+        }
+        .course-cons ul li:nth-child(8) .cons-label {
+            top: 92px !important;
+            right: 9px !important;
+        }
+        .course-cons ul li:nth-child(9) .cons-label {
+            top: 119px !important;
+            right: 11px !important;
+        }
+        .course-cons ul li:nth-child(10) .cons-label {
+            top: 26px !important;
+            right: 5px !important;
+        }
+        .course-cons ul li:nth-child(2) .cons-label {
+            top: 57px !important;
+            left: 5px !important;
+        }
+    }
+    .hero .head .desc {
+        width: 100%;
+    }
+    @media (max-width: 400px) {
+        .content-container-wrapper.course-cons {
+            margin-top: 0px !important;
+            height: 250px;
+        }
+    }
+    @media (max-width: 369px){
+        .js-sticky.hero.hero-compact {
+            height: 105px;
+        }
+        .section-product-features{
+            padding-bottom: 0px;
+        }
+        .section-product-info {
+            padding-bottom: 20px !important;
+        }
+        .section-product-images {
+            margin-top: -180px !important;
+        }
+        .course-cons ul li:nth-child(1) .cons-label {
+            top: 152px !important;
+            left: 30px !important;
+        }
+        .course-cons ul li:nth-child(2) .cons-label {
+            top: 46px !important;
+            left: 5px !important;
+        }
+        .course-cons ul li:nth-child(3) .cons-label {
+            top: 91px !important;
+            left: 20px !important;
+        }
+        .course-cons ul li:nth-child(4) .cons-label {
+            top: 21px !important;
+            left: 23px !important;
+        }
+        .course-cons ul li:nth-child(5) .cons-label {
+            top: 124px !important;
+            left: 12px !important;
+        }
+        .course-cons ul li:nth-child(6) .cons-label {
+            top: -4px !important;
+            left: 5px !important;
+        }
+        .course-cons ul li:nth-child(7) .cons-label {
+            top: 48px !important;
+            right: 5px !important;
+        }
+        .course-cons ul li:nth-child(8) .cons-label {
+            top: 93px !important;
+            right: 10px !important;
+        }
+        .course-cons ul li:nth-child(9) .cons-label {
+            top: 129px !important;
+            right: 17px !important;
+        }
+        .course-cons ul li:nth-child(10) .cons-label {
+            top: 8px !important;
+            right: 5px !important;
+        }
+
+    }
+    @media (min-width: 370px) and (max-width: 481px){
+        .js-sticky.hero.hero-compact {
+            height: 105px;
+        }
+        .section-product-images {
+            margin-top: -180px !important;
+        }
+        .course-cons ul li:nth-child(1) .cons-label {
+            top: 152px !important;
+            left: 60px !important;
+        }
+        .course-cons ul li:nth-child(2) .cons-label {
+            top: 46px !important;
+            left: 35px !important;
+        }
+        .course-cons ul li:nth-child(3) .cons-label {
+            top: 91px !important;
+            left: 50px !important;
+        }
+        .course-cons ul li:nth-child(4) .cons-label {
+            top: 21px !important;
+            left: 53px !important;
+        }
+        .course-cons ul li:nth-child(5) .cons-label {
+            top: 124px !important;
+            left: 42px !important;
+        }
+        .course-cons ul li:nth-child(6) .cons-label {
+            top: -4px !important;
+            left: 35px !important;
+        }
+        .course-cons ul li:nth-child(7) .cons-label {
+            top: 48px !important;
+            right: 35px !important;
+        }
+        .course-cons ul li:nth-child(8) .cons-label {
+            top: 93px !important;
+            right: 50px !important;
+        }
+        .course-cons ul li:nth-child(9) .cons-label {
+            top: 129px !important;
+            right: 47px !important;
+        }
+        .course-cons ul li:nth-child(10) .cons-label {
+            top: 8px !important;
+            right: 45px !important;
+        }
+        .course-cons .bg {
+            background-size: 67% auto;
+        }
+
+        .js-sticky.hero.hero-compact {
+            height: 105px;
+        }
+        .content-container-wrapper.course-cons {
+            margin-top: 0px;
+            height: 250px;
+        }
         .course-cons .bg:after {
             background: none !important;
+        }
+        .section.section-product-images {
+            margin-top: -150px;
+            height: 420px;
+        }
+        .section.section-product-features {
+            padding-bottom: 0px;
+        }
+        .content-container-wrapper.course-cons {
+            margin-top: 230px;
+            height: 250px;
+        }
+        .section.section-product-info {
+            margin-bottom: -300px;
         }
     }
     @media (max-width: 481px){
@@ -22,6 +224,12 @@
     @media (max-width: 767px) {
         .section {
             margin-top: -250px;
+        }
+        .course-cons .bg:after {
+            background: none !important;
+        }
+        .hero .btn-holder .btn:first-child {
+            margin-top: -40px;
         }
     }
     .course-cons .bg {
@@ -249,10 +457,18 @@ $images = Element::SelectAll('files', $filter, null, null);
                     <div id="fb-root"></div>
                     <h1 class="desc"><?=strip_tags($element['preview_desc'])?></h1>
                 </div>
+                <div class="btn-holder">
+                    <a href="/apply/" class="btn btn-dark btn-border">
+                    <span class="text">
+                        Подать заявку
+                    </span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 </div>
+
 <div class="section section-product-images">
     <div class="container">
         <div class="image-gallery">
@@ -277,7 +493,30 @@ $images = Element::SelectAll('files', $filter, null, null);
 <?=$element[$_SESSION['user']['city'] .'_desc']?>
 
 
-
+<div class="section section-product-combine style="">
+    <header class="hero">
+        <div class="image bg-adapt" style="background-image: url(&quot;/css/images/content/courses/<?=$_SESSION['user']['city']?>/baner/<?=$element['name']?>.jpg?mh=600&amp;c=1&amp;cw=2000&amp;hash=0D2DFF733EF51C66941EB5413B4D7F2A7723A5C9&quot;);background-size: cover;">
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="head">
+                    <div class="name">
+                        <?=$element['title']?>
+                    </div>
+                    <div id="fb-root"></div>
+                    <h1 class="desc"><?=strip_tags($element['preview_desc'])?></h1>
+                </div>
+                <div class="btn-holder">
+                    <a href="/apply/" class="btn btn-dark btn-border">
+                    <span class="text">
+                        Подать заявку
+                    </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
 <div class="section section-product-combine bg-dark-1 color-light">
     <div class="container product-combine">
         <h2 class="h2 no-line color-light">РЕКОМЕНДУЕМЫЕ КУРСЫ</h2>

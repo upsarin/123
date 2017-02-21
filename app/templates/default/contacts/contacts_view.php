@@ -1,5 +1,24 @@
 
 <style>
+    .simple-header .ghostbtn {
+        position: absolute;
+        left: 0;
+        top: 33px;
+    }
+    @media (max-width: 481px){
+        .simple-header h1.h2 {
+            font-size: 26px;
+            font-weight: 300;
+            margin-top: -60px;
+        }
+        .section.section-contact {
+            margin-top: -40px;
+        }
+    }
+    .simple-header .container {
+        padding-top: 55px;
+        opacity: 1;
+    }
     .page-home .header .navbar, .cookie-is-visible .page-home .header .navbar {
         background: #2a2937;
     }
