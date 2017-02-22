@@ -583,9 +583,13 @@
                                     $courses['filter']['alter']['city_array'] = $_SESSION['user']['city'];
                                     $btn_text = "Сделать заявку";
                                 } else {
+                                    $courses['id'] = "101";
+                                    $courses['filter']['alter']['city_courses_array'] = $_SESSION['user']['city'];
                                     $btn_text = "Записаться";
                                 }
                             } else {
+                                $courses['id'] = "101";
+                                $courses['filter']['alter']['city_courses_array'] = $_SESSION['user']['city'];
                                 $cur_course_id = 1;
                             } ?>
                             <select class="input__search" id="form_course">
