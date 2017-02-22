@@ -55,6 +55,23 @@
             .bg .section {
                 padding-top: 50px;
             }
+            .selectboxit-option-icon-container {
+                display: none !important;
+            }
+            .selectboxit-text {
+                margin-left: 10px !important;
+            }
+            .selectboxit-arrow-container {
+                position: relative !important;
+                color: white;
+            }
+            .select__footer-dark .selectboxit-container .selectboxit-btn .selectboxit-arrow-container i {
+                color: white;
+            }
+            .select__footer-dark {
+                top: -5px;
+                position: relative;
+            }
             @media (max-width: 780px){
                 select.input__search {
                     padding-right: 16% !important;
@@ -194,6 +211,24 @@
             .action-nav .select__footer-dark .selectboxit-container .selectboxit-btn {
                 background: none;
             }
+            @media (max-width: 1000px) and (min-width: 480px) {
+                .footer-countryselector.clearfix {
+                    margin-left: -90px;
+                }
+
+                .contact_phone {
+                    top: -42px !important;
+                    right: -40px !important;
+                }
+            }
+            @media (max-width: 767px){
+                .select__footer-dark {
+                    top: 3px;
+                }
+                .contact_phone {
+                    top: -35px !important;
+                }
+            }
             @media (max-width: 1000px) {
                 .header .topbar .container .logo {
                     margin: 0 200px;
@@ -241,6 +276,25 @@
                 }
 
             }
+            .contact_phone {
+                color: white;
+                font: 14px Helvetica,Arial;
+                font-size: 15px;
+                position: relative;
+                top: 10px;
+                right: 0px;
+            }
+            .page-is-scrolled .header .navbar, .cookie-is-visible .header .navbar, .cookie-is-visible.page-is-scrolled .page-home .header .navbar {
+                height: 55px;
+            }
+            @media(max-width: 480px) {
+                .contact_phone {
+                    display:none;
+                }
+                .footer-countryselector.clearfix {
+                    margin-left: 40px;
+                }
+            }
         </style>
 	</head>
     <body class="header__experience-mode cookie-is-visible">
@@ -268,9 +322,13 @@
                                                             </option>
                                                         <? } ?>
                                                     </select>
+
                                                 </div>
                                             </div>
                                         </div>
+                                    </li>
+                                    <li>
+                                        <span class="contact_phone"><?=$_SESSION['user']['city_phone']?></span>
                                     </li>
                                 </ul>
                             </div>
@@ -313,6 +371,9 @@
                                             </select>
                                         </div>
                                     </li>
+                                    <li>
+                                        <span class="contact_phone"><?=$_SESSION['user']['city_phone']?></span>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -326,7 +387,7 @@
                     <div class="footer-top">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-12">
                                     <!--<div class="footer-breadcrumb clearfix">
                                         <ul class="clearfix">
                                             <li><a href="/"><span class="icon-dj"></span><span class="sr-only">DJ</span></a></li>
