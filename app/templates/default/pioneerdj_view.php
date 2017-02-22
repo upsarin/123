@@ -33,6 +33,25 @@
             .input-wrap {
                 margin-top: 60px;
             }
+            #errors {
+                background: rgba(128, 0, 12, 0.56);
+                color: white;
+                padding: 7px;
+                display: none;
+            }
+            .form_mess {
+                width: 100%;
+                padding: 0;
+                background: none;
+                border: none;
+                border-bottom: 4px solid #3a5ee1;
+                outline: none;
+                font-family: "pdj",Arial,sans-serif;
+                font-size: 30px;
+                line-height: 40px;
+                color: #fff;
+                text-transform: uppercase;
+            }
             .bg .section {
                 padding-top: 50px;
             }
@@ -472,6 +491,13 @@
                 <div class="outer">
                     <div class="container">
                         <div class="input-wrap">
+                            <span id="errors"></span>
+                            
+                            <? if($array['content_type'] == "detail" && $array['model'] == "courses"){
+                                $cur_course_id = $array['content'][0]['id'];
+                            } else {
+                                $cur_course_id = 1;
+                            } ?>
                             <select class="input__search" id="form_course">
                                 <?
                                 $courses['id'] = "101";
@@ -480,7 +506,7 @@
                                 $courses['content']['courses'] = Element::GetList($courses, $courses['filter']);
                                 ?>
                                 <?foreach($courses['content']['courses'] as $courses_el){ ?>
-                                    <option val="<?=$courses_el['name']?>"><?=$courses_el['title']?></option>
+                                    <option val="<?=$courses_el['id']?>" <?=($cur_course_id == $courses_el['id']) ? "selected='selected'" : ""?>><?=$courses_el['title']?></option>
                                 <? } ?>
                             </select>
                             <span id="" class="selectboxit-arrow-container" unselectable="on"><i id="" class="selectboxit-arrow icon-arrow-f-d" unselectable="on"></i></span>

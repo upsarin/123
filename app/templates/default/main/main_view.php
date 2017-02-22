@@ -19,7 +19,7 @@
     <section class="experience">
         <div class="image image-fx image-fx-1">
             <div class="bg-adapt">
-                <img style="display: block;" src='https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=1020&amp;w=1280&amp;la=en&amp;hash=A37FA56CCD8A9BDD9AC7C03F8E68FD6086415888' alt='Homepage-ddj-sz2-3' />
+                <img style="display: block;" src=''  alt='' />
                 <span data-mq="xs" data-srcset="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=480&amp;w=640&amp;hash=5120A22A02F36A477B749735668E78C5E0D518DF"></span>
                 <span data-mq="sm" data-srcset="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=600&amp;w=800&amp;hash=BE53CFA41B4F33BDC9C45A2BB59B298C410004EF"></span>
                 <span data-mq="md" data-srcset="https://pdj-ecom-cdn.azureedge.net/-/media/pioneerdj/images/experience/homepage-ddj-sz2-3.jpg?h=768&amp;w=1024&amp;hash=C202A166F1870C382356B0DAAA164CEA603D8C44"></span>

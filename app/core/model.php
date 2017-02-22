@@ -2,14 +2,15 @@
 
 class Model
 {
-	
-	
+
+
 	// метод выборки данных
 	public function get_data($array)
 	{
+            User::check_city($array);
 		    if(isset($_POST['action'])){
 				if($_POST['action'] == 'activate'){
-					
+
 					foreach($_POST['id'] as $key => $id){
 						$where = array('id' => $id);
 						$what = array('active' => "Y");
@@ -21,7 +22,7 @@ class Model
 						Element::Update($where, $what, $table);
 					}
 				} else if($_POST['action'] == 'deactivate'){
-					
+
 					foreach($_POST['id'] as $key => $id){
 						$where = array('id' => $id);
 						$what = array('active' => "N");
@@ -30,19 +31,19 @@ class Model
 						} else {
 							$table = $array['model'];
 						}
-						
-						Element::Update($where, $what, $table);		
+
+						Element::Update($where, $what, $table);
 					}
 				} else if($_POST['action'] == 'del'){
 					foreach($_POST['id'] as $key => $id){
 						$where = array('id' => $id);
-						if($array['model'] == 'administrator'){ 
+						if($array['model'] == 'administrator'){
 							$table = $array['name'];
 						} else {
-							$table = $array['model']; 
+							$table = $array['model'];
 						}
 						if($table != 'users' && $id != '7'){
-							Element::Delete($where, $table);		
+							Element::Delete($where, $table);
 						} else if($table != 'pages' && $id != '1'){
 							Element::Delete($where, $table);
 						}
@@ -51,7 +52,7 @@ class Model
 			}
 		$routes = explode('/', $_SERVER['REQUEST_URI']);
 		$routes_from = explode('/', $_SERVER['HTTP_REFERER']);
-		
+
 		if($routes[1] == 'administrator'){
 			if($routes[2] != $routes_from[4]){
 				unset($_SESSION['user']['filter']);
@@ -63,7 +64,7 @@ class Model
 				unset($_REQUEST['filter']);
 			}
 		}
-		
+
 		$array['filter'] = NULL;
 		if($_REQUEST['filter']['cancel'] == "сброс" || $_REQUEST['filter'] == "N"){
 			unset($_SESSION['user']['filter']);
@@ -71,7 +72,7 @@ class Model
 		} else {
 			unset($_REQUEST['filter']['submit']);
 		}
-		
+
 		if((($_GET['c'] == 0 || !$_GET['c'])) || ($array['model'] == "administrator" && $array['name'] != "content")) {
 			unset($_SESSION['user']['filter']['cat']);
 		}
@@ -83,35 +84,35 @@ class Model
 		if(isset($_GET['c']) && (!empty($_GET['c']))){
 			$_REQUEST['filter']['cat'] = $_GET['c'];
 			$_SESSION['user']['filter']['cat'] = $_REQUEST['c'];
-			
+
 		}
-		
-		
+
+
 		if(isset($_REQUEST['name']) && (!empty($_REQUEST['name']))){
 			$_REQUEST['filter']['name'] = $_REQUEST['name'];
 			$_REQUEST['p'] = 1;
 		}
 		if((($_REQUEST['filter']) && !empty($_REQUEST['filter'])) || ($_SESSION['user']['filter'] && count($_SESSION['user']['filter']) > 0)){
-			
+
 			if(isset($_REQUEST['filter']) && !empty($_REQUEST['filter'])){
 				if($_REQUEST['filter']['name'] && !empty($_REQUEST['filter']['name'])){
-					
+
 					$name = "%";
 					$name.= $_REQUEST['filter']['name'];
 					$name .= "%";
 					$_REQUEST['filter']['name'] = $name;
-					
+
 				} else if(!empty($_SESSION['user']['filter']['name'])){
 					$name = "%";
 					$name.= Element::search($_SESSION['user']['filter']['name']);
 					$name .= "%";
 					$_REQUEST['filter']['name'] = $name;
-					
+
 				}
 				$filter = $_REQUEST['filter'];
 				$_SESSION['user']['filter'] = $_REQUEST['filter'];
 			} else if(isset($_SESSION['user']['filter']) && !empty($_SESSION['user']['filter'])){
-				
+
 				$filter = $_SESSION['user']['filter'];
 			}
             if (!empty($filter)) {
@@ -147,13 +148,14 @@ class Model
 			$limit = null;
 			$array['pagination']['list_limit'] = $limit;
 		}
-		if(isset($_REQUEST['p'])){
+		if($_REQUEST['p']){
 			$array['pagination']['page_num'] = $_REQUEST['p'];
 		} else {
 			$array['pagination']['page_num'] = 1;
 		}
-		
-		
+
+
+
 		if($array['model'] == 'administrator'){
 			$array['pages'] = Element::SelectAll('pages', $filter, null);
 			$array['cats'] = Element::SelectAll('pages', $filter, null);
@@ -176,7 +178,7 @@ class Model
 				if($limit != null){
 					$max_pages = Element::SelectAll('content', $filter);
 					$array['pagination']['max_pages'] = (count($max_pages)) / $limit;
-					
+
 				}
 			}
 			if($array['name'] == 'users'){
@@ -199,19 +201,19 @@ class Model
 					$array['filter']['user'] = $_SESSION['user']['id'];
 				}
 				if($array['content_type'] == "list"){
-					
+
 					if($array['model'] == 'services'){
 						$array['filter']['alter']['city_array'] = $_SESSION['user']['city'];
 					} else if($array['model'] == 'courses'){
                         $array['filter']['alter']['city_courses_array'] = $_SESSION['user']['city'];
                     }
-					
+
 					$array['content']['content'] = Element::GetList($array, $array['filter'], $limit);
-						
+
 					if($limit != null && ($array['model'] != 'services' || $array['model'] != 'courses')){
 						$max_pages = Element::GetList($array, $array['filter']);
 						$array['pagination']['max_pages'] = count($max_pages) / $limit;
-						
+
 					}
 				} else if($array['content_type'] == "element" || $array['content_type'] == "detail"){
 					$array['content']['content'] = Element::GetList($array, $array['filter'], $limit);
@@ -234,22 +236,22 @@ class Model
 				}
 			}
 		}
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
 		return $array;
 	}
-	
+
 	public function get_data_one($array)
 	{
-		
+
 		$array['content'] = Element::GetOne($array['content']['alias']);
 		//брать по id
 		// Element::GetOne(NULL, array("id" => $id))
-		
+
 		$array['title'] = $array['content'][0]['title'];
 		$array['metakeys'] = $array['content'][0]['metakeys'];
 		$array['keywords'] = $array['content'][0]['keywords'];
@@ -264,19 +266,19 @@ class Model
 		}
 		return $array;
 	}
-	
-	
+
+
 	public function create($array)
 	{
 		$routes = explode('/', $_SERVER['REQUEST_URI']);
 		if($routes[1] == 'administrator'){
 			$array['pages'] = DBConnect::init()->selectAll('pages', null);
 			$array['cats'] = DBConnect::init()->selectAll('cats', null);
-			
+
 		}
 		return $array;
 	}
-	
+
 	public function settings($array)
 	{
 		return $array;
@@ -287,17 +289,17 @@ class Model
 		if($routes[1] == 'administrator'){
 			$array['pages'] = DBConnect::init()->selectAll('pages', null);
 			$array['cats'] = DBConnect::init()->selectAll('cats', null);
-			
+
 		}
 		return $array;
 	}
-	
+
 	public function login(){
-		
+
 	}
-	
+
 	public function logout(){
-		
+
 	}
 
     /**
@@ -327,7 +329,7 @@ class Model
 		} else {
 			$table = 'content';
 		}
-		
+
 		$where = array('id' => $id);
 		$what = array('active' => "N");
 		if(!empty($id) && isset($id) && $action == 'deactivate'){
@@ -361,7 +363,7 @@ class Model
 		} else {
 			$table = 'content';
 		}
-		
+
 		$where = array('id' => $id);
 		$what = array('active' => "Y");
 		if(isset($id) && !empty($id) && $action == 'activate'){

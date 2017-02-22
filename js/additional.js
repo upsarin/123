@@ -1,11 +1,43 @@
 $(document).ready(function(){
 
 	$("a[href='/apply/']").click(function(){
-        $(".search-border").css({display: "block"})
+        $(".search-border").css({display: "block"});
         return false;
 	});
 	$("a.trigger__close-overlayer").click(function(){
-        $(".search-border").css({display: "none"})
+        $(".search-border").css({display: "none"});
+		return false;
+	});
+    $(".form-send").click(function(){
+        $("#errors").css({display: "none"});
+		var courseId = $("#form_course").val();
+		var courseUserName = $("#form_name").val();
+		var courseUserPhone = $("#form_phone").val();
+		var error = false;
+
+		if(courseUserName == ""){
+            $("#errors").css({display: "block"});
+            $("#errors").html("Введите ваше Имя");
+            error = true;
+		}
+		if(courseUserPhone == ""){
+            $("#errors").css({display: "block"});
+            $("#errors").html("Введите телефон для обратной связи");
+            error = true;
+		}
+		if(!error){
+			console.log("form complete");
+
+            data = "city=" + $(".select__footer-dark select option:selected").html() + "&course=" + courseId + "&name=" + courseUserName + "&phone=" + courseUserPhone;
+            $.ajax({
+                url: "/callback/ajax_mail.php",
+                type: "POST",
+                data: data,
+                success: function(html){
+                    $(".search-border .input-wrap").html(html);
+                }
+            });
+		}
 		return false;
 	});
 	/*
