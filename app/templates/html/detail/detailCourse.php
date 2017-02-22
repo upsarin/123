@@ -493,7 +493,7 @@ $images = Element::SelectAll('files', $filter, null, null);
 <?=$element[$_SESSION['user']['city'] .'_desc']?>
 
 
-<div class="section section-product-combine style="">
+<div class="section section-product-combine">
     <header class="hero">
         <div class="image bg-adapt" style="background-image: url(&quot;/css/images/content/courses/<?=$_SESSION['user']['city']?>/baner/<?=$element['name']?>.jpg?mh=600&amp;c=1&amp;cw=2000&amp;hash=0D2DFF733EF51C66941EB5413B4D7F2A7723A5C9&quot;);background-size: cover;">
         </div>

@@ -70,6 +70,7 @@
         }
         .select__footer-dark {
             top: -5px;
+            left: 125px;
             position: relative;
         }
         @media (max-width: 780px){
@@ -218,15 +219,17 @@
 
             .contact_phone {
                 top: -42px !important;
-                right: -40px !important;
+                left: -180px !important;
             }
         }
         @media (max-width: 767px){
             .select__footer-dark {
                 top: 3px;
+                left: 0px;
             }
             .contact_phone {
-                top: -35px !important;
+                top: -34px !important;
+                left: -120px !important;
             }
         }
         @media (max-width: 320px){
@@ -234,6 +237,9 @@
                 margin-left: 50px !important;
             }
 
+        }
+        .hero.hero-compact .btn-holder {
+            bottom: 30px;
         }
         .bg-experience {
             background-position: 0px -230px;
@@ -296,7 +302,7 @@
             font-size: 15px;
             position: relative;
             top: 10px;
-            right: 0px;
+            left: -220px;
         }
 
         @media(max-width: 480px) {
@@ -566,16 +572,25 @@
                         <div class="input-wrap">
                             <span id="errors"></span>
 
-                            <? if($array['content_type'] == "detail" && $array['model'] == "courses"){
+                            <? if($array['content_type'] == "detail" && ($array['model'] == "courses" || $array['model'] == "services")){
                                 $cur_course_id = $array['content'][0]['id'];
+                                if( $array['model'] == "courses"){
+                                    $courses['id'] = "101";
+                                    $courses['filter']['alter']['city_courses_array'] = $_SESSION['user']['city'];
+                                    $btn_text = "Записаться";
+                                } else if( $array['model'] == "services"){
+                                    $courses['id'] = "102";
+                                    $courses['filter']['alter']['city_array'] = $_SESSION['user']['city'];
+                                    $btn_text = "Сделать заявку";
+                                } else {
+                                    $btn_text = "Записаться";
+                                }
                             } else {
                                 $cur_course_id = 1;
                             } ?>
                             <select class="input__search" id="form_course">
                                 <?
-                                $courses['id'] = "101";
 
-                                $courses['filter']['alter']['city_courses_array'] = $_SESSION['user']['city'];
                                 $courses['content']['courses'] = Element::GetList($courses, $courses['filter']);
                                 ?>
                                 <?foreach($courses['content']['courses'] as $courses_el){ ?>
@@ -589,7 +604,7 @@
                             <input type="text" id="form_phone" class="input__search" data-nothing-entered="Пожалуйста введите свой телефон" placeholder="Ваш телефон" />
 
                             <div class="form-send-wrap">
-                                <a class="form-send" href="" >Записаться</a>
+                                <a class="form-send" href="" ><?=$btn_text?></a>
                             </div>
                         </div>
                         <div class="button-wrap">

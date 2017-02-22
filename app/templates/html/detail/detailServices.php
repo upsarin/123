@@ -33,6 +33,26 @@
     .product-combine .product .content-wrap {
         min-height: 90px;
     }
+    @media (max-width: 767px) {
+        .section {
+            margin-top: -250px;
+        }
+        .course-cons .bg:after {
+            background: none !important;
+        }
+        .hero .btn-holder .btn:first-child {
+            margin-top: -40px;
+        }
+    }
+    .section-product-combine {
+        margin-top: -50px;
+    }
+    .section-product-combine {
+        margin-top: -80px;
+    }
+    .hero.hero-compact .btn-holder {
+        bottom: 90px;
+    }
 </style>
 
 <?
@@ -53,6 +73,13 @@
                     </div>
                     <div id="fb-root"></div>
                     <h1 class="desc"><?=strip_tags($element['preview_desc'])?></h1>
+                </div>
+                <div class="btn-holder">
+                    <a href="/apply/" class="btn btn-dark btn-border">
+                    <span class="text">
+                        Подать заявку
+                    </span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -76,7 +103,30 @@
 
     </div>
 </div>
-
+<div class="section section-product-combine">
+    <header class="hero">
+        <div class="image bg-adapt" style="background-image: url('/css/images/content/services/services/<?=$element['name']?>_detail.jpg?mh=600&amp;c=1&amp;cw=2000&amp;hash=0D2DFF733EF51C66941EB5413B4D7F2A7723A5C9&quot;);background-size: cover;">
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="head">
+                    <div class="name">
+                        <?=$element['title']?>
+                    </div>
+                    <div id="fb-root"></div>
+                    <h1 class="desc"><?=strip_tags($element['preview_desc'])?></h1>
+                </div>
+                <div class="btn-holder">
+                    <a href="/apply/" class="btn btn-dark btn-border">
+                    <span class="text">
+                        Подать заявку
+                    </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
 <div class="section section-product-combine bg-dark-1 color-light">
     <div class="container product-combine">
         <h2 class="h2 no-line color-light">РЕКОМЕНДУЕМЫЕ КУРСЫ</h2>
@@ -86,9 +136,9 @@
 
                 <div class="row">
                     <?
-                    $array['id'] = "101";
-
-                    $array['filter']['alter']['city_courses_array'] = $_SESSION['user']['city'];
+                    $array['id'] = "102";
+                    $array['filter']['!id'] = $element['id'];
+                    $array['filter']['alter']['city_array'] = $_SESSION['user']['city'];
                     $array['content']['related'] = Element::GetList($array, $array['filter'], $limit="3");
                     ?>
                     <?if(count($array['content']['related']) > 0){?>
@@ -101,10 +151,10 @@
                             <div class="col-md-4 equalizer-item" style="height: 239px;">
 
                                 <a href="/courses/detail/<?=$element_related['alias']?>/" class="product clearfix">
-                                <span class="visual-wrap">
-                                    <img src="/css/images/content/courses/<?=$_SESSION['user']['city']?>/DJ/<?=$element_related['name']?>.png?h=250&amp;w=400&amp;hash=D222B2974AEEBAAACDA6B5913693BDD85BF118C0" alt="<?=$element_related['title']?>">
+                                <span class="visual-wrap" style="padding: 0px;">
+                                    <img src="/css/images/content/services/services/<?=$element_related['name']?>.jpg?h=250&amp;w=400&amp;hash=D222B2974AEEBAAACDA6B5913693BDD85BF118C0" alt="<?=$element_related['title']?>">
                                 </span>
-                                    <span class="content-wrap">
+                                    <span class="content-wrap" style="min-height: 140px;">
                                         <h6 class="no-line"><?=$element_related['title']?></h6>
 
                                 </span>
@@ -117,8 +167,9 @@
             </div>
         </div>
 
-        <a href="/courses/" class="ghostbtn ghostbtn-forw ghostbtn-light"><span class="text">Посмотреть все</span></a>
+        <a href="/services/" class="ghostbtn ghostbtn-forw ghostbtn-light"><span class="text">Посмотреть все</span></a>
 
     </div>
 </div>
+
 
