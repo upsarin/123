@@ -108,57 +108,6 @@
     </section>
     <section class="section">
         <div class="container">
-            <h2 class="h2 light">НОВЫЕ ВИДЕО ОТ PIONEERDJTV</h2>
-
-            <div class="row product-teasers">
-                <?
-                $array['id'] = "106";
-                $array['filter_video_6'] = array("cat" => "6");
-                $array['content']['video_6'] = Element::GetList($array, $array['filter_video_6'], $limit="2");
-                ?>
-
-                <?foreach($array['content']['video_6'] as $element){ ?>
-                    <div class="col-sm-6">
-                        <div class="product-teaser">
-
-
-                                    <iframe width="560" height="325" src="<?=$element['url']?>" frameborder="0" allowfullscreen style="    width: 100%;"></iframe>
-
-
-
-
-                        </div>
-                    </div>
-                <? } ?>
-            </div>
-            <h2 class="h2 light">Новые видео от pioneerdjschool</h2>
-
-            <div class="row product-teasers">
-                <?
-                $array['id'] = "106";
-                $array['filter_video_7'] = array("cat" => "7");
-                $array['content']['video_7'] = Element::GetList($array, $array['filter_video_7'], $limit="2");
-                ?>
-
-                <?foreach($array['content']['video_7'] as $element){?>
-                    <div class="col-sm-6">
-                        <div class="product-teaser">
-
-
-                            <iframe width="560" height="325" src="<?=$element['url']?>" frameborder="0" allowfullscreen style="    width: 100%;"></iframe>
-
-
-
-
-                        </div>
-                    </div>
-                <? } ?>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
             <h2 class="h2 light">АКЦИИ И УСЛУГИ</h2>
             <div class="row row-full">
                 <div class="col">
@@ -239,5 +188,57 @@
             </div>
         </div>
     </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="h2 light">НОВЫЕ ВИДЕО ОТ PIONEERDJTV</h2>
+
+            <div class="row product-teasers">
+                <?
+                $array['id'] = "106";
+                $array['filter_video_6'] = array("cat" => "6");
+                $array['content']['video_6'] = Element::GetList($array, $array['filter_video_6'], $limit="2");
+                ?>
+
+                <?foreach($array['content']['video_6'] as $element){ ?>
+                    <div class="col-sm-6">
+                        <div class="product-teaser">
+
+
+                                    <iframe width="560" height="325" src="<?=$element['url']?>" frameborder="0" allowfullscreen style="    width: 100%;"></iframe>
+
+
+
+
+                        </div>
+                    </div>
+                <? } ?>
+            </div>
+            <h2 class="h2 light">Новые видео от pioneerdjschool</h2>
+
+            <div class="row product-teasers">
+                <?
+                $array['id'] = "106";
+                $array['filter_video_7'] = array("cat" => "7");
+                $array['content']['video_7'] = Element::GetList($array, $array['filter_video_7'], $limit="2");
+                ?>
+
+                <?foreach($array['content']['video_7'] as $element){?>
+                    <div class="col-sm-6">
+                        <div class="product-teaser">
+
+
+                            <iframe width="560" height="325" src="<?=$element['url']?>" frameborder="0" allowfullscreen style="    width: 100%;"></iframe>
+
+
+
+
+                        </div>
+                    </div>
+                <? } ?>
+            </div>
+        </div>
+    </section>
+
+
 
 </div>

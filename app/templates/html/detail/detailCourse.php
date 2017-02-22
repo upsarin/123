@@ -30,48 +30,44 @@
             font-size: 6px !important;
         }
         .course-cons ul li:nth-child(1) .cons-label {
-            top: 137px !important;
-            left: 24px !important;
+            top: 140px !important;
+            left: 30px !important;
         }
         .course-cons ul li:nth-child(2) .cons-label {
-            top: 16px !important;
-            left: 20px !important;
+            top: 56px !important;
+            left: 5px !important;
         }
         .course-cons ul li:nth-child(3) .cons-label {
-            top: 89px !important;
-            left: 11px !important;
+            top: 91px !important;
+            left: 16px !important;
         }
         .course-cons ul li:nth-child(4) .cons-label {
-            top: 36px !important;
+            top: 35px !important;
             left: 13px !important;
         }
         .course-cons ul li:nth-child(5) .cons-label {
-            top: 115px !important;
-            left: 2px !important;
+            top: 116px !important;
+            left: 6px !important;
         }
         .course-cons ul li:nth-child(6) .cons-label {
-            top: 16px !important;
+            top: 15px !important;
             left: 5px !important;
         }
         .course-cons ul li:nth-child(7) .cons-label {
-            top: 56px !important;
+            top: 57px !important;
             right: 5px !important;
         }
         .course-cons ul li:nth-child(8) .cons-label {
-            top: 92px !important;
-            right: 9px !important;
+            top: 93px !important;
+            right: 10px !important;
         }
         .course-cons ul li:nth-child(9) .cons-label {
-            top: 119px !important;
-            right: 11px !important;
+            top: 121px !important;
+            right: 14px !important;
         }
         .course-cons ul li:nth-child(10) .cons-label {
             top: 26px !important;
-            right: 5px !important;
-        }
-        .course-cons ul li:nth-child(2) .cons-label {
-            top: 57px !important;
-            left: 5px !important;
+            right: 9px !important;
         }
     }
     .hero .head .desc {
@@ -83,19 +79,24 @@
             height: 250px;
         }
     }
-    @media (max-width: 369px){
+    @media (max-width: 369px) {
         .js-sticky.hero.hero-compact {
             height: 105px;
         }
-        .section-product-features{
+
+        .section-product-features {
             padding-bottom: 0px;
         }
+
         .section-product-info {
             padding-bottom: 20px !important;
         }
+
         .section-product-images {
             margin-top: -180px !important;
         }
+    }
+    @media (max-width: 369px) and (min-width: 321px){
         .course-cons ul li:nth-child(1) .cons-label {
             top: 152px !important;
             left: 30px !important;
@@ -136,7 +137,6 @@
             top: 8px !important;
             right: 5px !important;
         }
-
     }
     @media (min-width: 370px) and (max-width: 481px){
         .js-sticky.hero.hero-compact {
