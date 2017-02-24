@@ -31,6 +31,11 @@
     <link href="/Bundles/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
     <script src="//api-maps.yandex.ru/2.0/?load=package.full,package.route,package.geocode&amp;lang=ru-RU" type="text/javascript"></script>
     <style>
+        @media (min-width: 551px) and (max-width: 630px){
+            .header .topbar .container .logo {
+                margin: 0 130px !important;
+            }
+        }
         .input-wrap {
             margin-top: 60px;
         }
@@ -228,10 +233,16 @@
                 left: 112px !important;
             }
         }
+        @media (max-width: 480px){
+            .select__footer-dark {
+                top: 3px;
+                left: 10px !important;
+            }
+        }
         @media (max-width: 767px){
             .select__footer-dark {
                 top: 3px;
-                left: 0px;
+                left: 110px;
             }
             .contact_phone {
                 top: -34px !important;
