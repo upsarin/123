@@ -23,12 +23,6 @@
 	
 	require_once ("app/core/router.php");
 
-
-    /*
-    ?><pre><?
-    print_r($_SESSION);
-    ?></pre><?
-    */
 	User::check();
 	Router::start();
 
