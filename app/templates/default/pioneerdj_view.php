@@ -344,6 +344,7 @@
                         <a href="/" class="logo">
                             <img src="/css/images/logo.png" alt="Pioneer DJ School logo" />
                         </a>
+
                         <div class="action-nav">
                             <ul>
                                 <li>
@@ -352,7 +353,7 @@
                                             <div class="select__styled navigate-select select__footer-dark pos-always-below">
                                                 <select style="display: none;">
                                                     <?foreach($_SESSION['user']['city_array'] as $key => $val){?>
-                                                        <option data-icon="flag flag-INT" value="/<?=$array['name']?>/?city=<?=$val['id']?>" <?=($_SESSION['user']['city'] == $val['id']) ? 'selected="selected"' : ''?>>
+                                                        <option data-icon="flag flag-INT" value="<?=($array['name'] == "main") ? "/main/" : "/". $array['name'] ."/"?>?city=<?=$val['id']?>" <?=($_SESSION['user']['city'] == $val['id']) ? 'selected="selected"' : ''?>>
                                                             <span class="country-label"><?=$val['title']?></span>
                                                         </option>
                                                     <? } ?>
@@ -399,7 +400,7 @@
                                     <div class="select__styled navigate-select select__footer-dark pos-always-below">
                                         <select style="display: none;">
                                             <?foreach($_SESSION['user']['city_array'] as $key => $val){?>
-                                                <option data-icon="flag flag-INT" value="<?=($array['name'] == "main") ? "/index.php" : "/". $array['name'] ."/"?>?city=<?=$val['id']?>" <?=($_SESSION['user']['city'] == $val['id']) ? 'selected="selected"' : ''?>>
+                                                <option data-icon="flag flag-INT" value="<?=($array['name'] == "main") ? "/main/" : "/". $array['name'] ."/"?>?city=<?=$val['id']?>" <?=($_SESSION['user']['city'] == $val['id']) ? 'selected="selected"' : ''?>>
                                                     <span class="country-label"><?=$val['title']?></span>
                                                 </option>
                                             <? } ?>

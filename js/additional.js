@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    //$("#form_phone").inputmask({"mask": "+7 (999) 999-9999"});
+    $("#form_phone").mask("+7 (999) 999-9999");
 	$("a[href='/apply/']").click(function(){
         $(".search-border").css({display: "block"});
         return false;
