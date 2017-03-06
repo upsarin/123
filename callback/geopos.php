@@ -1,6 +1,5 @@
 <?
 session_start();
-
 require_once ("/var/www/u0205105/data/www/pioneerdjschool.ru/app/core/dbo.php");
 
 if($_POST['lat'] && $_POST['lon']){
@@ -15,6 +14,8 @@ if($_POST['lat'] && $_POST['lon']){
         }
     } else {
         $_SESSION['user']['pos_id'] = $_POST['lat'] . ":" . $_POST['lon'];
+        $pos = array("sess_id" => $_SESSION['user']['cur_sess_id'], "lat" => $_POST['lat'], "lon" => $_POST['lon']);
+        $result = DBConnect::init()->saveGeoPos($pos);
     }
     echo "широта: ". $_POST['lat'] ." долгота: ". $_POST['lon'] ." дата: ". date("H:i:s");
     echo $result;

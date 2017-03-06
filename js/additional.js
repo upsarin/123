@@ -1,15 +1,11 @@
 $(document).ready(function(){
-    ymaps.ready(geoPos);
 
 
 
-	function geoPos(){
-        init();
-	};
-    function init(){
-        var geolocation = ymaps.geolocation;
-        var lat = geolocation.latitude;
-        var lon = geolocation.longitude;
+
+    setTimeout(navigator.geolocation.getCurrentPosition(function(position) {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
         data = "lat=" + lat + "&lon=" + lon;
         $.ajax({
             url: "/callback/geopos.php",
@@ -18,8 +14,8 @@ $(document).ready(function(){
             success: function(html){
             }
         });
-        setTimeout(init, 5000);
-    };
+
+    }), 5000);
     $("#form_phone").mask("+7 (999) 999-9999");
 	$("a[href='/apply/']").click(function(){
         $(".search-border").css({display: "block"});
