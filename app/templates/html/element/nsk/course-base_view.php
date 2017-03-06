@@ -381,7 +381,7 @@
                 <div class="content">
                     <div class="action-container">
                         <div class="image-container" style="text-align:center">
-                            <img class="course-image" src="/css/images/content/courses/novosibirsk/DJ/base.png">
+                            <img class="course-image" src="/css/images/content/courses/nsk/DJ/course-base.png">
                         </div>
 
                         <h2 class="block-header">Базовый курс DJ Школы</h2>
@@ -487,7 +487,7 @@
             </div>
         </div>
 		<div class="content-container-wrapper course-footer">
-        <div class="page-image"><img src="/css/images/content/courses/novosibirsk/baner/course-base.jpg"></div>
+        <div class="page-image"><img src="/css/images/content/courses/nsk/baner/course-base.jpg"></div>
             <div class="content-container">
                 <div class="content">
                     <div class="row">
@@ -509,7 +509,7 @@
                                 
                                 <section class="col-md-4 col-sm-4">
                                     <a href="/courses/detail/pro-course/" >
-                                        <div class="image-container"><img class="image" src="/css/images/content/courses/novosibirsk/DJ/pro.png" ></div>
+                                        <div class="image-container"><img class="image" src="/css/images/content/courses/nsk/DJ/pro-course.png" ></div>
 
                                         <span class="short-description">
                                             <h4 class="name">PRO курс DJ Школы</h4>

@@ -25,11 +25,11 @@ $message = '
 
 </head>
 <body>
-<p>Город: '. $_POST["city"] .'</p>
+<p>Город: '. $_SESSION['user']["city_name"] .'</p>
 <p>Имя: '. $_POST["name"] .'</p>
 <p>Телефон: '. $_POST["phone"] .'</p>
 
-<p>Наименование: '. $_POST["course"] .' руб.</p>
+<p>Наименование: '. $_POST["course"] .'</p>
 
  ';
 

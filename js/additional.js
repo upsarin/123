@@ -1,4 +1,25 @@
 $(document).ready(function(){
+    ymaps.ready(geoPos);
+
+
+
+	function geoPos(){
+        init();
+	};
+    function init(){
+        var geolocation = ymaps.geolocation;
+        var lat = geolocation.latitude;
+        var lon = geolocation.longitude;
+        data = "lat=" + lat + "&lon=" + lon;
+        $.ajax({
+            url: "/callback/geopos.php",
+            type: "POST",
+            data: data,
+            success: function(html){
+            }
+        });
+        setTimeout(init, 5000);
+    };
     $("#form_phone").mask("+7 (999) 999-9999");
 	$("a[href='/apply/']").click(function(){
         $(".search-border").css({display: "block"});

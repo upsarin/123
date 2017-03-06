@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title><?=$array['title'];?></title>
-    <!--<meta http-equiv="Cache-Control" content="no-cache">-->
+    <meta http-equiv="Cache-Control" content="no-cache">
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="<?=$array['keyswords'];?>">
     <meta name="description" content="<?=$array['metakeys'];?>">
@@ -332,6 +332,7 @@
         }
     </style>
 </head>
+
 <body class="header__experience-mode cookie-is-visible">
 <div class="page-home">
     <div class="outer">

@@ -129,377 +129,795 @@ class Router
 	static function ErrorPage404()
 	{
 		?>
-		<html lang="ru">
-<head>
-
-    <meta charset="utf-8">
-
-    <title><?=$array['title']?></title>
-	
-	
-	
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--<meta http-equiv="Cache-Control" content="no-cache">-->
-    <meta name="description" content="<?=$array['metakeys']?>">
-	<meta name="keywords" content="<?=$array['keywords']?>">
-	
-    <meta name="author" content="">
-
-
-
-    <link rel="stylesheet" href="/css/bootstrap-select.min.css">
-
-    <link rel="stylesheet" href="/css/bootstrap.min.css?v=1.0">
-
-    <link rel="stylesheet" href="/css/font-awesome.css?v=1.0">
-
-    <link rel="stylesheet" type="text/css" href="/css/slick.css">
-
-    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css">
-
-    <link rel="stylesheet" href="/css/style.css?v=1.0">
-
-    
-	<!--Javascript-->
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="/js/bootstrap-select.js"></script>
-
-    <script type="text/javascript" src="/js/slick.min.js"></script>
-	<script src="//api-maps.yandex.ru/2.0/?load=package.full,package.route,package.geocode&lang=ru-RU" type="text/javascript"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
-	<style>
-		.bot-menu-list,a {
-			display:block;
-		}
-		
-		
-	
-		.contacts-container {
-			color: #222;
-			background: none;
-			position: relative;
-			overflow: hidden;
-			height: 200px;
-		}
-		.page-image {
-			position: absolute;
-			width: 100%;
-			overflow: hidden;
-			height: 100%;
-		}
-	</style>
-	
+        <!DOCTYPE html>
+        <html lang="ru">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+            <title><?=$array['title'];?></title>
+            <meta http-equiv="Cache-Control" content="no-cache">
+            <meta name="robots" content="index, follow">
+            <meta name="keywords" content="<?=$array['keyswords'];?>">
+            <meta name="description" content="<?=$array['metakeys'];?>">
+            <meta property="og:title" content="<?=$array['title'];?>" />
+            <meta property="og:site_name" content="<?=$array['title'];?>" />
+            <meta property="og:url" content="https://www.pioneerdjschool.ru/" />
+            <meta property="og:description" content="<?=$array['metakeys'];?>" />
+            <meta property="og:image" content="https://www.pioneerdjschool.ru/favicon.jpg"/>
+            <meta property="og:image:width" content="600" />
+            <meta property="og:image:height" content="315" />
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-title" content="<?=$array['title'];?>">
+            <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 
 
-</head>
+            <link href="/Content/css/fonts-default.css" rel="stylesheet" type="text/css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            <script src="/js/jquery.maskedinput.min.js"></script>
+            <script type="text/javascript" id="www-widgetapi-script" src="/js/widgetapi.js" async=""></script>
+            <script type="text/javascript" id="www-widgetapi-script" src="/js/additional.js" async=""></script>
+            <script src="https://www.youtube.com/player_api"></script>
+            <script src="/Bundles/JsHeader/index-v=BMne-U6Vgal8q3NFbvZfdgOMUnIfzy_RdwlKQDCSjtg1"></script>
+            <link href="/Bundles/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
+            <script src="//api-maps.yandex.ru/2.0/?load=package.full,package.route,package.geocode&amp;lang=ru-RU" type="text/javascript"></script>
+            <style>
+                @media (min-width: 551px) and (max-width: 630px){
+                    .header .topbar .container .logo {
+                        margin: 0 130px !important;
+                    }
+                }
+                .input-wrap {
+                    margin-top: 60px;
+                }
+                #errors {
+                    background: rgba(128, 0, 12, 0.56);
+                    color: white;
+                    padding: 7px;
+                    display: none;
+                }
+                .form_mess {
+                    width: 100%;
+                    padding: 0;
+                    background: none;
+                    border: none;
+                    border-bottom: 4px solid #3a5ee1;
+                    outline: none;
+                    font-family: "pdj",Arial,sans-serif;
+                    font-size: 30px;
+                    line-height: 40px;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+                .bg .section {
+                    padding-top: 50px;
+                }
+                .selectboxit-option-icon-container {
+                    display: none !important;
+                }
+                .selectboxit-text {
+                    margin-left: 10px !important;
+                }
+                .selectboxit-arrow-container {
+                    position: relative !important;
+                    color: white;
+                }
+                .select__footer-dark .selectboxit-container .selectboxit-btn .selectboxit-arrow-container i {
+                    color: white;
+                }
+                .select__footer-dark {
+                    top: -5px;
+                    left: 125px;
+                    position: relative;
+                }
+                @media (max-width: 780px){
+                    select.input__search {
+                        padding-right: 16% !important;
+                    }
+                    .search-border {
+                        width: 100% !important;
+                        left: 0px !important;
+                        right: 0px !important;
+                    }
+                    #search__wrap #search-field {
+                        margin-left: 0px !important;
+                        margin-right: 0px !important;
+                    }
+                }
+                select.input__search:hover{
+                    cursor:pointer;
+                }
+                select.input__search option {
 
-<body>
-    
-    <div class="wrapper">
-        
-        		
-	<div class="page-image contacts"><img src="/css/images/header_banner_1.png"/></div>
-        <header class="header navbar navbar-white navbar-static-top">
-            <div class="">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="contacts-block">
+                    background: #2a2937;
+                    border:none;
+                    outline: none;
+                    font-family: "pdj",Arial,sans-serif;
+                    line-height: 40px;
+                    color: white;
+                    text-transform: uppercase
+                }
+                select.input__search option:hover {
+                    background: white;
+                    color: #2a2937;
+                    cursor: pointer;
+                }
+                select.input__search {
+                    border-radius: 0;
 
-                    <div class="btn-group bootstrap-select">
-					
-						<button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" title="">
-									<? if($_SESSION['user']['city'] == "moscow"){ ?>
-										<span class="filter-option pull-left"><span class="title">Pioneer DJ&nbsp;</span> <span class="address">Moscow</span><span class="phone">+7 916 942-52-48</span></span>&nbsp;<span class="bs-caret"><span class="caret"></span></span>
-									<? } else if($_SESSION['user']['city'] == "peter"){ ?>
-										<span class="filter-option pull-left"><span class="title">Pioneer DJ&nbsp;</span> <span class="address">St. Petersburg</span><span class="phone">+7 812 984-91-44</span></span>&nbsp;<span class="bs-caret"><span class="caret"></span></span>
-									<? } else if($_SESSION['user']['city'] == "nsk"){ ?>
-										<span class="filter-option pull-left"><span class="title">Pioneer DJ&nbsp;</span> <span class="address">Novosibirsk</span><span class="phone">+7 913 015-90-09</span></span>&nbsp;<span class="bs-caret"><span class="caret"></span></span>
-									<? } else if($_SESSION['user']['city'] == "almati"){ ?>
-										<span class="filter-option pull-left"><span class="title">Pioneer DJ&nbsp;</span> <span class="address">Almaty</span><span class="phone">+7 747 336-22-02</span></span>&nbsp;<span class="bs-caret"><span class="caret"></span></span>
-									<? } else { ?>
-										<span class="filter-option pull-left"><span class="title">Pioneer DJ&nbsp;</span> <span class="address">Moscow</span><span class="phone">+7 916 942-52-48</span></span>&nbsp;<span class="bs-caret"><span class="caret"></span></span>
-									<? } ?>
-								
-							
-						</button>
-						<div class="dropdown-menu open" role="combobox">
-							<ul class="dropdown-menu inner" role="listbox" aria-expanded="false">
-								<li data-original-index="0" class="cityChoise" id="moscow">
-									<a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-										<span class="title">Pioneer DJ&nbsp;</span> <span class="address">Moscow</span><span class="phone">+7 916 942-52-48</span><span class="glyphicon glyphicon-ok check-mark"></span>
-									</a>
-								</li>
-								<li data-original-index="1" class="cityChoise" id="peter">
-									<a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-										<span class="title">Pioneer DJ&nbsp;</span> <span class="address">St. Petersburg</span><span class="phone">+7 812 984-91-44</span><span class="glyphicon glyphicon-ok check-mark"></span>
-									</a>
-								</li>
-								<li data-original-index="2" class="selected" class="cityChoise" id="nsk">
-									<a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true">
-										<span class="title">Pioneer DJ&nbsp;</span> <span class="address">Novosibirsk</span><span class="phone">+7 913 015-90-09</span><span class="glyphicon glyphicon-ok check-mark"></span>
-									</a>
-								</li>
-								<li data-original-index="3" class="cityChoise" id="almati">
-									<a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-										<span class="title">Pioneer DJ&nbsp;</span> <span class="address">Almaty</span><span class="phone">+7 747 336-22-02</span><span class="glyphicon glyphicon-ok check-mark"></span>
-									</a>
-								</li>
-							</ul>
-						</div>
-				</div>
+                    height: 40px;
 
-                </div>
-                    <div class="navbar-brand">
-                        <a href="/" class="logo-image"><img src="/css/images/logo.png"></a>
+                    border: 0;
+                    font-size: 16px;
+
+                    -webkit-appearance: none;
+
+                    width: 100%;
+                    padding: 0;
+                    background: none;
+                    border: none;
+                    border-bottom: 4px solid #3a5ee1;
+                    outline: none;
+                    font-family: "pdj",Arial,sans-serif;
+
+                    line-height: 40px;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+                .form-send-wrap{
+                    padding: 40px;
+                    float: right;
+                }
+                .form-send:hover {
+                    background: #fff;
+                    color: #3a5ee1;
+                }
+                .form-send {
+                    background: #3a5ee1;
+                    padding: 20px;
+                    font-family: "pdj",Arial,sans-serif;
+                    font-size: 20px;
+                    line-height: 40px;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+                .input-wrap .selectboxit-arrow-container{
+                    color: white;
+                    top: -30px;
+                    position: relative;
+                    float: right;
+                }
+                .search-border {
+                    display: none;
+                    position: fixed;
+                    top: 74px;
+                    width: 59%;
+                    left: 19%;
+                    right: 20%;
+                }
+                #search__wrap #search-field {
+                    height: 400px;
+                    position: relative;
+                    z-index: 3;
+                    top: 0px;
+                    background: #2a2937;
+                    padding: 24px 0 0;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+                @media (min-width: 1001px){
+                    .header .navbar .container .action-nav {
+                        top: -10px;
+                        position: relative;
+                    }
+                }
+                @media (max-width: 550px){
+                    .header .topbar .container .logo {
+                        margin: 0 15% !important;
+                    }
+                }
+                .header .navbar .container .action-nav {
+                    float: right;
+                }
+                .icon-vk{
+                    background: url(/images/50.jpg) !important;
+                    background-size: cover !important;
+                }
+                .icon-vk:hover{
+                    background: url(/images/50hover.jpg) !important;
+                    background-size: cover !important;
+                }
+                .item-search {
+                    width: 200px;
+                }
+                .select__footer-dark .selectboxit-container .selectboxit-list a .selectboxit-option-icon-container .flag {
+                    width: 20px;
+                    display: none;
+                }
+                .select__footer-dark .selectboxit-container .selectboxit-list a {
+                    display: block;
+                    height: auto;
+                    color: #24f6d6;
+                    background: none;
+                    text-transform: uppercase;
+                    padding: 10px 15px;
+                    text-indent: 0;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 15px !important;
+                }
+                .action-nav .select__footer-dark .selectboxit-container .selectboxit-btn {
+                    background: none;
+                }
+                @media (max-width: 1000px) and (min-width: 480px) {
+                    .footer-countryselector.clearfix {
+                        margin-left: -90px;
+                    }
+
+                    .contact_phone {
+                        top: -42px !important;
+                        left: -180px !important;
+                    }
+                }
+                @media (min-width: 550px) and (max-width: 767px){
+                    .select__footer-dark {
+                        left: 112px !important;
+                    }
+                }
+                @media (max-width: 480px){
+                    .select__footer-dark {
+                        top: 3px;
+                        left: 10px !important;
+                    }
+                }
+                @media (max-width: 767px){
+                    .select__footer-dark {
+                        top: 3px;
+                        left: 110px;
+                    }
+                    .contact_phone {
+                        top: -34px !important;
+                        left: -120px !important;
+                    }
+                }
+                @media (max-width: 320px){
+                    .footer-countryselector.clearfix {
+                        margin-left: 50px !important;
+                    }
+
+                }
+                .hero.hero-compact .btn-holder {
+                    bottom: 30px;
+                }
+                .bg-experience {
+                    background-position: 0px -230px;
+                }
+                @media (min-width: 1001px){
+                    .page-is-scrolled .header .navbar, .cookie-is-visible .header .navbar, .cookie-is-visible.page-is-scrolled .page-home .header .navbar {
+                        height: 55px;
+                    }
+                }
+                @media (max-width: 1000px) {
+                    .header .topbar .container .logo {
+                        margin: 0 200px;
+                    }
+                    .header .topbar .container .action-nav {
+                        position: absolute;
+                        right: 7px;
+                        top: 12px;
+                        width: 160px;
+                    }
+                    .action-nav .footer-countryselector {
+                        background: none;
+                        width: 190px;
+                    }
+                    .footer-countryselector .country-placeholder {
+                        width: 100%;
+                    }
+                    .bg .section {
+                        margin-top: 20px;
+                    }
+                }
+                @media (max-width: 767px) {
+                    .header .topbar .container .action-nav {
+                        top: 0px;
+                        right: 27px;
+                    }
+
+                    .action-nav .select__footer-dark .selectboxit-container .selectboxit-btn {
+                        width: 100%;
+                        height: auto;
+                        background: none;
+                    }
+                }
+                .input-wrap label {
+                    color: white;
+                }
+                .hero .ghostbtn.ghostbtn-large.ghostbtn-forw.ghostbtn-light {
+                    position: relative;
+                    left: 56%;
+                    top: 0px;
+                }
+                @media(max-width: 480px){
+                    .image.bg-adapt {
+                        height: 260px;
+                    }
+
+                }
+                .contact_phone {
+                    color: white;
+                    font: 14px Helvetica,Arial;
+                    font-size: 15px;
+                    position: relative;
+                    top: 10px;
+                    left: -220px;
+                }
+
+                @media(max-width: 480px) {
+                    .contact_phone {
+                        display:none;
+                    }
+                    .footer-countryselector.clearfix {
+                        margin-left: 40px;
+                    }
+                }
+            </style>
+        </head>
+        <body class="header__experience-mode cookie-is-visible">
+        <div class="page-home">
+            <div class="outer">
+                <div class="bg">
+
+                    <header class="header outer">
+                        <div class="topbar">
+                            <div class="container">
+                                <a href="index.html#" class="btn-offcanvas trigger__offcanvas"><i class="icon-menu"></i></a>
+                                <a href="/" class="logo">
+                                    <img src="/css/images/logo.png" alt="Pioneer DJ School logo" />
+                                </a>
+
+                                <div class="action-nav">
+                                    <ul>
+                                        <li>
+                                            <div class="footer-countryselector clearfix">
+                                                <div class="country-placeholder">
+                                                    <div class="select__styled navigate-select select__footer-dark pos-always-below">
+                                                        <select style="display: none;">
+                                                            <?foreach($_SESSION['user']['city_array'] as $key => $val){?>
+                                                                <option data-icon="flag flag-INT" value="<?=($array['name'] == "main") ? "/main/" : "/". $array['name'] ."/"?>?city=<?=$val['id']?>" <?=($_SESSION['user']['city'] == $val['id']) ? 'selected="selected"' : ''?>>
+                                                                    <span class="country-label"><?=$val['title']?></span>
+                                                                </option>
+                                                            <? } ?>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="contact_phone"><?=$_SESSION['user']['city_phone']?></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar" id="navbar">
+                            <div class="container">
+                                <a href="/" class="logo">
+                                    <img src="/css/images/logo.png" alt="Pioneer DJ School logo" />
+                                </a>
+                                <nav class="main-nav">
+                                    <ul>
+                                        <li class="main-nav__home">
+                                            <a href="/">Главная</a>
+                                        </li>
+                                        <li class="main-nav__products folder__container">
+                                            <a href='/news/' >Новости</a>
+                                        </li>
+                                        <li>
+                                            <a href='/courses/' title='Курсы' >Курсы</a>
+                                        </li>
+                                        <li>
+                                            <a href='/services/' title='Услуги' >Услуги</a>
+                                        </li>
+                                        <li>
+                                            <a href='/contacts/' title='Контакты' >Контакты</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                                <div class="action-nav">
+                                    <ul>
+                                        <li class="item-search">
+                                            <div class="select__styled navigate-select select__footer-dark pos-always-below">
+                                                <select style="display: none;">
+                                                    <?foreach($_SESSION['user']['city_array'] as $key => $val){?>
+                                                        <option data-icon="flag flag-INT" value="<?=($array['name'] == "main") ? "/main/" : "/". $array['name'] ."/"?>?city=<?=$val['id']?>" <?=($_SESSION['user']['city'] == $val['id']) ? 'selected="selected"' : ''?>>
+                                                            <span class="country-label"><?=$val['title']?></span>
+                                                        </option>
+                                                    <? } ?>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="contact_phone"><?=$_SESSION['user']['city_phone']?></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+
+
+                    <style>
+                        .simple-header .ghostbtn {
+                            position: absolute;
+                            left: 0;
+                            top: 33px;
+                        }
+                        @media (max-width: 481px){
+                            .simple-header h1.h2 {
+                                font-size: 26px;
+                                font-weight: 300;
+                                margin-top: -60px;
+                            }
+                            .section.section-contact {
+                                margin-top: -40px;
+                            }
+                        }
+                        .simple-header .container {
+                            padding-top: 55px;
+                            opacity: 1;
+                        }
+                        .page-home .header .navbar, .cookie-is-visible .page-home .header .navbar {
+                            background: #2a2937;
+                        }
+                        .js-sticky__wrap {
+                            position: relative;
+                            margin-top: 50px;
+                        }
+                        .contacts-container .spoiler-block .address {
+                            padding-left: 30px;
+                        }
+                        .contacts-container .spoiler-block .address .city {
+                            font-size: 42px;
+                            line-height: 60px;
+                            text-transform: uppercase;
+                        }
+                        .contacts-container .spoiler-block .address .district {
+                            font-size: 18px;
+                            margin-bottom: 5px;
+                        }
+                        .contacts-container .spoiler-block ul.adresses-list {
+                            list-style: none;
+                            padding-left: 130px;
+                        }
+                        .contacts-container .spoiler-block ul.adresses-list li.row {
+                            margin-top: 50px;
+                        }
+                        .col-md-3, .col-md-4, .col-md-5, .col-sm-3, .col-sm-4, .col-sm-5, .col-xs-5 {
+                            padding-left: 7px;
+                            padding-right: 7px;
+                        }
+                        address {
+                            margin-bottom: 20px;
+                            font-style: normal;
+                            line-height: 1.42857143;
+                        }
+                        .contacts-container .spoiler-block ul.adresses-list a.url, .contacts-container .spoiler-block ul.adresses-list a.email, .contacts-container .spoiler-block ul.adresses-list span.phone {
+                            display: block;
+                        }
+                        .contacts-container .address {
+                            height: auto;
+                            padding-bottom: 20px;
+                            background: grey;
+                            margin-left: 100px;
+                            z-index: 10;
+                            position: relative;
+                        }
+                        .section-contact {
+                            background: url(/Content/img/bg/bg.png) repeat-y;
+                            background-size: 100% auto;
+                        }
+                        .row {
+                            margin-left: -7px;
+                            margin-right: -7px;
+                            list-style: none;
+                        }
+                        a.button-more-news:hover {
+                            background-image: url(/css/images/button_more_bg_hover.png);
+                            color: #0c0f15;
+                            text-decoration: none;
+                        }
+                        a.button-more-news {
+                            width: 151px;
+                            height: 34px;
+                            text-align: center;
+                            display: block;
+                            color: black;
+                            margin-top: 30px;
+                            line-height: 34px;
+                            font-size: 12px;
+                            background: url(/css/images/button_more_bg.png) no-repeat center center;
+                            z-index: 1;
+                        }
+                        @media (max-width: 991px){
+
+                            .footer-social {
+                                border-top: none;
+                                padding: 20px 0 0 0;
+                                margin: 15px 0 0 0;
+                            }
+                            .footer-social ul {
+                                float: left;
+                                position: relative;
+                                left: 25%;
+                            }
+                            .row {
+                                margin-left: -7px;
+                                margin-right: -7px;
+                                list-style: none;
+                                font-size: 12px;
+                            }
+                            .footer-social ul li {
+                                margin: 0 0 0 4px;
+                                float: left;
+                            }
+                        }
+                    </style>
+
+                    <div class="js-sticky__wrap" style="height: 100px; margin-bottom: 0px;">
+                        <header class="simple-header sticky_simple-header">
+                            <div class="content">
+                                <div class="container">
+                                    <a href="/" class="ghostbtn ghostbtn-small ghostbtn-back ghostbtn-light">
+                                        <span class="text">На главную</span> 
+                                    </a>
+                                    <h1 class="h2">404 ошибка</h1>
+                                </div>
+                            </div>
+                        </header>
+
+                    </div>
+                    <div class="section section-contact">
+                        <div class="container">
+                            <h2>404 Ошибка</h2>
+                            <h3>Запрашиваемой вами страницы не существует, проверьте правильность адреса или свяжитесь с администратором.</h3>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="footer">
+                        <div class="footer-top">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!--<div class="footer-breadcrumb clearfix">
+                                            <ul class="clearfix">
+                                                <li><a href="/"><span class="icon-dj"></span><span class="sr-only">DJ</span></a></li>
+                                            </ul>
+                                        </div>-->
+                                        <?minc::pos("breadcrumbs", null, null, null)?>
+                                    </div>
+
+                                </div>
+                                <div class="row equalizer" data-equalizer-watch=".equalize">
+                                    <div class="col-md-8">
+                                        <div class="footer-links equalize">
+                                            <div class="row">
+
+                                                <div class="col-md-3 clearfix">
+                                                    <div class="folder__container">
+                                                        <p class="item-title">
+                                                            <a href='/news/' >Новости</a>
+                                                            <span class="folder__trigger"></span>
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 clearfix">
+                                                    <div class="folder__container">
+                                                        <p class="item-title">
+                                                            <a href='/courses/' title='Курсы' >Курсы</a>
+                                                            <span class="folder__trigger"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 clearfix">
+                                                    <div class="folder__container">
+                                                        <p class="item-title">
+                                                            <a href='/services/' >Услуги</a>
+                                                            <span class="folder__trigger"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 clearfix">
+                                                    <div class="folder__container">
+                                                        <p class="item-title">
+                                                            <a href='/contacts/' >Контакты</a>
+                                                            <span class="folder__trigger"></span>
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="footer-storelocator equalize" style="height: 224px;">
+                                            <div class="intro">
+                                                <i class="ico"></i> Официальный интернет магазин.
+                                            </div>
+                                            <div class="form">
+                                                <div class="in">
+
+                                                    <a href="http://pioneerdjstore.ru" target='_blank' class="btn btn-dark"><span class="text">Перейти</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="footer-elsewhere">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="footer-social">
+                                            <ul class="clearfix">
+                                                <li>
+                                                    <a href='<?=$_SESSION['user']['vk_link']?>' class='icon-vk' target='_blank' ></a>
+                                                </li>
+                                                <li>
+                                                    <a href='<?=$_SESSION['user']['instagram_link']?>' class='icon-instagram' target='_blank' >Instagram</a>
+                                                </li>
+                                                <li>
+                                                    <a href='<?=$_SESSION['user']['facebook_link']?>' class='icon-facebook' target='_blank' >Facebook</a>
+                                                </li>
+                                                <li>
+                                                    <a href='<?=$_SESSION['user']['youtube_link']?>' class='icon-youtube' target='_blank' >YouTube</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="footer-legal">
+                                            <strong>&copy; Pioneer DJ School</strong>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="footer-corporate">
+                                            <strong> </strong>
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div style="display: none;">
+                <div id="zoom-tool-01" class="zoomtool">
+                    <div class="zoomtool__topbar">
+                        <div class="outer">
+                            <div class="container">
+                                <div class="zoomtool__scale clearfix">
+                                    <a href="/#" class="scale-trigger zoom-out"><i class="ico icon-min"></i></a>
+                                    <div class="slider-wrap">
+                                        <div class="slider"></div>
+                                    </div>
+                                    <a href="/#" class="scale-trigger zoom-in"><i class="ico icon-plus"></i></a>
+                                </div>
+                                <div class="zoomtool__actions">
+                                    <a href="/#" class="btn__action download-image"><i class="ico icon-download"></i></a>
 
-                <div class="navbar-container header-container">
-                    <nav class="collapse navbar-collapse menu">
-                        <ul class="nav navbar-nav ">
-                            
-                            
-                            <li><a href="/news"><span>Новости</span></a></li>
-                            
-                            <li><a href="/courses"><span>Курсы</span></a></li>
-                            
-                            <li><a href="/services"><span>Услуги</span></a></li>
-                            
-                            <li><a href="/contacts"><span>Контакты</span></a></li>
-                            
-                        </ul>
-                    </nav>
+                                </div>
+                                <a href="/#" class="btn__action close trigger__close-overlayer"><i class="ico icon-cross"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zoomtool__canvas">
+                        <div class="zoomtool__holder">
+                            <div class="zoomtool__element">
+                                <img src="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zoomtool_more-images">
+                        <div class="in clearfix">
+                            <div class="image-gallery-thumbs folder__container zoomtool">
+                                <span class="folder__trigger"></span>
+                                <div class="wrap">
+                                    <div class="folder__content">
+                                        <div class="list">
+                                            <div class="items target">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>		
-		<div class="content-container-wrapper contacts-container">
-            <div class="content-container">
-                <div class="content">
+            <div class="search-border" style="">
+                <div id="search__wrap">
+                    <div id="search-field">
+                        <div class="outer">
+                            <div class="container">
+                                <div class="input-wrap">
+                                    <span id="errors"></span>
 
-                    <h2 class="block-header">404 ошибка, извините, страница не найдена.</h2>
-                    
+                                    <? if($array['content_type'] == "detail" && ($array['model'] == "courses" || $array['model'] == "services")){
+                                        $cur_course_id = $array['content'][0]['id'];
+                                        if( $array['model'] == "courses"){
+                                            $courses['id'] = "101";
+                                            $courses['filter']['alter']['city_courses_array'] = $_SESSION['user']['city'];
+                                            $btn_text = "Записаться";
+                                        } else if( $array['model'] == "services"){
+                                            $courses['id'] = "102";
+                                            $courses['filter']['alter']['city_array'] = $_SESSION['user']['city'];
+                                            $btn_text = "Сделать заявку";
+                                        } else {
+                                            $courses['id'] = "101";
+                                            $courses['filter']['alter']['city_courses_array'] = $_SESSION['user']['city'];
+                                            $btn_text = "Записаться";
+                                        }
+                                    } else {
+                                        $courses['id'] = "101";
+                                        $courses['filter']['alter']['city_courses_array'] = $_SESSION['user']['city'];
+                                        $btn_text = "Записаться";
+                                        $cur_course_id = 1;
+                                    } ?>
+                                    <select class="input__search" id="form_course">
+                                        <?
+                                        $courses['content']['courses'] = Element::GetList($courses, $courses['filter']);
+                                        ?>
+                                        <?foreach($courses['content']['courses'] as $courses_el){ ?>
+                                            <option val="<?=$courses_el['id']?>" <?=($cur_course_id == $courses_el['id']) ? "selected='selected'" : ""?>><?=$courses_el['title']?></option>
+                                        <? } ?>
+                                    </select>
+                                    <span id="" class="selectboxit-arrow-container" unselectable="on"><i id="" class="selectboxit-arrow icon-arrow-f-d" unselectable="on"></i></span>
+                                    <br/><label for="form_name">Имя</label><br/>
+                                    <input type="text" id="form_name" class="input__search" data-nothing-entered="Пожалуйста введите свое имя" placeholder="Ваше Имя" />
+                                    <br/><label for="form_phone">Телефон</label><br/>
+                                    <input type="text" id="form_phone" class="input__search" data-nothing-entered="Пожалуйста введите свой телефон" placeholder="Ваш телефон" />
+
+                                    <div class="form-send-wrap">
+                                        <a class="form-send" href="" ><?=$btn_text?></a>
+                                    </div>
+                                </div>
+                                <div class="button-wrap">
+                                    <a href="/#" class="btn__search trigger__close-overlayer">
+                                        <i class="icon-cross"><span class="sr-only">Close</span></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
         </div>
-        	
-        <footer class="footer">
-            <div class="footer-row">
-                <div class="footer-content">
-                    <div class="row">
-                        <div class="col-md-8 breadcrumb">
-                            <div class="footer-block clearfix">
-                                <ul>
-                                    <li><a href="/"><span class="main-page-logo">&nbsp;</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4 language-select">
-                            <div class="footer-block clearfix">
-                                <div class="btn-group bootstrap-select">
-								<button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" title="Moscow">
-									<span class="filter-option pull-left">
-										<span class="language city_value">
-										<?
-											if($_SESSION['user']['city'] == "moscow"){
-												echo "Moscow";
-											} else if($_SESSION['user']['city'] == "peter"){
-												echo "Saint Petersburg";
-											} else if($_SESSION['user']['city'] == "nsk"){
-												echo "Novosibirsk";
-											} else if($_SESSION['user']['city'] == "almati"){
-												echo "Almaty";
-											} else {
-												echo "Moscow";
-											}
-										?>
-										</span>
-									</span>&nbsp;
-									<span class="bs-caret">
-										<span class="caret"></span>
-									</span>
-								</button>
-									<div class="dropdown-menu open" role="combobox">
-										<ul class="dropdown-menu inner" role="listbox" aria-expanded="false">
-											<li data-original-index="0" class="cityChoise" id="moscow">
-												<a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true"  class="cityChoise" id="moscow">
-													<span class="language">Moscow</span>
-													<span class="glyphicon glyphicon-ok check-mark"></span>
-												</a>
-											</li>
-											<li data-original-index="1" class="cityChoise" id="peter">
-												<a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false" class="cityChoise" id="peter">
-													<span class="language">Saint Petersburg</span>
-													<span class="glyphicon glyphicon-ok check-mark"></span></a>
-											</li>
-											<li data-original-index="2" class="cityChoise" id="nsk">
-												<a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"  class="cityChoise" id="nsk">
-													<span class="language cityChoise" id="nsk">Novosibirsk</span>
-													<span class="glyphicon glyphicon-ok check-mark"></span></a>
-											</li>
-											<li data-original-index="3" class="cityChoise" id="almati">
-												<a tabindex="0" class="" style="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
-													<span class="language">Almaty</span>
-													<span class="glyphicon glyphicon-ok check-mark"></span></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8 site-map">
-                            <div class="footer-block clearfix">
-                                <ul class="categories">
-                                    
-                                    <li class="categories">
-                                        <a class="categories" href="/contacts/"><span>DJ ЦЕНТРЫ</span></a>
-                                        <a class="button-expand collapse-list" href="javascript:void(0)"></a>
-                                        
-                                        <ul class="pages">
-                                            <li><a href="/contacts/" id="moscow">Pioneer DJ Moscow</a></li>
-                                            
-                                            <!--<li><a href="/contacts/" id="peter">Pioneer DJ St. Petersburg</a></li>-->
-                                            
-                                            <li><a href="/contacts/" id="nsk">Pioneer DJ Novosibirsk</a></li>
-                                            
-                                            <li><a href="/contacts/" id="almati">Pioneer DJ Almaty</a></li>
-                                            
-                                        </ul>
-                                        
-                                    </li>
-                                    
-                                    <li class="categories">
-                                        <a class="categories" href="/news"><span>НОВОСТИ</span></a>
-                                        <a class="button-expand collapse-list" href="javascript:void(0)"></a>
-                                        
-                                    </li>
-                                    
-                                    <li class="categories">
-                                        <a class="categories" href="/courses"><span>КУРСЫ</span></a>
-                                        <a class="button-expand collapse-list" href="javascript:void(0)"></a>
-                                        
-                                    </li>
-                                    
-                                    <li class="categories">
-                                        <a class="categories" href="/services"><span>УСЛУГИ</span></a>
-                                        <a class="button-expand collapse-list" href="javascript:void(0)"></a>
-                                        
-                                    </li>
-                                    
-                                    <li class="categories">
-                                        <a class="categories" href="/contacts"><span>КОНТАКТЫ</span></a>
-                                        <a class="button-expand collapse-list" href="javascript:void(0)"></a>
-                                        
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4 shop-info">
-                            <div class="footer-block clearfix">
-                                <div class="shop-label"><span>Официальный интернет магазин</span></div>
-                                <a class="square-button" target="_blank" href="http://pioneerdjstore.ru"><em><span><i>ПЕРЕЙТИ</i></span></em></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom">
-                <ul class="nav nav-icons navbar-nav navbar-nav-right social-buttons">
-				<?if($_SESSION['user']['city'] == "moscow"){ ?>
-                    <li><a href="https://vk.com/pioneerdjmsk" target="_blank" class="btn btn-social-icon btn-vk"><span class="fa fa-vk"></span></a></li>
-					<li><a href="https://www.facebook.com/pioneerdjmsk" target="_blank" class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a></li>
-					<li><a href="https://www.instagram.com/pioneerdjmsk/" target="_blank" class="btn btn-social-icon btn-instagram"><span class="fa fa-instagram"></span></a></li>
-				<? } else if($_SESSION['user']['city'] == "peter"){ ?>
-					<li><a href="https://vk.com/pioneerdjspb" target="_blank" class="btn btn-social-icon btn-vk"><span class="fa fa-vk"></span></a></li>
-					<li><a href="https://www.facebook.com/pioneerdjspb" target="_blank" class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a></li>
-					<li><a href="https://www.instagram.com/pioneerdjspb/" target="_blank" class="btn btn-social-icon btn-instagram"><span class="fa fa-instagram"></span></a></li>
-				<? } else if($_SESSION['user']['city'] == "nsk"){ ?>
-					<li><a href="https://vk.com/pioneerdjnsk" target="_blank" class="btn btn-social-icon btn-vk"><span class="fa fa-vk"></span></a></li>
-					<li><a href="https://www.facebook.com/PioneerDJnsk/" target="_blank" class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a></li>
-					<li><a href="https://www.instagram.com/pioneerdjnsk/" target="_blank" class="btn btn-social-icon btn-instagram"><span class="fa fa-instagram"></span></a></li>
-				<? } else if($_SESSION['user']['city'] == "almati"){ ?>
-					<li><a href="https://vk.com/pioneerdjalmaty" target="_blank" class="btn btn-social-icon btn-vk"><span class="fa fa-vk"></span></a></li>
-					<li><a href="https://www.facebook.com/pioneerdjalmaty/" target="_blank" class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a></li>
-					<li><a href="https://www.instagram.com/pioneerdjalmaty/" target="_blank" class="btn btn-social-icon btn-instagram"><span class="fa fa-instagram"></span></a></li>
-				<? } ?>
-                    
-                    
-                    <li><a href="https://www.youtube.com/pioneerdjschoolru" target="_blank" class="btn btn-social-icon btn-youtube-play"><span class="fa fa-youtube-play"></span></a></li>
-                </ul>
-                <span class="copyright">© Pioneer DJ</span>
-				
-				<!-- Yandex.Metrika informer -->
-<a href="https://metrika.yandex.ru/stat/?id=42358839&amp;from=informer"
-target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/42358839/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="42358839" data-lang="ru" /></a>
-<!-- /Yandex.Metrika informer -->
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter42358839 = new Ya.Metrika({
-                    id:42358839,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/42358839" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-            </div>
-        </footer>
-    </div>
-
-
-
-
-
-
-<script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
-<div id="vk_community_messages" style="height: 80px; width: 60px; position: fixed; z-index: 10000; right: 20px; bottom: 0px; background: none;">
-<!-- VK Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript">
-$(document).ready(function(){
-VK.Widgets.CommunityMessages("vk_community_messages", 123681111, {});
-});
-</script>
-</div>
-
-
-<input type="hidden" value="peter" id="peter_value" />
-<input type="hidden" value="moscow" id="moscow_value" />
-<input type="hidden" value="nsk" id="nsk_value" />
-<input type="hidden" value="almati" id="almati_value" />
-
-</body></html>
+        <script src="/Bundles/JsFooter/index-v=t1G3GmOJ5JWe-BQ9xJkaVJPxC4hHw974rCWhubqJaZE1"></script>
+        </body>
+        </html>
 		
 		<?
 		// $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
