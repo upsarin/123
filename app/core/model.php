@@ -35,6 +35,7 @@ class Model
 						Element::Update($where, $what, $table);
 					}
 				} else if($_POST['action'] == 'del'){
+
 					foreach($_POST['id'] as $key => $id){
 						$where = array('id' => $id);
 						if($array['model'] == 'administrator'){
@@ -42,9 +43,7 @@ class Model
 						} else {
 							$table = $array['model'];
 						}
-						if($table != 'users' && $id != '7'){
-							Element::Delete($where, $table);
-						} else if($table != 'pages' && $id != '1'){
+						if(($table != 'users' && $id != '7') || ($table != 'pages' && $id != '1')){
 							Element::Delete($where, $table);
 						}
 					}

@@ -28,9 +28,9 @@
             <div class="image-fx-overlay"></div>
         </div>
         <div class="wheel"></div>
-        <a href="/apply/" class="body">
+        <a href="/apply/" class="body" style="padding: 44px;">
                     <div class="in">
-                <h1 class="quote"><span class="ellipsis">Хочешь быть настоящим Dj <br /> Мы поможем!<br>Просто запишись на пробное бесплатное занятие</span></h1>
+                <h1 class="quote"><span class="ellipsis">Хочешь быть настоящим Dj?<br /> Мы поможем!<br>Просто запишись на пробное бесплатное занятие</span></h1>
                 <span class="ghostbtn ghostbtn-large ghostbtn-forw ghostbtn-light"><span class="text">Подать заявку</span></span>
             </div>
         </a>
