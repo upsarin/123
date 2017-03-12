@@ -19,9 +19,6 @@ if($_POST['lat'] && $_POST['lon']){
     $_SESSION['user']['pos_id'] = $_POST['lat'] . ":" . $_POST['lon'];
     echo "широта: ". $_POST['lat'] ." долгота: ". $_POST['lon'] ." дата: ". date("H:i:s") ."<br />";
     echo $result ."<br />";
-    ?><pre><?
-    print_r($_SESSION['user']['pos_id']);
-    print_r($_POST);
-    ?></pre><?
+
 }
 ?>
