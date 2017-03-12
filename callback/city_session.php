@@ -1,6 +1,15 @@
 <?
+
 session_start();
-if($_REQUEST['city']){	if($_REQUEST['city'] == "peter"){		$_SESSION['user']['city'] = "moscow";	}	if(!$_SESSION['user']['city']){
-		$_SESSION['user']['city'] = $_REQUEST['city'];		unset($_REQUEST);		echo "ok";	} else {		if($_REQUEST['city'] && $_REQUEST['manualy'] == "Y" && ($_REQUEST['city'] != $_SESSION['user']['city'])){						unset($_REQUEST);			echo "ok";		} else {			echo "no";		}			}
-	
+require_once ("/var/www/u0205105/data/www/pioneerdjschool.ru/app/classes/User.php");
+
+if($_REQUEST['city']){
+        if($_SESSION['user']['city_find'] != "Y"){
+            unset($_REQUEST);
+            $_SESSION['user']['city_find'] = "Y";
+            echo "ok";
+        } else {
+            echo "no";
+        }
 }
+

@@ -13,6 +13,7 @@
 	ini_set('display_errors', '0');
 
 
+
 	require_once ("app/core/model.php");
 	require_once ("app/core/view.php");
 	require_once ("app/core/module_router.php");

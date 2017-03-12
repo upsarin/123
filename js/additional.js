@@ -1,21 +1,100 @@
 $(document).ready(function(){
 
+    var route,geocode;
+    ymaps.ready(init);
+
+    function degreesToRadians (degrees) {
+        var radians = (degrees * Math.PI)/180;
+        return radians;
+    }
+
+    function computeDistance (startCoords, destCoords) {
+        var startLatRads = degreesToRadians(startCoords.latitude);
+        var startLongRads = degreesToRadians(startCoords.longitude);
+        var destLatRads = degreesToRadians(destCoords.latitude);
+        var destLongRads = degreesToRadians(destCoords.longitude);
+
+        var Radius = 6371; //радиус Земли в километрах
+        var distance = Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) + Math.cos(startLatRads) * Math.cos(destLatRads) * Math.cos(startLongRads - destLongRads)) * Radius;
+
+        return distance;
+    }
+
+    function init() {
+        var geolocation = ymaps.geolocation;
+        var lat = geolocation.latitude;
+        var lon = geolocation.longitude;
+        var current = {
+            latitude: lat,
+            longitude: lon
+        };
+        var ourCoordsPeter = {
+            latitude: 59.934985,
+            longitude: 30.282161
+        };
+        var ourCoordsMoscow = {
+            latitude: 55.720843,
+            longitude: 37.577083
+        };
+        var ourCoordsNsk = {
+            latitude: 55.014367,
+            longitude: 82.916654
+        };
+        var ourCoordsAlmati = {
+            latitude: 43.202242,
+            longitude: 76.900278
+        };
+
+        var peter = computeDistance(current, ourCoordsPeter);
+        var moscow = computeDistance(current, ourCoordsMoscow);
+        var nsk = computeDistance(current, ourCoordsNsk);
+        var almati = computeDistance(current, ourCoordsAlmati);
 
 
-
-    setTimeout(navigator.geolocation.getCurrentPosition(function(position) {
-        var lat = position.coords.latitude;
-        var lon = position.coords.longitude;
-        data = "lat=" + lat + "&lon=" + lon;
+        var min = Math.min(peter, moscow, nsk, almati);
+        var cityId;
+        if(peter == min){
+            cityId = "peter";
+        } else if(moscow == min){
+            cityId = "moscow";
+        } else if(nsk == min){
+            cityId = "nsk";
+        } else if(almati == min){
+            cityId = "almati";
+        }
+        var data = "city=" + cityId + "&manualy=N";
         $.ajax({
-            url: "/callback/geopos.php",
+            url: "/callback/city_session.php",
             type: "POST",
             data: data,
             success: function(html){
+                if(html == "ok"){
+                    window.location = "/main/?city=" + cityId; ///
+                }
             }
         });
 
-    }), 5000);
+        console.log(min, peter, moscow, nsk, almati);
+    }
+
+	var geopos = function(){
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var lat_geo = position.coords.latitude;
+            var lon_geo = position.coords.longitude;
+            data = "lat=" + lat_geo + "&lon=" + lon_geo;
+            $.ajax({
+                url: "/callback/geopos.php",
+                type: "POST",
+                data: data,
+                success: function(html){
+                    console.log("lat=" + lat_geo + "&lon=" + lon_geo);
+                }
+            });
+            setTimeout(geopos, 150000);
+        });
+	};
+    geopos();
+
     $("#form_phone").mask("+7 (999) 999-9999");
 	$("a[href='/apply/']").click(function(){
         $(".search-border").css({display: "block"});
@@ -57,6 +136,7 @@ $(document).ready(function(){
 		}
 		return false;
 	});
+
 	/*
 	$('.module-window').click(function(){
 		console.log(this.id);
