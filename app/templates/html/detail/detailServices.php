@@ -8,27 +8,42 @@
             top: 80px !important;
         }
         .section.section-product-info {
-            margin-top: -220px;
-            margin-bottom: -20px;
+            margin-top: -190px !important;
+            margin-bottom: -50px !important;
         }
+        .hero.hero-compact .head .name {
+            margin-top: -73px;
+        }
+
     }
+
     @media (max-width: 1001px){
         .bg .section {
             margin-top: 0px;
         }
+        .section.section-product-info {
+            margin-bottom: -50px;
+        }
+    }
+    @media (max-width: 767px) and (min-width: 482px) {
+
     }
     @media (max-width: 767px) {
         .section {
             margin-top: -250px;
         }
         .section.section-product-info {
-            margin-top: -220px !important;
-            margin-bottom: -20px;
+            margin-top: -150px;
+            margin-bottom: -50px;
+        }
+        .hero .head .desc {
+            width: 70%;
         }
     }
     .section-product-info {
         background: url(/css/images/bg.png);
         background-size: cover;
+        padding-bottom: 50px;
     }
     .product-combine .product .content-wrap {
         min-height: 90px;
@@ -47,9 +62,7 @@
     .section-product-combine {
         margin-top: -50px;
     }
-    .section-product-combine {
-        margin-top: -80px;
-    }
+
     .hero.hero-compact .btn-holder {
         bottom: 90px;
     }
@@ -57,6 +70,9 @@
 
 <?
     $element = $array['content'][0];
+    if($element['alias'] == "traning"){
+        $element['title'] = "Свободная тренировка";
+    }
     $filter = array("content_id" => $element['id']);
     $images = Element::SelectAll('files', $filter, null, null);
 ?>
@@ -127,7 +143,7 @@
         </div>
     </header>
 </div>
-<div class="section section-product-combine bg-dark-1 color-light">
+<div class="section section-product-combine bg-dark-1 color-light" style="margin-top: -80px;">
     <div class="container product-combine">
         <h2 class="h2 no-line color-light">РЕКОМЕНДУЕМЫЕ КУРСЫ</h2>
 

@@ -98,8 +98,8 @@
     }
     @media (max-width: 369px) and (min-width: 321px){
         .course-cons ul li:nth-child(1) .cons-label {
-            top: 152px !important;
-            left: 30px !important;
+            top: 145px !important;
+            left: 10px !important;
         }
         .course-cons ul li:nth-child(2) .cons-label {
             top: 46px !important;
@@ -107,15 +107,15 @@
         }
         .course-cons ul li:nth-child(3) .cons-label {
             top: 91px !important;
-            left: 20px !important;
+            left: 3px !important;
         }
         .course-cons ul li:nth-child(4) .cons-label {
             top: 21px !important;
             left: 23px !important;
         }
         .course-cons ul li:nth-child(5) .cons-label {
-            top: 124px !important;
-            left: 12px !important;
+            top: 118px !important;
+            left: 3px !important;
         }
         .course-cons ul li:nth-child(6) .cons-label {
             top: -4px !important;
@@ -221,6 +221,11 @@
             background-size: 50% 50%;
         }
     }
+    @media (max-width: 767px) and (min-width: 482px){
+        .section.section-product-images {
+            margin-top: -150px;
+        }
+    }
     @media (max-width: 767px) {
         .section {
             margin-top: -250px;
@@ -231,6 +236,7 @@
         .hero .btn-holder .btn:first-child {
             margin-top: -40px;
         }
+
     }
     .course-cons .bg {
         max-width: 767px;

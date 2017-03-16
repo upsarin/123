@@ -31,6 +31,7 @@
     <link href="/Bundles/Style/index-v=H4Yv5sjJRgLgqs-CyBthqH_GrqH4LZtmoI-pAHgdUuw1.css" rel="stylesheet"/>
     <script src="//api-maps.yandex.ru/2.0/?load=package.full,package.route,package.geocode&amp;lang=ru-RU" type="text/javascript"></script>
     <style>
+        
         @media (min-width: 551px) and (max-width: 630px){
             .header .topbar .container .logo {
                 margin: 0 130px !important;
