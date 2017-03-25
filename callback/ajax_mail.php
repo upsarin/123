@@ -15,7 +15,7 @@ $to= "info@pioneerdjschool.ru" . ", " ; //обратите внимание на
 $to .= $email_to;
 
 /* тема/subject */
-$subject = "Сообщение с сайта pioneerdjschool.ru ". $_POST['city'];
+$subject = $_POST['title'] ." ". $_POST['city'];
 
 /* сообщение */
 $message = '
@@ -28,11 +28,10 @@ $message = '
 <p>Город: '. $_SESSION['user']["city_name"] .'</p>
 <p>Имя: '. $_POST["name"] .'</p>
 <p>Телефон: '. $_POST["phone"] .'</p>
-
-<p>Наименование: '. $_POST["course"] .'</p>
-
- ';
-
+';
+if($_POST["course"]){
+    $message .= '<p>Наименование: '. $_POST["course"] .'</p>';
+}
   $message .= '
 
 </body>

@@ -22,8 +22,10 @@
 
 
     <link href="/Content/css/fonts-default.css" rel="stylesheet" type="text/css">
+    <link href="/css/callback.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/js/jquery.maskedinput.min.js"></script>
+    <script src="/js/callback.js"></script>
     <script type="text/javascript" id="www-widgetapi-script" src="/js/widgetapi.js" async=""></script>
     <script type="text/javascript" id="www-widgetapi-script" src="/js/additional.js" async=""></script>
     <script src="https://www.youtube.com/player_api"></script>
@@ -423,6 +425,36 @@
             <? include $content; ?>
 
             <div class="footer">
+                <!--callback-->
+
+                        <div id="callback-icon">
+                            <a href="/callback/">
+                                <img src="/css/images/callback.png" />
+                            </a>
+                        </div>
+                        <div id="callback" >
+                            <div class="container">
+                                <div class="button-wrap">
+                                    <a href="/#" class="btn__search trigger__close-overlayer">
+                                        <i class="icon-cross"><span class="sr-only">Close</span></i>
+                                    </a>
+                                </div>
+                                <div class="input-wrap">
+                                    <span id="callback_errors"></span>
+                                    <h4>Оставьте свои контактные данные и мы перезвоним вам в ближайшее время.</h4>
+                                    <br/><label for="callback_name">Имя</label><br/>
+                                    <input type="text" id="callback_name" class="input__search" data-nothing-entered="Пожалуйста введите свое имя" placeholder="Ваше Имя" />
+                                    <br/><label for="callback_phone">Телефон</label><br/>
+                                    <input type="text" id="callback_phone" class="input__search" data-nothing-entered="Пожалуйста введите свой телефон" placeholder="Ваш телефон" />
+
+                                    <div class="form-send-wrap">
+                                        <a class="callback_send" href="" >Перезвоните мне</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                <!--end callback -->
                 <div class="footer-top">
                     <div class="container">
                         <div class="row">

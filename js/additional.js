@@ -109,6 +109,7 @@ $(document).ready(function(){
 		var courseId = $("#form_course").val();
 		var courseUserName = $("#form_name").val();
 		var courseUserPhone = $("#form_phone").val();
+		var title = "Заявка с сайта pioneerdjschool.ru";
 		var error = false;
 
 		if(courseUserName == ""){
@@ -124,7 +125,7 @@ $(document).ready(function(){
 		if(!error){
 			console.log("form complete");
 
-            data = "city=" + $(".select__footer-dark select option:selected").html() + "&course=" + courseId + "&name=" + courseUserName + "&phone=" + courseUserPhone;
+            data = "title=" + title + "&city=" + $(".select__footer-dark select option:selected").html() + "&course=" + courseId + "&name=" + courseUserName + "&phone=" + courseUserPhone;
             $.ajax({
                 url: "/callback/ajax_mail.php",
                 type: "POST",
