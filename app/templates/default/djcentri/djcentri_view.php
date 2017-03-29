@@ -34,9 +34,7 @@
             </p>
         </div>
     </div>
-    <pre>
-        <?print_r($_SESSION['user']['city_array']);?>
-    </pre>
+
     <div class="section section-productcat-products">
         <div class="container">
             <div class="gallery-showcase-block"></div>
