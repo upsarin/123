@@ -23,9 +23,11 @@
 
     <link href="/Content/css/fonts-default.css" rel="stylesheet" type="text/css">
     <link href="/css/callback.css" rel="stylesheet" type="text/css">
+    <link href="/css/gallery.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/js/jquery.maskedinput.min.js"></script>
     <script src="/js/callback.js"></script>
+    <script src="/js/gallery.js"></script>
     <script type="text/javascript" id="www-widgetapi-script" src="/js/widgetapi.js" async=""></script>
     <script type="text/javascript" id="www-widgetapi-script" src="/js/additional.js" async=""></script>
     <script src="https://www.youtube.com/player_api"></script>

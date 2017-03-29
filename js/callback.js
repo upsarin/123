@@ -1,15 +1,25 @@
 $(document).ready(function(){
-    $("#callback_phone").mask("8 (999) 999-9999");
+   //$("#callback_phone").mask("8 (999) 999-9999");
     $("#callback-icon").animate({
         opacity: 0.5,
     }, 2000);
-    $("#callback-icon a").click(function(){
-        $("#callback").animate({
-            right: 0,
-            opacity: 1
-        }, 500);
-        return false;
-    });
+    if(screen.width > "767") {
+        $("#callback-icon a").click(function () {
+            $("#callback").animate({
+                right: "20%",
+                opacity: 1
+            }, 500);
+            return false;
+        });
+    } else {
+        $("#callback-icon a").click(function () {
+            $("#callback").animate({
+                right: "0%",
+                opacity: 1
+            }, 500);
+            return false;
+        });
+    }
     $("#callback .trigger__close-overlayer").click(function(){
         $("#callback").animate({
             right: "-100%",

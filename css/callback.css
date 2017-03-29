@@ -15,18 +15,31 @@
 }
 #callback {
     position: fixed;
-    top: 0;
+    top: 15%;
     right: -100%;
     z-index: 100000;
-    background: #2a2937;
-    width: 40%;
-    height: 100%;
-    color: #ffffff;
+    background: #fff;
+    width: 60%;
+    padding-bottom: 15px;
+    color: black;
     opacity: 0;
-    padding-top: 35px;
+    padding-top: 0px;
 }
 #callback h4 {
-    color: #ffffff;
+    color: black;
+}
+#callback input[type=text].input__search {
+    width: 100%;
+    padding: 0;
+    background: none;
+    border: none;
+    border-bottom: 4px solid #3a5ee1;
+    outline: none;
+    font-family: "pdj",Arial,sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    color: black;
+    text-transform: uppercase;
 }
 #callback .trigger__close-overlayer {
     margin-top: 40px;
@@ -66,9 +79,12 @@
         width: 100%;
     }
 }
+#callback .input-wrap {
+    margin-top: 30px;
+}
 #callback-icon:hover {
     opacity: 1 !important;
 }
 #callback .button-wrap {
-    margin-top: 30px;
+    margin-top: 10px;
 }
