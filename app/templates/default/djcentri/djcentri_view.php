@@ -46,11 +46,23 @@
                     <div class="gallery-header gallery-header-<?=$element['id']?>"><?=$element['title']?><i id="<?=$element['id']?>" class="ico"></i></div>
                     <div class="gallery-container gallery-cont-<?=$element['id']?>">
                         <? if($element['id'] == "moscow"){ ?>
-                            <img src="/css/images/content/index/services/rent.jpg" />
-                            <img class="imgMap" src="/css/images/struc/str_msk.jpg" />
+                            <img class="people" src="/css/images/content/index/services/rent.jpg" />
+                            <img class="imgMap" src="/css/images/struc/str_msk.png" />
                         <? } else if($element['id'] == "almati") { ?>
                             <img src="/css/images/content/index/services/rent.jpg" />
                             <img class="imgMap" src="/css/images/content/index/services/rent.jpg" />
+                        <? } ?>
+                    </div>
+                    <div class="points-<?=$element['id']?>">
+                        <? if($element['id'] == "moscow"){ ?>
+                            <i class="point" id="point_1" class="ico"></i>
+                            <i class="point" id="point_2" class="ico"></i>
+                            <i class="point" id="point_3" class="ico"></i>
+                            <i class="point" id="point_4" class="ico"></i>
+                        <? } else if($element['id'] == "almati") { ?>
+                            <i class="point" id="point_1" class="ico"></i>
+                            <i class="point" id="point_2" class="ico"></i>
+                            <i class="point" id="point_3" class="ico"></i>
                         <? } ?>
                     </div>
                 </div>
