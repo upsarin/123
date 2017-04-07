@@ -41,11 +41,6 @@
                 margin: 0 130px !important;
             }
         }
-        .header .navbar .container .logo img {
-            display: block;
-            width: 100%;
-            height: 27px;
-        }
         .input-wrap {
             margin-top: 60px;
         }
@@ -352,7 +347,7 @@
                     <div class="container">
                         <a href="index.html#" class="btn-offcanvas trigger__offcanvas"><i class="icon-menu"></i></a>
                         <a href="/" class="logo">
-                            <img src="/css/images/1_amp_gt_Pioneer_DJ_School.png" alt="Pioneer DJ School logo" />
+                            <img src="/css/images/logo.png" alt="Pioneer DJ School logo" />
                         </a>
 
                         <div class="action-nav">
@@ -383,7 +378,7 @@
                 <div class="navbar" id="navbar">
                     <div class="container">
                         <a href="/" class="logo">
-                            <img src="/css/images/1_amp_gt_Pioneer_DJ_School.png" alt="Pioneer DJ School logo" />
+                            <img src="/css/images/logo.png" alt="Pioneer DJ School logo" />
                         </a>
                         <nav class="main-nav">
                             <ul>
