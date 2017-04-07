@@ -10,6 +10,9 @@
         padding-left: 10px;
         color: #7a7a8a;
     }
+    .gallery-showcase-block {
+        max-height: 660px;
+    }
 </style>
 
 
@@ -46,10 +49,10 @@
                     <div class="gallery-header gallery-header-<?=$element['id']?>"><?=$element['title']?><i id="<?=$element['id']?>" class="ico"></i></div>
                     <div class="gallery-container gallery-cont-<?=$element['id']?>">
                         <? if($element['id'] == "moscow"){ ?>
-                            <img class="people" src="/css/images/content/index/services/rent.jpg" />
+                            <img class="people" src="/images/pioneer_centers/moscow/FAN_2939.jpg" />
                             <img class="imgMap" src="/css/images/struc/str_msk.png" />
                         <? } else if($element['id'] == "almati") { ?>
-                            <img src="/css/images/content/index/services/rent.jpg" />
+                            <img src="/images/image/content/index/services/rent.jpg" />
                             <img class="imgMap" src="/css/images/content/index/services/rent.jpg" />
                         <? } ?>
                     </div>
@@ -60,10 +63,18 @@
                             <i class="point" id="point_3" class="ico"></i>
                             <i class="point" id="point_4" class="ico"></i>
                             <i class="point" id="point_5" class="ico"></i>
-                        <? } else if($element['id'] == "almati") { ?>
                             <i class="point" id="point_6" class="ico"></i>
                             <i class="point" id="point_7" class="ico"></i>
                             <i class="point" id="point_8" class="ico"></i>
+                            <i class="point" id="point_9" class="ico"></i>
+                            <i class="point" id="point_10" class="ico"></i>
+                            <i class="point" id="point_11" class="ico"></i>
+                            <i class="point" id="point_12" class="ico"></i>
+                        <? } else if($element['id'] == "almati") { ?>
+                            <i class="point" id="point_13" class="ico"></i>
+                            <i class="point" id="point_14" class="ico"></i>
+                            <i class="point" id="point_15" class="ico"></i>
+                            <i class="point" id="point_16" class="ico"></i>
                         <? } ?>
                     </div>
                 </div>

@@ -90,26 +90,61 @@
 }
 #point_1 {
     position: relative;
-    top: -340px;
+    top: -380px;
     left: -860px;
 }
 #point_2 {
     position: relative;
-    top: -340px;
-    left: -540px;
+    top: -270px;
+    left: -720px;
 }
 #point_3 {
     position: relative;
-    top: -340px;
-    left: -240px;
+    top: -310px;
+    left: -610px;
 }
 #point_4 {
     position: relative;
-    top: -340px;
-    left: 30px;
+    top: -380px;
+    left: -480px;
 }
 #point_5 {
     position: relative;
-    top: -140px;
-    left: -700px;
+    top: -310px;
+    left: -360px;
+}
+#point_6  {
+    position: relative;
+    top: -180px;
+    left: -330px;
+}
+#point_7 {
+    position: relative;
+    top: -310px;
+    left: -230px;
+}
+#point_8 {
+    position: relative;
+    top: -380px;
+    left: -100px;
+}
+#point_9 {
+    position: relative;
+    top: -180px;
+    left: -20px;
+}
+#point_10 {
+    position: relative;
+    top: -320px;
+    left: 180px;
+}
+#point_11 {
+    position: relative;
+    top: -60px;
+    left: 210px;
+}
+#point_12 {
+    position: relative;
+    top: -150px;
+    left: -510px;
 }
