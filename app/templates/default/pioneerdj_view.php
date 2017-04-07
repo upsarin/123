@@ -258,7 +258,6 @@
             .footer-countryselector.clearfix {
                 margin-left: 50px !important;
             }
-
         }
         .hero.hero-compact .btn-holder {
             bottom: 30px;

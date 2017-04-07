@@ -13,6 +13,9 @@
     background: #fff;
     color: #3a5ee1;
 }
+.people {
+    display: none;
+}
 #callback {
     position: fixed;
     top: 15%;

@@ -10,7 +10,7 @@ $(document).ready(function(){
         }, 200, function(){
             subj.html('<img src="'+ $(".gallery-cont-"+ id +" img")[0].src +'" />');
             $(".gallery-cont-moscow").animate({
-                height: $(".gallery-cont-"+ id +" img")[1].height,
+                height: $(".gallery-cont-"+ id +" img")[1].height/1.5 + "px",
                 opacity: 1,
                 width: "100%"
             }, 200, function(){
@@ -24,7 +24,11 @@ $(document).ready(function(){
                 }, 200, function(){
                     $(".gallery-cont-"+ id).css({
                         margin: "0px 0px 10px 0px"
-                });
+                    });
+                    $(".points-" + id + " .point").css({
+                        display: "block"
+                    });
+                    
                     var destination = $(".gallery-showcase-block").offset().top;
                     $('body').animate({ scrollTop: destination-100 }, 1100);
                 });

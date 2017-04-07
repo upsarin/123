@@ -59,10 +59,11 @@
                             <i class="point" id="point_2" class="ico"></i>
                             <i class="point" id="point_3" class="ico"></i>
                             <i class="point" id="point_4" class="ico"></i>
+                            <i class="point" id="point_5" class="ico"></i>
                         <? } else if($element['id'] == "almati") { ?>
-                            <i class="point" id="point_1" class="ico"></i>
-                            <i class="point" id="point_2" class="ico"></i>
-                            <i class="point" id="point_3" class="ico"></i>
+                            <i class="point" id="point_6" class="ico"></i>
+                            <i class="point" id="point_7" class="ico"></i>
+                            <i class="point" id="point_8" class="ico"></i>
                         <? } ?>
                     </div>
                 </div>
