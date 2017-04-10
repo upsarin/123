@@ -334,6 +334,9 @@
                 margin-left: 40px;
             }
         }
+        .header .navbar .container .logo img {
+            margin-top: 5px;
+        }
     </style>
 </head>
 

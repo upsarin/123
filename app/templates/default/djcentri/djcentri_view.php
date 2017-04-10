@@ -13,9 +13,17 @@
     .gallery-showcase-block {
         max-height: 660px;
     }
+
 </style>
 
+<div class="slider">
+    <div id="close">X</div>
+    <div id="prev"></div>
+    <div id="next"></div>
+    <div class="slider-container">
 
+    </div>
+</div>
 <div class="section">
     <div class="section category-toolbar">
         <div class="container">
@@ -51,9 +59,14 @@
                         <? if($element['id'] == "moscow"){ ?>
                             <img class="people" src="/images/pioneer_centers/moscow/FAN_2939.jpg" />
                             <img class="imgMap" src="/css/images/struc/str_msk.png" />
+                            <img class="images image-point_11" src="/images/pioneer_centers/moscow/1/1.jpg" />
+                            <img class="images image-point_11" src="/images/pioneer_centers/moscow/1/2.jpg" />
+                            <img class="images image-point_11" src="/images/pioneer_centers/moscow/1/3.jpg" />
+
                         <? } else if($element['id'] == "almati") { ?>
-                            <img src="/images/image/content/index/services/rent.jpg" />
+                            <img class="people" src="/images/pioneer_centers/almati/RUS_9623.jpg" />
                             <img class="imgMap" src="/css/images/content/index/services/rent.jpg" />
+
                         <? } ?>
                     </div>
                     <div class="points-<?=$element['id']?>">
