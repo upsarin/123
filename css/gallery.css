@@ -40,7 +40,7 @@
     padding: 30px 5px;
 }
 .gallery-showcase-li {
-
+    margin-bottom: 30px;
 }
 .point:hover {
     cursor: pointer;
@@ -85,7 +85,7 @@
     background: #fff;
     color: #3a5ee1;
 }
-.slider #close{
+.slider-images #close{
     color: white;
     position: absolute;
     top: 50px;
@@ -94,10 +94,10 @@
     width: 50px;
     padding: 0px 0px 0px 10px;
 }
-.slider #close:hover {
+.slider-images #close:hover {
     cursor: pointer;
 }
-.slider #prev {
+.slider-images #prev {
     background: url(/css/images/slider-left.jpg);
     top: 45%;
     left: 10px;
@@ -107,7 +107,10 @@
     position: absolute;
     border-radius: 35px;
 }
-.slider #next {
+.slider-images #prev:hover, .slider-images #next:hover {
+    cursor: pointer;
+}
+.slider-images #next {
     background: url(/css/images/slider-right.jpg);
     top: 45%;
     right: 10px;
@@ -118,7 +121,7 @@
     /* color: white; */
     border-radius: 35px;
 }
-.slider {
+.slider-images {
     display: none;
     position: fixed;
     width: 100%;
@@ -127,73 +130,101 @@
     top: 0px;
     left: 0px;
 }
-.slider .slider-container {
+.slider-images .slider-container {
     padding: 50px;
+    height: 100%;
 }
-.slider .slider-container img{
-    display: none;
+.slider-images .slider-container img{
+    position: absolute;
+    top: 56px;
+    opacity: 0;
+}
+@media (max-width: 1023px){
+    .slider-images .slider-container img {
+
+    }
 }
 
 .gallery-header .ico::before {
     content: "";
 }
-#point_1 {
+.points-moscow #point_1 {
     position: relative;
     top: -350px;
-    left: -830px;
+    left: -860px;
 }
-#point_2 {
+.points-moscow #point_2 {
     position: relative;
     top: -240px;
-    left: -690px;
+    left: -720px;
 }
-#point_3 {
+.points-moscow #point_3 {
     position: relative;
     top: -280px;
-    left: -580px;
+    left: -6100px;
 }
-#point_4 {
+.points-moscow #point_4 {
     position: relative;
     top: -350px;
-    left: -450px;
+    left: -480px;
 }
-#point_5 {
+.points-moscow #point_5 {
     position: relative;
     top: -280px;
+    left: -360px;
+}
+.points-moscow #point_6  {
+    position: relative;
+    top: -150px;
     left: -330px;
 }
-#point_6  {
-    position: relative;
-    top: -150px;
-    left: -300px;
-}
-#point_7 {
+.points-moscow #point_7 {
     position: relative;
     top: -280px;
-    left: -200px;
+    left: -230px;
 }
-#point_8 {
+.points-moscow #point_8 {
     position: relative;
     top: -350px;
-    left: -70px;
+    left: -100px;
 }
-#point_9 {
+.points-moscow #point_9 {
     position: relative;
     top: -150px;
-    left: 10px;
+    left: -20px;
 }
-#point_10 {
+.points-moscow #point_10 {
     position: relative;
     top: -280px;
-    left: 210px;
+    left: 200px;
 }
-#point_11 {
+.points-moscow #point_11 {
     position: relative;
     top: -50px;
     left: 230px;
 }
-#point_12 {
+.points-moscow #point_12 {
     position: relative;
     top: -120px;
-    left: -480px;
+    left: -510px;
+}
+.points-almati #point_13 {
+    position: relative;
+    top: -310px;
+    left: -595px;
+}
+.points-almati #point_14 {
+    position: relative;
+    top: -380px;
+    left: -345px;
+}
+.points-almati #point_15 {
+    position: relative;
+    top: -240px;
+    left: -315px;
+}
+.points-almati #point_16 {
+    position: relative;
+    top: -110px;
+    left: -285px;
 }

@@ -90,7 +90,7 @@ $(document).ready(function(){
                     console.log("lat=" + lat_geo + "&lon=" + lon_geo);
                 }
             });
-            setTimeout(geopos, 150000);
+            //setTimeout(geopos, 150000);
         });
 	};
     geopos();

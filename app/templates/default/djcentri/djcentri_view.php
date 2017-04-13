@@ -16,7 +16,7 @@
 
 </style>
 
-<div class="slider">
+<div class="slider-images">
     <div id="close">X</div>
     <div id="prev"></div>
     <div id="next"></div>
@@ -58,14 +58,20 @@
                     <div class="gallery-container gallery-cont-<?=$element['id']?>">
                         <? if($element['id'] == "moscow"){ ?>
                             <img class="people" src="/images/pioneer_centers/moscow/FAN_2939.jpg" />
-                            <img class="imgMap" src="/css/images/struc/str_msk.png" />
+                            <img class="imgMap" src="/css/images/struc/str_msk.png" style="width: 100%"/>
                             <img class="images image-point_11" src="/images/pioneer_centers/moscow/1/1.jpg" />
                             <img class="images image-point_11" src="/images/pioneer_centers/moscow/1/2.jpg" />
                             <img class="images image-point_11" src="/images/pioneer_centers/moscow/1/3.jpg" />
 
                         <? } else if($element['id'] == "almati") { ?>
                             <img class="people" src="/images/pioneer_centers/almati/RUS_9623.jpg" />
-                            <img class="imgMap" src="/css/images/content/index/services/rent.jpg" />
+                            <img class="imgMap" src="/css/images/struc/str_almati.png" style="height: 450px;width: 350px;text-align: center;margin: 0 32%;"/>
+                            <img class="images image-point_13" src="/images/pioneer_centers/almati/shop_1.jpg" />
+                            <img class="images image-point_13" src="/images/pioneer_centers/almati/shop_2.jpg" />
+                            <img class="images image-point_14" src="/images/pioneer_centers/almati/base.jpg" />
+                            <img class="images image-point_15" src="/images/pioneer_centers/almati/vinyl.jpg" />
+                            <img class="images image-point_16" src="/images/pioneer_centers/almati/trening_1.jpg" />
+                            <img class="images image-point_16" src="/images/pioneer_centers/almati/trening_2.jpg" />
 
                         <? } ?>
                     </div>
