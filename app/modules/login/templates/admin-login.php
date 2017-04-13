@@ -10,17 +10,18 @@
 	<link rel="icon" type="image/png" href="favicon.png" />
 	<style>
 		body {
-			width: 99%;
-			height: 90%;
+            width: 99%;
+            height: 85%;
+            min-height: 300px;
 		}
 		.main-block {
-			position: relative;
-			top: 0px;
-			left: 0px;
-			color: black;
-			width: 100%;
-			min-height: 70%;
-			z-index: 3;
+            position: relative;
+            top: 0px;
+            left: -30px;
+            color: black;
+            width: 100%;
+            min-height: 30%;
+            z-index: 3;
 		}	
 		.content {
 			position: absolute;

@@ -59,9 +59,32 @@
                         <? if($element['id'] == "moscow"){ ?>
                             <img class="people" src="/images/pioneer_centers/moscow/FAN_2939.jpg" />
                             <img class="imgMap" src="/css/images/struc/str_msk.png" style="width: 100%"/>
+                            <img class="images image-point_1" src="/images/pioneer_centers/moscow/12/1.jpg" />
+                            <img class="images image-point_1" src="/images/pioneer_centers/moscow/12/2.jpg" />
+                            <img class="images image-point_2" src="/images/pioneer_centers/moscow/11/1.jpg" />
+                            <img class="images image-point_2" src="/images/pioneer_centers/moscow/11/2.jpg" />
+                            <img class="images image-point_3" src="/images/pioneer_centers/moscow/9/1.jpg" />
+                            <img class="images image-point_3" src="/images/pioneer_centers/moscow/9/2.jpg" />
+                            <img class="images image-point_3" src="/images/pioneer_centers/moscow/9/3.jpg" />
+                            <img class="images image-point_4" src="/images/pioneer_centers/moscow/8/1.jpg" />
+                            <img class="images image-point_4" src="/images/pioneer_centers/moscow/8/2.jpg" />
+                            <img class="images image-point_5" src="/images/pioneer_centers/moscow/7/1.jpg" />
+                            <img class="images image-point_5" src="/images/pioneer_centers/moscow/7/2.jpg" />
+                            <img class="images image-point_6" src="/images/pioneer_centers/moscow/6/1.jpg" />
+                            <img class="images image-point_6" src="/images/pioneer_centers/moscow/6/2.jpg" />
+                            <img class="images image-point_6" src="/images/pioneer_centers/moscow/6/3.jpg" />
+                            <img class="images image-point_7" src="/images/pioneer_centers/moscow/4/1.jpg" />
+                            <img class="images image-point_7" src="/images/pioneer_centers/moscow/4/2.jpg" />
+                            <img class="images image-point_8" src="/images/pioneer_centers/moscow/5/1.jpg" />
+                            <img class="images image-point_9" src="/images/pioneer_centers/moscow/3/1.jpg" />
+                            <img class="images image-point_9" src="/images/pioneer_centers/moscow/3/2.jpg" />
+                            <img class="images image-point_10" src="/images/pioneer_centers/moscow/2/1.jpg" />
+                            <img class="images image-point_10" src="/images/pioneer_centers/moscow/2/2.jpg" />
                             <img class="images image-point_11" src="/images/pioneer_centers/moscow/1/1.jpg" />
                             <img class="images image-point_11" src="/images/pioneer_centers/moscow/1/2.jpg" />
                             <img class="images image-point_11" src="/images/pioneer_centers/moscow/1/3.jpg" />
+                            <img class="images image-point_12" src="/images/pioneer_centers/moscow/10/1.jpg" />
+                            <img class="images image-point_12" src="/images/pioneer_centers/moscow/10/2.jpg" />
 
                         <? } else if($element['id'] == "almati") { ?>
                             <img class="people" src="/images/pioneer_centers/almati/RUS_9623.jpg" />
