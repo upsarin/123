@@ -439,6 +439,11 @@ class ContentModel
 					$val['default_value'] = 'Y';
 				}
 				$val['type'] = $post['form']['page_id'];
+				if($val['required']) {
+                    $val['required'] = $val['required'];
+                } else {
+                    $val['required'] = "N";
+                }
 				$val['multi'] = "N";
 				$val['field_type'] = "alter";
 				Element::saveField($val);

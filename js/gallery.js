@@ -4,16 +4,19 @@ $(document).ready(function(){
         var obj = $("#gallery-" + id);
         var subj = $(".gallery-showcase-block");
         var imgMap = $(".gallery-cont-"+ id +" img");
-            subj.css({
-                height: $(".gallery-cont-" + id + " img")[0].height
-            });
-            subj.html('<img src="' + $(".gallery-cont-" + id + " .people").attr("src") + '" />');
+            // subj.css({
+                // height: $(".gallery-cont-" + id + " img")[0].height
+            // });
+            // subj.html('<img src="' + $(".gallery-cont-" + id + " .people").attr("src") + '" />');
             $(".gallery-cont-" + id).css({
                 width: "100%",
                 display: "block"
             });
             $(".gallery-header-" + id).css({
                 margin: "0px 0px 1px 0px"
+            });
+			$(".gallery-cont-" + id + " .people").css({
+                display: "block"
             });
             $(".gallery-cont-" + id + " .imgMap").css({
                 display: "block"
@@ -43,7 +46,7 @@ $(document).ready(function(){
             }, 500, function(){
                 $("img#" + nextImage).animate({
                     top: $("img#" + nextImage).css("top"),
-                    left: 50,
+                    left: (screen.width-$("img#" + nextImage).width())/2,
                     opacity: 1
                 }, 500);
                 $("img#" + curImage).css({
@@ -105,6 +108,10 @@ $(document).ready(function(){
                     width: "100%",
                     display: "none"
                 });
+				$(".gallery-cont-moscow .people").css({
+                    width: "100%",
+                    display: "none"
+                });
                 $(".points-moscow .point").css({
                     display: "none"
                 });
@@ -118,6 +125,10 @@ $(document).ready(function(){
                     display: "none"
                 });
                 $(".gallery-cont-almati .imgMap").css({
+                    width: "450px",
+                    display: "none"
+                });
+				$(".gallery-cont-almati .people").css({
                     width: "450px",
                     display: "none"
                 });
@@ -191,7 +202,7 @@ $(document).ready(function(){
             width: screen.width,
         });
         $(".slider-images .slider-container img").css({
-            width: $(".slider-images .slider-container").width()-20,
+            width: ($(".slider-images .slider-container").height()-100)*1.49,
             height: $(".slider-images .slider-container").height()-100,
             left: screen.width,
             top: 56
@@ -200,7 +211,7 @@ $(document).ready(function(){
         $(".slider-images .slider-container").attr("id", pointId);
         $(".slider-images .slider-container img#0").attr("selected", "selected");
         $(".slider-images .slider-container img#0").css({
-            left: $(".slider-images .slider-container").css("padding"),
+            left: ((screen.width-$(".slider-images .slider-container img#0").width()))/2,
             opacity: 1
         });
         staticHeight = parseInt($(".slider-images .slider-container img").css("height"));

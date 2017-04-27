@@ -73,17 +73,27 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    float: right;
+    float: left;
     top: -10px;
-    right: -25px;
+    left: -105px;
     width: 48px;
     height: 48px;
+
     line-height: 46px;
     text-align: center;
     font-size: 26px;
     border: 2px solid #d1d3d4;
     background: #fff;
     color: #3a5ee1;
+}
+.gallery-header .ico:after {
+    content: "";
+    height: 1px;
+    width: 20px;
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    left: 49px;
+    top: 22px;
 }
 .slider-images #close{
     color: white;

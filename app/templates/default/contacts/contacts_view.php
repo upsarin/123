@@ -189,53 +189,7 @@
                     </div>
                 </div>
             </div>
-            <div class="folder__container">
-                <h3 class="folder__trigger">Новосибирск</h3>
-                <div class="folder__content">
-                    <div class="spoiler-block">
-                        <a class="button-plus toogle-address-list" href="#"></a>
-                        <div class="spoiler-line" ></div>
-                        <div class="spoiler-content ">
 
-                            <ul class="adresses-list">
-
-                                <li class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-5 ">
-                                        <address><strong>Pioneer DJ Novosibirsk</strong><br>Проспект Димитрова, д. 7,<br/> оф. 407<br>Ежедневно с 10.00 до 22.00</address>
-                                    </div>
-                                    <div class="col-md-5 col-sm-5 col-xs-5">
-                                        <span class="phone">+7 913 015-90-09</span>
-                                        <br/>
-                                        <a href="#" class="email"><span>info@pioneerdjschool.ru</span></a>
-                                        <a class="mail-us" href="mailto:info@pioneerdjschool.ru"><br /><span class="mail-us-label">Написать нам</span><span class="round_button"><em><span class="button_round_bg"><i class="fa fa-envelope-o fa-2x"></i></span></em></span></a>
-                                    </div>
-
-                                    <div class="footer-social">
-                                        <ul class="clearfix">
-                                            <li>
-                                                <a href='https://vk.com/pioneerdjnsk' class='icon-vk' target='_blank' ></a>
-                                            </li>
-                                            <li>
-                                                <a href="https://instagram.com/pioneerdjnsk" class="icon-instagram" target="_blank">Instagram</a>
-                                            </li>
-                                            <li>
-                                                <a href="https://fb.com/pioneerdjnsk" class="icon-facebook" target="_blank">Facebook</a>
-                                            </li>
-                                            <li>
-                                                <a href="https://youtube.com/pioneerdjschoolru" class="icon-youtube" target="_blank">YouTube</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-
-                            </ul>
-                            <div class="map">
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=QuRo4ZFs__93PX777kEgYeCwgLY8cz7m&amp;width=749&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="folder__container">
                 <h3 class="folder__trigger">Алматы</h3>
                 <div class="folder__content">
