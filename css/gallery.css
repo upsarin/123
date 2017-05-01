@@ -154,6 +154,11 @@
 
     }
 }
+@media (max-width: 1366px){
+    .gallery-header {
+        margin: 0 0px 1px 80px;
+    }
+}
 
 .gallery-header .ico::before {
     content: "";

@@ -398,6 +398,9 @@
                                     <a href='/services/' title='Услуги' >Услуги</a>
                                 </li>
                                 <li>
+                                    <a href='/djcentri/' title='DJ Центры' >DJ Центры</a>
+                                </li>
+                                <li>
                                     <a href='/contacts/' title='Контакты' >Контакты</a>
                                 </li>
                             </ul>
@@ -506,6 +509,15 @@
                                             <div class="folder__container">
                                                 <p class="item-title">
                                                     <a href='/contacts/' >Контакты</a>
+                                                    <span class="folder__trigger"></span>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 clearfix">
+                                            <div class="folder__container">
+                                                <p class="item-title">
+                                                    <a href='/djcentri/' >DJ Центры</a>
                                                     <span class="folder__trigger"></span>
                                                 </p>
 

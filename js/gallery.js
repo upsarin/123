@@ -12,8 +12,8 @@ $(document).ready(function(){
                 width: "100%",
                 display: "block"
             });
-            $(".gallery-header-" + id).css({
-                margin: "0px 0px 1px 0px"
+            $(".gallery-cont-"+ id +" h2").css({
+                display: "block"
             });
 			$(".gallery-cont-" + id + " .people").css({
                 display: "block"
@@ -104,6 +104,9 @@ $(document).ready(function(){
                     width: "100%",
                     display: "none"
                 });
+                $(".gallery-cont-moscow h2").css({
+                    display: "none"
+                });
                 $(".gallery-cont-moscow .imgMap").css({
                     width: "100%",
                     display: "none"
@@ -122,6 +125,9 @@ $(document).ready(function(){
             } else if ($(".gallery-cont-almati .imgMap").css("display") == "block") {
                 $(".gallery-cont-almati").css({
                     width: "100%",
+                    display: "none"
+                });
+                $(".gallery-cont-almati h2").css({
                     display: "none"
                 });
                 $(".gallery-cont-almati .imgMap").css({
@@ -191,19 +197,30 @@ $(document).ready(function(){
         var pointId = this.id;
         var pointCur = $("#"+this.id).parent();
         var curParentClass = $(pointCur).attr("class");
+        var imgWidth;
+        var imgHeight;
+        console.log(pointId);
         $(".slider-images").css({
             display: "block",
             height: screen.height
         });
+
         for(var i = 0; i < $(".image-" + pointId).length; ++i){
             $(".slider-images .slider-container").append("<img id='"+ i +"' src='"+ $('.image-'+pointId)[i].src +"' />");
         }
         $(".slider-images .slider-container").css({
             width: screen.width,
         });
+        if(((screen.width-$(".slider-images .slider-container img#0").width()))/2 < 56){
+            imgWidth = ($(".slider-images .slider-container").height()-200)*1.49;
+            imgHeight = $(".slider-images .slider-container").height()-200;
+        } else {
+            ($(".slider-images .slider-container").height()-100)*1.49;
+            imgHeight = $(".slider-images .slider-container").height()-100;
+        }
         $(".slider-images .slider-container img").css({
-            width: ($(".slider-images .slider-container").height()-100)*1.49,
-            height: $(".slider-images .slider-container").height()-100,
+            width: imgWidth,
+            height: imgHeight,
             left: screen.width,
             top: 56
         });
